@@ -1027,3 +1027,4 @@ asioIndividuals:BegoñaCristinaPelayoPaper2 rdf:type owl:NamedIndividual ,
 asioIndividuals:Springer rdf:type owl:NamedIndividual ,
                        asio:EditedPublication ;
               rdfs:label "Springer, Berlin, Heidelberg"@en .
+ 

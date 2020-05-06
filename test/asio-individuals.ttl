@@ -712,6 +712,16 @@ asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
                                     "José Emilio Labra Gayo"@es .
 
 
+###  http://www.asio.es/asioinstances/asio#DanielChamovitz
+asioIndividuals:DanielChamovitz rdf:type owl:NamedIndividual ;
+                         asio:plays  asio:Researching ,
+                                     asio:Teaching ;
+                         asio:isMemberOf asioIndividuals:MinimalIntelligenceLab ;
+                                      asioIndividuals:DanielChamovitzPaper1 ;
+                         rdfs:label "Daniel Chamovitz"@en ,
+                                    "דניאל חיימוביץ"@he .
+
+
 ###  http://www.asio.es/asioinstances/asio#JoseMariaAlvarezRodriguez
 asioIndividuals:JoseMariaAlvarezRodriguez rdf:type owl:NamedIndividual ;
                                asio:plays  asio:Researching ,

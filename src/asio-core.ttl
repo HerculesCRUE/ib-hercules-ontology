@@ -78,6 +78,8 @@ asio:addresses rdf:type owl:ObjectProperty ;
 ###  http://purl.org/hercules/asio/core#advises
 asio:advises rdf:type owl:ObjectProperty ;
              owl:inverseOf asio:isAdvisedBy ;
+             rdfs:domain foaf:Person ;
+             rdfs:range asio:AcademicPublication ;
              rdfs:label "advises"@en .
 
 
@@ -97,6 +99,14 @@ asio:atContext rdf:type owl:ObjectProperty ;
                rdfs:label "at context"@en .
 
 
+###  http://purl.org/hercules/asio/core#authorCitation
+asio:authorCitation rdf:type owl:ObjectProperty ;
+                    rdfs:domain foaf:Person ;
+                    rdfs:range asio:QualifiedValue ;
+                    rdfs:comment "A property to link the number of citations to a given author."@en ;
+                    rdfs:label "author citations"@en .
+
+
 ###  http://purl.org/hercules/asio/core#authors
 asio:authors rdf:type owl:ObjectProperty ;
              owl:inverseOf asio:isAuthoredBy ;
@@ -113,13 +123,20 @@ asio:capital rdf:type owl:ObjectProperty ;
              rdfs:label "capital"@en .
 
 
+###  http://purl.org/hercules/asio/core#coadvisedBy
+asio:coadvisedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain asio:AcademicPublication ;
+                 rdfs:range foaf:Person ;
+                 rdfs:comment "An academic publication (bachelor thesis, master thesis or doctoral thesis) is co-advised by an advisor."@en ;
+                 rdfs:label "co-advised by"@en .
+
+
 ###  http://purl.org/hercules/asio/core#coadvises
 asio:coadvises rdf:type owl:ObjectProperty ;
-               owl:inverseOf asio:isCoadvisedBy ;
                rdfs:domain foaf:Person ;
                rdfs:range asio:AcademicPublication ;
-               rdfs:label "A person cod-avises an academic publication (bachelor thesis, master thesis or doctoral thesis)"@en ,
-                          "co-advises"@en .
+               rdfs:comment "A person co-advises an academic publication (bachelor thesis, master thesis or doctoral thesis)."@en ;
+               rdfs:label "co-advises"@en .
 
 
 ###  http://purl.org/hercules/asio/core#codeOf
@@ -254,13 +271,6 @@ asio:isAuthoredBy rdf:type owl:ObjectProperty ;
                   rdfs:label "is authored by"@en .
 
 
-###  http://purl.org/hercules/asio/core#isCoadvisedBy
-asio:isCoadvisedBy rdf:type owl:ObjectProperty ;
-                   rdfs:domain asio:AcademicPublication ;
-                   rdfs:range foaf:Person ;
-                   rdfs:label "is co-advised by"@en .
-
-
 ###  http://purl.org/hercules/asio/core#isFundedBy
 asio:isFundedBy rdf:type owl:ObjectProperty ;
                 rdfs:label "is funded by"@en .
@@ -324,6 +334,14 @@ asio:projectOutcome rdf:type owl:ObjectProperty ;
                     rdfs:label "project outcome"@en .
 
 
+###  http://purl.org/hercules/asio/core#publicationCitation
+asio:publicationCitation rdf:type owl:ObjectProperty ;
+                         rdfs:domain asio:Publication ;
+                         rdfs:range asio:QualifiedValue ;
+                         rdfs:comment "a property to link a given publication to the number of citations."@en ;
+                         rdfs:label "publication citations"@en .
+
+
 ###  http://purl.org/hercules/asio/core#publishedBy
 asio:publishedBy rdf:type owl:ObjectProperty ;
                  rdfs:domain asio:Publication ;
@@ -367,17 +385,6 @@ asio:specializes rdf:type owl:ObjectProperty ;
 asio:spinsOffFrom rdf:type owl:ObjectProperty ;
                   rdfs:domain asio:Spinoff ;
                   rdfs:label "spins of from"@en .
-
-
-###  http://purl.org/hercules/asio/core#supervised
-asio:supervised rdf:type owl:ObjectProperty ;
-                owl:inverseOf asio:supervisedBy ;
-                rdfs:label "supervised"@en .
-
-
-###  http://purl.org/hercules/asio/core#supervisedBy
-asio:supervisedBy rdf:type owl:ObjectProperty ;
-                  rdfs:label "supervised by"@en .
 
 
 ###  http://purl.org/hercules/asio/core#utilizes

@@ -282,7 +282,7 @@ asioIndividuals:DanielGayoAvello rdf:type owl:NamedIndividual ;
                                  asio:plays asio:Researching ,
                                             asio:Teaching ;
                                  asio:isMemberOf asioIndividuals:WESO ;
-                                 asio:supervised asioIndividuals:Thesis6 ;
+                                 asio:advised asioIndividuals:Thesis6 ;
                                  asio:authorCitation [
                                                         rdf:type asio:QualifiedValue ;
                                                         asio:qualifieddate "2015"^^xsd:date ;
@@ -812,7 +812,7 @@ asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
                                                 asio:qualifieddate "06-05-2020"^^xsd:date ;
                                                 asio:qualifiedvaluation "38"
                                              ] ;
-                         asio:supervised asioIndividuals:Thesis1 ,
+                         asio:advised asioIndividuals:Thesis1 ,
                                          asioIndividuals:Thesis2 ,
                                          asioIndividuals:Thesis3 ,
                                          asioIndividuals:Thesis4 ,
@@ -956,7 +956,7 @@ asioIndividuals:Synthese rdf:type owl:NamedIndividual ,
 asioIndividuals:Thesis1 rdf:type owl:NamedIndividual ,
                       asio:PhDThesis ;
              asio:isAuthoredBy asioIndividuals:JoseMariaAlvarezRodriguez ;
-             asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+             asio:advisedBy asioIndividuals:JoseEmilioLabraGayo ;
              asio:publicationDate "2012"^^xsd:date ;
              rdfs:label "Métodos semánticos de reutilización de datos abiertos enlazados en las licitaciones públicas"@es .
 
@@ -965,7 +965,7 @@ asioIndividuals:Thesis1 rdf:type owl:NamedIndividual ,
 asioIndividuals:Thesis2 rdf:type owl:NamedIndividual ,
                       asio:PhDThesis ;
              asio:isAuthoredBy asioIndividuals:HernanSagasteguiChigne ;
-             asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+             asio:advisedBy asioIndividuals:JoseEmilioLabraGayo ;
              asio:publicationDate "2015"^^xsd:date ;
              rdfs:label "Desarrollo de Tecnologías Colaborativas para Entornos virtuales de apoyo al aprendizaje"@es .
 
@@ -974,7 +974,7 @@ asioIndividuals:Thesis2 rdf:type owl:NamedIndividual ,
 asioIndividuals:Thesis3 rdf:type owl:NamedIndividual ,
                       asio:PhDThesis ;
              asio:isAuthoredBy asioIndividuals:JoseAlbertoBenitezAndrades ;
-             asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+             asio:advisedBy asioIndividuals:JoseEmilioLabraGayo ;
              asio:publicationDate "2017"^^xsd:date ;
              rdfs:label "Tecnologías Semánticas aplicadas al Análisis de Redes Sociales en el ámbito de la Salud"@es .
 
@@ -982,7 +982,7 @@ asioIndividuals:Thesis3 rdf:type owl:NamedIndividual ,
 asioIndividuals:Thesis4 rdf:type owl:NamedIndividual ,
                                  asio:MastersThesis ;
                         asio:isAuthoredBy asioIndividuals:HerminioGarciaGonzalez ;
-                        asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+                        asio:advisedBy asioIndividuals:JoseEmilioLabraGayo ;
                         asio:publicationDate "01-06-2016"^^xsd:date ;
                         asio:projectKeyword "e-Learning" ,
                                             "Web Semántica" ,
@@ -994,7 +994,7 @@ asioIndividuals:Thesis4 rdf:type owl:NamedIndividual ,
 asioIndividuals:Thesis5 rdf:type owl:NamedIndividual ,
                                  asio:BachelorsThesis ;
                         asio:isAuthoredBy asioIndividuals:GuillermoFacundoColunga ;
-                        asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+                        asio:advisedBy asioIndividuals:JoseEmilioLabraGayo ;
                         asio:publicationDate "2020"^^xsd:date ;
                         rdfs:label "Automatic generation of multilanguage domain models through a subset of shape expressions"@en .
 
@@ -1002,7 +1002,7 @@ asioIndividuals:Thesis5 rdf:type owl:NamedIndividual ,
 asioIndividuals:Thesis6 rdf:type owl:NamedIndividual ,
                                  asio:BachelorsThesis ;
                         asio:isAuthoredBy asioIndividuals:AlejandroGonzalezHevia ;
-                        asio:supervisedBy asioIndividuals:DanielGayoAvello ;
+                        asio:advisedBy asioIndividuals:DanielGayoAvello ;
                         asio:publicationDate "16-06-2019"^^xsd:date ;
                         asio:projectKeyword "mental health" ,
                                             "suicide prevention" ,

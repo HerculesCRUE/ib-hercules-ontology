@@ -282,9 +282,88 @@ asioIndividuals:DanielGayoAvello rdf:type owl:NamedIndividual ;
                                  asio:plays asio:Researching ,
                                             asio:Teaching ;
                                  asio:isMemberOf asioIndividuals:WESO ;
-                                 asio:supervised asio:Thesis6 ;
+                                 asio:supervised asioIndividuals:Thesis6 ;
+                                 asio:authorCitation [
+                                                        rdf:type asio:QualifiedValue ;
+                                                        asio:qualifieddate "2015"^^xsd:date ;
+                                                        asio:qualifiedvaluation "306"
+                                                     ] ,
+                                                     [
+                                                        rdf:type asio:QualifiedValue ;
+                                                        asio:qualifieddate "2016"^^xsd:date ;
+                                                        asio:qualifiedvaluation "287"
+                                                     ] ,
+                                                     [
+                                                        rdf:type asio:QualifiedValue ;
+                                                        asio:qualifieddate "2017"^^xsd:date ;
+                                                        asio:qualifiedvaluation "292"
+                                                     ] ,
+                                                     [
+                                                        rdf:type asio:QualifiedValue ;
+                                                        asio:qualifieddate "2018"^^xsd:date ;
+                                                        asio:qualifiedvaluation "242"
+                                                     ] ,
+                                                     [
+                                                        rdf:type asio:QualifiedValue ;
+                                                        asio:qualifieddate "2019"^^xsd:date ;
+                                                        asio:qualifiedvaluation "252"
+                                                     ] ,
+                                                     [
+                                                        rdf:type asio:QualifiedValue ;
+                                                        asio:qualifieddate "06-05-2020"^^xsd:date ;
+                                                        asio:qualifiedvaluation "58"
+                                                     ] ;
+                                 asio:authors asioIndividuals:DanielGayoPublication1 ;
+                                 asio:h-index [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2020"^^xsd:date ;
+                                                asio:qualifiedvaluation "18"
+                                              ] ;
+                                 asio:i-index [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2020"^^xsd:date ;
+                                                asio:qualifiedvaluation "24"
+                                              ] ;
                                  rdfs:label "Daniel Gayo-Avello"@en ,
                                             "Daniel Gayo-Avello"@es .
+
+asioIndividuals:DanielGayoPublication1 rdf:type owl:NamedIndividual ,
+                               asio:PeerReviewedArticle ;
+                      asio:isAuthoredBy asioIndividuals:DanielGayoAvello ;
+                      asio:publicationDate "2012"^^xsd:date ;
+                      asio:hasDOI "10.1177/0894439313493979" ;
+                      asio:publicationCitation [
+                                                   rdf:type asio:QualifiedValue ;
+                                                   asio:qualifieddate "2015"^^xsd:date ;
+                                                   asio:qualifiedvaluation "46"
+                                                ] ,
+                                                [
+                                                   rdf:type asio:QualifiedValue ;
+                                                   asio:qualifieddate "2016"^^xsd:date ;
+                                                   asio:qualifiedvaluation "40"
+                                                ] ,
+                                                [
+                                                   rdf:type asio:QualifiedValue ;
+                                                   asio:qualifieddate "2017"^^xsd:date ;
+                                                   asio:qualifiedvaluation "46"
+                                                ] ,
+                                                [
+                                                   rdf:type asio:QualifiedValue ;
+                                                   asio:qualifieddate "2018"^^xsd:date ;
+                                                   asio:qualifiedvaluation "38"
+                                                ] ,
+                                                [
+                                                   rdf:type asio:QualifiedValue ;
+                                                   asio:qualifieddate "2019"^^xsd:date ;
+                                                   asio:qualifiedvaluation "46"
+                                                ] ,
+                                                [
+                                                   rdf:type asio:QualifiedValue ;
+                                                   asio:qualifieddate "06-05-2020"^^xsd:date ;
+                                                   asio:qualifiedvaluation "15"
+                                                ] ;
+                      rdfs:comment "This article aims to (1) provide a balanced and critical review of the state of the art; (2) cast light on the presume predictive power of Twitter data; and (3) propose some considerations to push forward the field."@en ;
+                      rdfs:label "A meta-analysis of state-of-the-art electoral prediction from Twitter data"@en .
 
 ###  http://www.asio.es/asioinstances/asio#DepartamentDeTecnologiesDeLaInformacioILesComunicacions
 asioIndividuals:DepartamentDeTecnologiesDeLaInformacioILesComunicacions rdf:type owl:NamedIndividual ,
@@ -703,11 +782,51 @@ asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
                          asio:plays  asio:Researching ,
                                      asio:Teaching ;
                          asio:isMemberOf asioIndividuals:WESO ;
+                         asio:authorCitation [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2015"^^xsd:date ;
+                                                asio:qualifiedvaluation "138"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2016"^^xsd:date ;
+                                                asio:qualifiedvaluation "120"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2017"^^xsd:date ;
+                                                asio:qualifiedvaluation "137"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2018"^^xsd:date ;
+                                                asio:qualifiedvaluation "164"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2019"^^xsd:date ;
+                                                asio:qualifiedvaluation "180"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "06-05-2020"^^xsd:date ;
+                                                asio:qualifiedvaluation "38"
+                                             ] ;
                          asio:supervised asioIndividuals:Thesis1 ,
                                          asioIndividuals:Thesis2 ,
                                          asioIndividuals:Thesis3 ,
                                          asioIndividuals:Thesis4 ,
                                          asioIndividuals:Thesis5 ;
+                         asio:h-index [
+                                        rdf:type asio:QualifiedValue ;
+                                        asio:qualifieddate "2020"^^xsd:date ;
+                                        asio:qualifiedvaluation "18"
+                                      ] ;
+                         asio:i-index [
+                                        rdf:type asio:QualifiedValue ;
+                                        asio:qualifieddate "2020"^^xsd:date ;
+                                        asio:qualifiedvaluation "37"
+                                      ] ;
                          rdfs:label "José Emilio Labra Gayo"@en ,
                                     "José Emilio Labra Gayo"@es .
 

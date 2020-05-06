@@ -502,6 +502,8 @@ asio:qualifieddate rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/hercules/asio/core#qualifiedvaluation
 asio:qualifiedvaluation rdf:type owl:DatatypeProperty ;
+                        rdfs:domain asio:QualifiedValue ;
+                        rdfs:range xsd:string ;
                         rdfs:comment "A given value linked to a given date (point in time) within a qualified value."@en ;
                         rdfs:label "qualified valuation"@en .
 

@@ -416,6 +416,13 @@ foaf:member rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  http://purl.org/hercules/asio/core#awardedWith
+asio:awardedWith rdf:type owl:DatatypeProperty ;
+                 rdfs:domain asio:Publication ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "awarded with"@en .
+
+
 ###  http://purl.org/hercules/asio/core#hasDOI
 asio:hasDOI rdf:type owl:DatatypeProperty ;
             rdfs:domain asio:Publication ;

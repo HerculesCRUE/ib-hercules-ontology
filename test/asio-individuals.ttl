@@ -708,6 +708,8 @@ asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
                                          asioIndividuals:Thesis3 ,
                                          asioIndividuals:Thesis4 ,
                                          asioIndividuals:Thesis5 ;
+                         asio:coadvises  asioIndividuals:Thesis7 ,
+                                         asioIndividuals:Thesis8 ;
                          rdfs:label "José Emilio Labra Gayo"@en ,
                                     "José Emilio Labra Gayo"@es .
 
@@ -886,6 +888,7 @@ asioIndividuals:Thesis5 rdf:type owl:NamedIndividual ,
                                  asio:BachelorsThesis ;
                         asio:isAuthoredBy asioIndividuals:GuillermoFacundoColunga ;
                         asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+                        asio:coadvisedBy asioIndividuals:DanielFernandezAlvarez ;
                         asio:publicationDate "2020"^^xsd:date ;
                         rdfs:label "Automatic generation of multilanguage domain models through a subset of shape expressions"@en .
 
@@ -1080,3 +1083,50 @@ asioIndividuals:BegoñaCristinaPelayoPaper2 rdf:type owl:NamedIndividual ,
 asioIndividuals:Springer rdf:type owl:NamedIndividual ,
                        asio:EditedPublication ;
               rdfs:label "Springer, Berlin, Heidelberg"@en .
+
+### http://www.asio.es/asioinstances/asio#Thesis7
+asioIndividuals:Thesis7 rdf:type owl:NamedIndividual ,
+                                 asio:MastersThesis ;
+                        asio:isAuthoredBy asioIndividuals:SheilaMendezNunez ;
+                        asio:coadvisedBy asioIndividuals:JoseEmilioLabraGayo ,
+                                         asioIndividuals:FranciscoOrtinSoler  ;
+                        asio:publicationDate "2009"^^xsd:date ;
+                        rdfs:label "Reflective environmental intelligence system applied to robotics"@en .
+
+###  http://www.asio.es/asioinstances/asio#SheilaMendezNunez
+asioIndividuals:SheilaMendezNunez rdf:type owl:NamedIndividual ;
+                                       asio:plays asio:MasterStudent ;
+                                       asio:authors asioIndividuals:Thesis7 ;
+                                       rdfs:label "Sheila Méndez Núñez"@en ,
+                                                  "Sheila Méndez Núñez"@es .
+
+###  http://www.asio.es/asioinstances/asio#FranciscoOrtinSoler
+asioIndividuals:FranciscoOrtinSoler rdf:type owl:NamedIndividual ;
+                                    asio:plays  asio:Researching ,
+                                                asio:Teaching ;
+                                    asio:coadvises  asioIndividuals:Thesis7 ;
+                                    rdfs:label "Francisco Ortín Soler"@en ,
+                                                "Francisco Ortín Soler"@es .
+
+### http://www.asio.es/asioinstances/asio#Thesis8
+asioIndividuals:Thesis8 rdf:type owl:NamedIndividual ,
+                                 asio:MastersThesis ;
+                        asio:isAuthoredBy asioIndividuals:CarlosLopezMenendez ;
+                        asio:coadvisedBy asioIndividuals:JoseEmilioLabraGayo ;
+                        asio:publicationDate "2001"^^xsd:date ;
+                        rdfs:label "New technologies applied to musical pedagogy"@en .
+
+###  http://www.asio.es/asioinstances/asio#CarlosLopezMenendez
+asioIndividuals:CarlosLopezMenendez rdf:type owl:NamedIndividual ;
+                                       asio:plays asio:MasterStudent ;
+                                       asio:authors asioIndividuals:Thesis8 ;
+                                       rdfs:label "Carlos López Menéndez"@en ,
+                                                  "Carlos López Menéndez"@es .
+
+###  http://www.asio.es/asioinstances/asio#DanielFernandezAlvarez
+asioIndividuals:DanielFernandezAlvarez rdf:type owl:NamedIndividual ;
+                                       asio:plays asio:PhDStudent ;
+                                       asio:isMemberOf asioIndividuals:WESO ;
+                                       asio:coadvises asioIndividuals:Thesis5 ;
+                                       rdfs:label "Daniel Fernández Álvarez"@en ,
+                                                  "Daniel Fernández Álvarez"@es .

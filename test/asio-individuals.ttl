@@ -419,6 +419,41 @@ asioIndividuals:HerminioGarciaGonzalez rdf:type owl:NamedIndividual ;
                                        asio:plays asio:PhDStudent ;
                                        asio:isMemberOf asioIndividuals:WESO ;
                                        asio:authors asioIndividuals:Thesis4 ;
+                                       asio:authorCitation [
+                                                              rdf:type asio:QualifiedValue ;
+                                                              asio:qualifieddate "2016"^^xsd:date ;
+                                                              asio:qualifiedvaluation "1"
+                                                           ] ,
+                                                           [
+                                                              rdf:type asio:QualifiedValue ;
+                                                              asio:qualifieddate "2017"^^xsd:date ;
+                                                              asio:qualifiedvaluation "1"
+                                                           ] ,
+                                                           [
+                                                              rdf:type asio:QualifiedValue ;
+                                                              asio:qualifieddate "2018"^^xsd:date ;
+                                                              asio:qualifiedvaluation "6"
+                                                           ] ,
+                                                           [
+                                                              rdf:type asio:QualifiedValue ;
+                                                              asio:qualifieddate "2019"^^xsd:date ;
+                                                              asio:qualifiedvaluation "14"
+                                                           ] ,
+                                                           [
+                                                              rdf:type asio:QualifiedValue ;
+                                                              asio:qualifieddate "08-05-2020"^^xsd:date ;
+                                                              asio:qualifiedvaluation "3"
+                                                           ] ;
+                                       asio:h-index [
+                                                      rdf:type asio:QualifiedValue ;
+                                                      asio:qualifieddate "2020"^^xsd:date ;
+                                                      asio:qualifiedvaluation "2"
+                                                    ] ;
+                                       asio:i-index [
+                                                      rdf:type asio:QualifiedValue ;
+                                                      asio:qualifieddate "2020"^^xsd:date ;
+                                                      asio:qualifiedvaluation "1"
+                                                    ] ;
                                        rdfs:label "Herminio García González"@en ,
                                                   "Herminio García González"@es .
 
@@ -1127,6 +1162,46 @@ asioIndividuals:BegoñaCristinaPelayoGarciaBustelo rdf:type owl:NamedIndividual 
                                      asio:Teaching ;
                          asio:authors asioIndividuals:BegoñaCristinaPelayoPaper1 ,
                                       asioIndividuals:BegoñaCristinaPelayoPaper2 ;
+                         asio:authorCitation [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2015"^^xsd:date ;
+                                                asio:qualifiedvaluation "95"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2016"^^xsd:date ;
+                                                asio:qualifiedvaluation "93"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2017"^^xsd:date ;
+                                                asio:qualifiedvaluation "136"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2018"^^xsd:date ;
+                                                asio:qualifiedvaluation "129"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "2019"^^xsd:date ;
+                                                asio:qualifiedvaluation "147"
+                                             ] ,
+                                             [
+                                                rdf:type asio:QualifiedValue ;
+                                                asio:qualifieddate "08-05-2020"^^xsd:date ;
+                                                asio:qualifiedvaluation "45"
+                                             ] ;
+                        asio:h-index [
+                                       rdf:type asio:QualifiedValue ;
+                                       asio:qualifieddate "2020"^^xsd:date ;
+                                       asio:qualifiedvaluation "17"
+                                     ] ;
+                        asio:i-index [
+                                       rdf:type asio:QualifiedValue ;
+                                       asio:qualifieddate "2020"^^xsd:date ;
+                                       asio:qualifiedvaluation "28"
+                                     ] ;
                          rdfs:label "Begoña Cristina Pelayo García-Bustelo"@en ,
                                     "Begoña Cristina Pelayo García-Bustelo"@es .
 
@@ -1134,6 +1209,41 @@ asioIndividuals:PedroDiez rdf:type owl:NamedIndividual ;
                           asio:plays asio:Researching ,
                                      asio:Teaching ;
                           asio:authors asioIndividuals:PedroDiezPaper1 ;
+                          asio:authorCitation [
+                                                 rdf:type asio:QualifiedValue ;
+                                                 asio:qualifieddate "2015"^^xsd:date ;
+                                                 asio:qualifiedvaluation "75"
+                                              ] ,
+                                              [
+                                                 rdf:type asio:QualifiedValue ;
+                                                 asio:qualifieddate "2016"^^xsd:date ;
+                                                 asio:qualifiedvaluation "80"
+                                              ] ,
+                                              [
+                                                 rdf:type asio:QualifiedValue ;
+                                                 asio:qualifieddate "2017"^^xsd:date ;
+                                                 asio:qualifiedvaluation "84"
+                                              ] ,
+                                              [
+                                                 rdf:type asio:QualifiedValue ;
+                                                 asio:qualifieddate "2018"^^xsd:date ;
+                                                 asio:qualifiedvaluation "92"
+                                              ] ,
+                                              [
+                                                 rdf:type asio:QualifiedValue ;
+                                                 asio:qualifieddate "2019"^^xsd:date ;
+                                                 asio:qualifiedvaluation "91"
+                                              ] ,
+                                              [
+                                                 rdf:type asio:QualifiedValue ;
+                                                 asio:qualifieddate "08-05-2020"^^xsd:date ;
+                                                 asio:qualifiedvaluation "71"
+                                              ] ;
+                          asio:h-index [
+                                         rdf:type asio:QualifiedValue ;
+                                         asio:qualifieddate "2020"^^xsd:date ;
+                                         asio:qualifiedvaluation "19"
+                                       ] ;
                           asio:isMemberOf asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria ;
                           rdfs:label "Pedro Díez Mejía"@en,
                                      "Pedro Díez Mejía"@es .
@@ -1224,6 +1334,46 @@ asioIndividuals:FranciscoOrtinSoler rdf:type owl:NamedIndividual ;
                                     asio:plays  asio:Researching ,
                                                 asio:Teaching ;
                                     asio:coadvises  asioIndividuals:Thesis7 ;
+                                    asio:authorCitation [
+                                                           rdf:type asio:QualifiedValue ;
+                                                           asio:qualifieddate "2015"^^xsd:date ;
+                                                           asio:qualifiedvaluation "56"
+                                                        ] ,
+                                                        [
+                                                           rdf:type asio:QualifiedValue ;
+                                                           asio:qualifieddate "2016"^^xsd:date ;
+                                                           asio:qualifiedvaluation "122"
+                                                        ] ,
+                                                        [
+                                                           rdf:type asio:QualifiedValue ;
+                                                           asio:qualifieddate "2017"^^xsd:date ;
+                                                           asio:qualifiedvaluation "64"
+                                                        ] ,
+                                                        [
+                                                           rdf:type asio:QualifiedValue ;
+                                                           asio:qualifieddate "2018"^^xsd:date ;
+                                                           asio:qualifiedvaluation "43"
+                                                        ] ,
+                                                        [
+                                                           rdf:type asio:QualifiedValue ;
+                                                           asio:qualifieddate "2019"^^xsd:date ;
+                                                           asio:qualifiedvaluation "66"
+                                                        ] ,
+                                                        [
+                                                           rdf:type asio:QualifiedValue ;
+                                                           asio:qualifieddate "08-05-2020"^^xsd:date ;
+                                                           asio:qualifiedvaluation "17"
+                                                        ] ;
+                                    asio:h-index [
+                                                   rdf:type asio:QualifiedValue ;
+                                                   asio:qualifieddate "2020"^^xsd:date ;
+                                                   asio:qualifiedvaluation "17"
+                                                 ] ;
+                                    asio:i-index [
+                                                   rdf:type asio:QualifiedValue ;
+                                                   asio:qualifieddate "2020"^^xsd:date ;
+                                                   asio:qualifiedvaluation "27"
+                                                 ] ;
                                     rdfs:label "Francisco Ortín Soler"@en ,
                                                 "Francisco Ortín Soler"@es .
 

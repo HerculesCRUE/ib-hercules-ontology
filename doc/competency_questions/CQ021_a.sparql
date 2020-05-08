@@ -1,0 +1,23 @@
+PREFIX p: <http://hercules-demo.wiki.opencura.com/prop/>
+PREFIX pq: <http://hercules-demo.wiki.opencura.com/prop/qualifier/>
+PREFIX ps: <http://hercules-demo.wiki.opencura.com/prop/statement/>
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?researchCenterLabel (SUM(?numCitations) AS ?totalCitations) WHERE {
+  ?researchCenter wbt:P1 ?researchCenterType . # get research centers
+
+  FILTER(?researchCenterType in (wb:Q68, wb:Q2))
+  ?researcher wbt:P17 wb:Q44 ; # get entities of role Researching
+              wbt:P12  ?researchCenter ; # members of the research center
+              p:P39 [
+                      ps:P39 ?numCitations ;
+                      pq:P44 ?date
+                    ] .
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+}
+GROUP BY ?researchCenterLabel
+ORDER BY DESC(SUM(?numCitations))
+LIMIT 3

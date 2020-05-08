@@ -10,6 +10,10 @@ This document also serves as a reference with the links to the Wikibase SPARQL q
 ## CQ002
 https://tinyurl.com/yal7vbhs
 
+## CQ003
+* version A (top 3 based on h-index): https://tinyurl.com/y7z7dkvx
+* version B (top 3 based on citations): https://tinyurl.com/y7t2gq79
+
 ## CQ004
 * version A: https://tinyurl.com/st6zmg7
 * version B: https://tinyurl.com/t872gck

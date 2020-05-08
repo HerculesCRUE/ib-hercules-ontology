@@ -40,6 +40,11 @@ https://tinyurl.com/y7qlopbe
 ## CQ029
 https://tinyurl.com/ybpzquc3
 
+## CQ031
+* version A (citations): https://tinyurl.com/y8hrhopa
+* version B (h-index): https://tinyurl.com/yadob8vv
+* version C (i10-index): https://tinyurl.com/yd4yb4xv
+
 ## CQ032
 * version A (advised theses): https://tinyurl.com/y9egttvw
 * version B (co-advised theses): https://tinyurl.com/y9tjyb2p

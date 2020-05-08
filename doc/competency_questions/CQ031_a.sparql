@@ -1,0 +1,19 @@
+PREFIX p: <http://hercules-demo.wiki.opencura.com/prop/>
+PREFIX pq: <http://hercules-demo.wiki.opencura.com/prop/qualifier/>
+PREFIX ps: <http://hercules-demo.wiki.opencura.com/prop/statement/>
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?researcherLabel ?numberOfCitations ?date WHERE {
+  ?researcher wbt:P17 wb:Q44 . # get entities of role Researching
+  ?researcher rdfs:label ?researcherLabel .
+  FILTER(?researcherLabel = "José Emilio Labra Gayo"@es) # researcher to be parametrized
+  ?researcher p:P39 [
+    ps:P39 ?numberOfCitations ;
+    pq:P44 ?date
+  ] .
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+}
+ORDER BY ?date

@@ -426,7 +426,8 @@ asio:awardedWith rdf:type owl:DatatypeProperty ;
 ###  http://purl.org/hercules/asio/core#hasDOI
 asio:hasDOI rdf:type owl:DatatypeProperty ;
             rdfs:domain asio:Publication ;
-            rdfs:range xsd:string .
+            rdfs:range xsd:string ;
+            rdfs:label "has DOI"@en .
 
 
 ###  http://purl.org/hercules/asio/core#hasORCID

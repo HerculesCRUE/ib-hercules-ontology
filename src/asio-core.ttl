@@ -88,7 +88,8 @@ asio:associatedWith rdf:type owl:ObjectProperty ,
                              owl:SymmetricProperty ;
                     rdfs:domain foaf:Agent ;
                     rdfs:range foaf:Agent ;
-                    rdfs:comment "an organisation (i.e. university) is associated with another organsiation (i.e. research institute)."@en .
+                    rdfs:comment "an organisation (i.e. university) is associated with another organsiation (i.e. research institute)."@en ;
+                    rdfs:label "associated with"@en .
 
 
 ###  http://purl.org/hercules/asio/core#atContext
@@ -113,6 +114,15 @@ asio:authors rdf:type owl:ObjectProperty ;
              rdfs:domain foaf:Agent ;
              rdfs:range asio:Publication ;
              rdfs:label "authors"@en .
+
+
+###  http://purl.org/hercules/asio/core#awards
+asio:awards rdf:type owl:ObjectProperty ;
+            owl:inverseOf asio:isAwardedBy ;
+            rdf:type owl:InverseFunctionalProperty ;
+            rdfs:domain foaf:Agent ;
+            rdfs:comment "An object property linking an agent to something the agent awards, for example linking a funding agency to a grant, a university to a degree, or an organization to a prize. [source: cerif/frapo]"@en ;
+            rdfs:label "awards"@en .
 
 
 ###  http://purl.org/hercules/asio/core#capital
@@ -271,9 +281,24 @@ asio:isAuthoredBy rdf:type owl:ObjectProperty ;
                   rdfs:label "is authored by"@en .
 
 
+###  http://purl.org/hercules/asio/core#isAwardedBy
+asio:isAwardedBy rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:range foaf:Agent ;
+                 rdfs:label "is awarded by"@en .
+
+
 ###  http://purl.org/hercules/asio/core#isFundedBy
 asio:isFundedBy rdf:type owl:ObjectProperty ;
                 rdfs:label "is funded by"@en .
+
+
+###  http://purl.org/hercules/asio/core#isGrantedWith
+asio:isGrantedWith rdf:type owl:ObjectProperty ;
+                   rdfs:domain foaf:Person ;
+                   rdfs:range asio:Grant ;
+                   rdfs:comment "A person is granted with a stipend for researching."@en ;
+                   rdfs:label "is granted with"@en .
 
 
 ###  http://purl.org/hercules/asio/core#isMemberOf
@@ -282,10 +307,17 @@ asio:isMemberOf rdf:type owl:ObjectProperty ;
                 rdfs:label "is member of"@en .
 
 
+###  http://purl.org/hercules/asio/core#mainResearcherParticipant
+asio:mainResearcherParticipant rdf:type owl:ObjectProperty ;
+                               rdfs:domain foaf:Person ;
+                               rdfs:range foaf:Project ;
+                               rdfs:comment "A person is the main researcher in a given project."@en ;
+                               rdfs:label "main researcher participant"@en .
+
+
 ###  http://purl.org/hercules/asio/core#participant
 asio:participant rdf:type owl:ObjectProperty ;
                  rdfs:domain foaf:Agent ;
-                 rdfs:range foaf:Project ;
                  rdfs:label "participant"@en .
 
 
@@ -409,6 +441,8 @@ asio:yields rdf:type owl:ObjectProperty ;
 
 ###  http://xmlns.com/foaf/0.1/member
 foaf:member rdf:type owl:ObjectProperty ;
+            rdfs:domain foaf:Group ;
+            rdfs:range foaf:Agent ;
             rdfs:label "member"@en .
 
 
@@ -528,6 +562,14 @@ asio:qualifiedvaluation rdf:type owl:DatatypeProperty ;
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.org/NET/c4dm/event.owl#Event
+<http://purl.org/NET/c4dm/event.owl#Event> rdf:type owl:Class ;
+                                           rdfs:comment """An arbitrary classification of a space/time region, by a
+cognitive agent. An event may have actively participating agents,
+passive factors, products, and a location in space/time."""@en ;
+                                           rdfs:label "Event"@en .
+
 
 ###  http://purl.org/cerif/frapo/FinancialEntity
 <http://purl.org/cerif/frapo/FinancialEntity> rdf:type owl:Class ;
@@ -773,6 +815,13 @@ asio:Company rdf:type owl:Class ;
                             "Empresa"@gl ,
                             "Empresa"@pt ,
                             "Entreprise"@fr .
+
+
+###  http://purl.org/hercules/asio/core#Conference
+asio:Conference rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> ;
+                rdfs:comment "A meeting for consultation or discussion. [Source: http://purl.org/ontology/bibo/Conference]"@en ;
+                rdfs:label "Conference"@en .
 
 
 ###  http://purl.org/hercules/asio/core#Context
@@ -1331,6 +1380,10 @@ asio:Spinoff rdf:type owl:Class ;
                             "Spin-off enpresa"@eu .
 
 
+###  http://purl.org/hercules/asio/core#Status
+asio:Status rdf:type owl:Class .
+
+
 ###  http://purl.org/hercules/asio/core#TechnicalReport
 asio:TechnicalReport rdf:type owl:Class ;
                      rdfs:subClassOf asio:ScientificPublication ;
@@ -1391,6 +1444,13 @@ asio:UniversityDivision rdf:type owl:Class ;
                                    "División de universidade"@gl ,
                                    "Divisão de universidade"@pt ,
                                    "University division"@en .
+
+
+###  http://purl.org/hercules/asio/core#Workshop
+asio:Workshop rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> ;
+              rdfs:comment "A seminar, discussion group, or the like, that emphasizes zxchange of ideas and the demonstration and application of techniques, skills, etc. [Source: http://purl.org/ontology/bibo/Workshop]"@en ;
+              rdfs:label "Workshop"@en .
 
 
 ###  http://purl.org/hercules/asio/modules#GeopoliticalEntities
@@ -1481,6 +1541,13 @@ asio:Administrative rdf:type owl:NamedIndividual ,
                              asio:Role .
 
 
+###  http://purl.org/hercules/asio/core#EventOrganiser
+asio:EventOrganiser rdf:type owl:NamedIndividual ,
+                             asio:Role ;
+                    rdfs:comment "A role of organising cientific events, such as conferences, workshops, etc."@en ;
+                    rdfs:label "Event organiser"@en .
+
+
 ###  http://purl.org/hercules/asio/core#MasterStudent
 asio:MasterStudent rdf:type owl:NamedIndividual ,
                             asio:Role .
@@ -1509,6 +1576,54 @@ asio:TechnicalSupport rdf:type owl:NamedIndividual ,
 ###  http://purl.org/hercules/asio/core#UndergraduateStudent
 asio:UndergraduateStudent rdf:type owl:NamedIndividual ,
                                    asio:Role .
+
+
+###  http://purl.org/hercules/asio/core#accepted
+asio:accepted rdf:type owl:NamedIndividual ,
+                       asio:Status ;
+              rdfs:label "Accepted"@en .
+
+
+###  http://purl.org/hercules/asio/core#cancelled
+asio:cancelled rdf:type owl:NamedIndividual ,
+                        asio:Status ;
+               rdfs:label "Cancelled"@en .
+
+
+###  http://purl.org/hercules/asio/core#closed
+asio:closed rdf:type owl:NamedIndividual ,
+                     asio:Status ;
+            rdfs:label "Closed"@en .
+
+
+###  http://purl.org/hercules/asio/core#funded
+asio:funded rdf:type owl:NamedIndividual ,
+                     asio:Status ;
+            rdfs:label "Funded"@en .
+
+
+###  http://purl.org/hercules/asio/core#rejected
+asio:rejected rdf:type owl:NamedIndividual ,
+                       asio:Status ;
+              rdfs:label "Rejected"@en .
+
+
+###  http://purl.org/hercules/asio/core#signed
+asio:signed rdf:type owl:NamedIndividual ,
+                     asio:Status ;
+            rdfs:label "Signed"@en .
+
+
+###  http://purl.org/hercules/asio/core#terminated
+asio:terminated rdf:type owl:NamedIndividual ,
+                         asio:Status ;
+                rdfs:label "Terminated"@en .
+
+
+###  http://purl.org/hercules/asio/core#unfunded
+asio:unfunded rdf:type owl:NamedIndividual ,
+                       asio:Status ;
+              rdfs:label "Unfunded"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

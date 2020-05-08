@@ -319,7 +319,7 @@ asioIndividuals:DanielGayoAvello rdf:type owl:NamedIndividual ;
                                                 asio:qualifieddate "2020"^^xsd:date ;
                                                 asio:qualifiedvaluation "18"
                                               ] ;
-                                 asio:i-index [
+                                 asio:i10-index [
                                                 rdf:type asio:QualifiedValue ;
                                                 asio:qualifieddate "2020"^^xsd:date ;
                                                 asio:qualifiedvaluation "24"
@@ -449,7 +449,7 @@ asioIndividuals:HerminioGarciaGonzalez rdf:type owl:NamedIndividual ;
                                                       asio:qualifieddate "2020"^^xsd:date ;
                                                       asio:qualifiedvaluation "2"
                                                     ] ;
-                                       asio:i-index [
+                                       asio:i10-index [
                                                       rdf:type asio:QualifiedValue ;
                                                       asio:qualifieddate "2020"^^xsd:date ;
                                                       asio:qualifiedvaluation "1"
@@ -857,7 +857,7 @@ asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
                                         asio:qualifieddate "2020"^^xsd:date ;
                                         asio:qualifiedvaluation "18"
                                       ] ;
-                         asio:i-index [
+                         asio:i10-index [
                                         rdf:type asio:QualifiedValue ;
                                         asio:qualifieddate "2020"^^xsd:date ;
                                         asio:qualifiedvaluation "37"
@@ -1197,7 +1197,7 @@ asioIndividuals:BegoñaCristinaPelayoGarciaBustelo rdf:type owl:NamedIndividual 
                                        asio:qualifieddate "2020"^^xsd:date ;
                                        asio:qualifiedvaluation "17"
                                      ] ;
-                        asio:i-index [
+                        asio:i10-index [
                                        rdf:type asio:QualifiedValue ;
                                        asio:qualifieddate "2020"^^xsd:date ;
                                        asio:qualifiedvaluation "28"
@@ -1369,7 +1369,7 @@ asioIndividuals:FranciscoOrtinSoler rdf:type owl:NamedIndividual ;
                                                    asio:qualifieddate "2020"^^xsd:date ;
                                                    asio:qualifiedvaluation "17"
                                                  ] ;
-                                    asio:i-index [
+                                    asio:i10-index [
                                                    rdf:type asio:QualifiedValue ;
                                                    asio:qualifieddate "2020"^^xsd:date ;
                                                    asio:qualifiedvaluation "27"

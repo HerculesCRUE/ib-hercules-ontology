@@ -36,6 +36,9 @@ https://tinyurl.com/y7qlopbe
 ## CQ018
 https://tinyurl.com/y7dpqwg9
 
+## CQ019
+Same as CQ018: https://tinyurl.com/y7dpqwg9
+
 ## CQ020
 * version A (default subject area): https://tinyurl.com/y8hw5ka4
 * version B (level 1 subject areas): https://tinyurl.com/yc6u4kk4

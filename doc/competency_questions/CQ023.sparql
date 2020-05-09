@@ -1,0 +1,25 @@
+PREFIX p: <http://hercules-demo.wiki.opencura.com/prop/>
+PREFIX pq: <http://hercules-demo.wiki.opencura.com/prop/qualifier/>
+PREFIX ps: <http://hercules-demo.wiki.opencura.com/prop/statement/>
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT ?researcherLabel ?hIndex WHERE {
+  ?researcher wbt:P17 wb:Q44 ;
+              wbt:P40 ?hIndex .
+  {
+    SELECT (AVG(?hIndex) as ?avghIndex) WHERE {
+      ?researcher wbt:P17 wb:Q44 ; # get entities of role Researching
+                  p:P40 [          # with h-index
+                          ps:P40 ?hIndex ;
+                          pq:P44 ?date
+                        ] .
+      FILTER(year(?date) = 2020)   # get h-index at 2020
+    }
+  }
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+  FILTER(?hIndex > (?avghIndex + 0.25) ||
+         ?hIndex < (?avghIndex - 0.25)) # deviation to be parametrized
+}

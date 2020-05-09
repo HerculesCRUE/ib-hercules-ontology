@@ -47,6 +47,9 @@ Same as CQ018: https://tinyurl.com/y7dpqwg9
 * version A (based on research centers): https://tinyurl.com/y95snqlg
 * version B (based on scientific domain): https://tinyurl.com/yd99gxvz
 
+## CQ023
+https://tinyurl.com/y84a6hqp
+
 ## CQ025
 * version A: https://tinyurl.com/y9ao7oh2
 * version B: https://tinyurl.com/y8gxakof

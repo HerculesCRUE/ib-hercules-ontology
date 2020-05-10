@@ -60,6 +60,9 @@ https://tinyurl.com/y84a6hqp
 * version A: https://tinyurl.com/y9ao7oh2
 * version B: https://tinyurl.com/y8gxakof
 
+## CQ026: List of conferences/workshops and scientific outreach events.
+https://tinyurl.com/y792383w
+
 ## CQ028: List of projects including role.
 https://tinyurl.com/y7d5mhn9
 

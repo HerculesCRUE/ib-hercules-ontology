@@ -987,6 +987,10 @@ asioIndividuals:SemConf2019 rdf:type owl:NamedIndividual ,
                             rdfs:label "Semantics Conference"@en ;
                             skos:altLabel "SemConf2019"@en .
 
+asioIndividuals:MarieCurieGrant rdf:type owl:NamedIndividual ,
+                                         asio:Grant ;
+                                rdfs:label "Marie Curie Grant"@en .
+
 
 ###  http://www.asio.es/asioinstances/asio#SemConf
 asioIndividuals:ESWC2019 rdf:type owl:NamedIndividual ,
@@ -1507,5 +1511,6 @@ asioIndividuals:DanielFernandezAlvarez rdf:type owl:NamedIndividual ;
                                        asio:plays asio:PhDStudent ;
                                        asio:isMemberOf asioIndividuals:WESO ;
                                        asio:coadvises asioIndividuals:Thesis5 ;
+                                       asio:isGrantedWith asioIndividuals:MarieCurieGrant ;
                                        rdfs:label "Daniel Fernández Álvarez"@en ,
                                                   "Daniel Fernández Álvarez"@es .

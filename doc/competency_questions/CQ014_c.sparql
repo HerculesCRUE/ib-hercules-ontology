@@ -1,0 +1,18 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?projectLabel ?propLabel ?oLabel WHERE {
+  ?project wbt:P1 ?projectType ;    # get all projects
+           wbt:P32 ?researchField . # and research field
+  ?researchField wbt:P23* ?researchFieldLevel1 .
+  ?researchFieldLevel1 wbt:P24 wb:Q162 .  # get Level 1 Subject Area from the project
+  FILTER(?projectType IN (wb:Q94, wb:Q155, wb:Q156, wb:Q157) &&  # regional, national, european and standard projects
+         ?researchFieldLevel1 = wb:Q189)  # and main research field is Mathematical, physical, chemical and engineering sciences
+
+  ?project ?p ?o . # extract all predicates about the researcher
+  ?prop wikibase:directClaim ?p .
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+}
+ORDER BY ?propLabel

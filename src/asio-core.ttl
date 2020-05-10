@@ -149,6 +149,13 @@ asio:coadvises rdf:type owl:ObjectProperty ;
                rdfs:label "co-advises"@en .
 
 
+###  http://purl.org/hercules/asio/core#coauthors
+asio:coauthors rdf:type owl:ObjectProperty ;
+               rdfs:domain foaf:Agent ;
+               rdfs:range asio:Publication ;
+               rdfs:label "co-authors"@en .
+
+
 ###  http://purl.org/hercules/asio/core#codeOf
 asio:codeOf rdf:type owl:ObjectProperty ;
             owl:inverseOf asio:hasCode ;
@@ -286,6 +293,13 @@ asio:isAwardedBy rdf:type owl:ObjectProperty ,
                           owl:FunctionalProperty ;
                  rdfs:range foaf:Agent ;
                  rdfs:label "is awarded by"@en .
+
+
+###  http://purl.org/hercules/asio/core#isCoauthoredBy
+asio:isCoauthoredBy rdf:type owl:ObjectProperty ;
+                    rdfs:domain asio:Publication ;
+                    rdfs:range foaf:Agent ;
+                    rdfs:label "is co-authored by"@en .
 
 
 ###  http://purl.org/hercules/asio/core#isFundedBy

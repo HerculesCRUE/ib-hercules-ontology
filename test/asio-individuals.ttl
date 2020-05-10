@@ -872,10 +872,23 @@ asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
 asioIndividuals:DanielChamovitz rdf:type owl:NamedIndividual ;
                          asio:plays  asio:Researching ,
                                      asio:Teaching ;
-                         asio:isMemberOf asioIndividuals:MinimalIntelligenceLab ;
+                         asio:isMemberOf asioIndividuals:Ben-GurionUniversityOfTheNegev ;
                           asio:authors asioIndividuals:DanielChamovitzPaper1 ;
+                          asio:country asioModules:ISO_ALPHA_3_COUNTRY_CODE_ISR ;
                          rdfs:label "Daniel Chamovitz"@en ,
                                     "דניאל חיימוביץ"@he .
+
+
+###  http://www.asio.es/asioinstances/asio#ManuelGarlochiHeredia
+asioIndividuals:ManuelGarlochiHeredia rdf:type owl:NamedIndividual ;
+                         asio:plays  asio:Researching ,
+                                     asio:Teaching ;
+                         asio:isMemberOf asioIndividuals:InstitutoDeInvestigacionesMarinas ;
+                            asio:associatedWith asioModules:ES_UNIVERSITY_005 ;
+                          asio:country asioModules:ISO_ALPHA_3_COUNTRY_CODE_ESP ;
+                          asio:coauthors asioIndividuals:DanielChamovitzPaper1 ;
+                         rdfs:label "Manuel Garlochí Heredia"@en ,
+                                    "Manuel Garlochí Heredia"@es .
 
 
 ###  http://www.asio.es/asioinstances/asio#JoseMariaAlvarezRodriguez
@@ -923,6 +936,26 @@ asioIndividuals:MinimalIntelligenceLab rdf:type owl:NamedIndividual ,
                             skos:altLabel "MINT Lab"@en .
 
 
+###  http://www.asio.es/asioinstances/asio#TheJacobBlausteinInstitutesForDesertResearch
+asioIndividuals:TheJacobBlausteinInstitutesForDesertResearch rdf:type owl:NamedIndividual ,
+                                     asio:ResearchInstitute ;
+                            asio:associatedWith asioModules:Ben-GurionUniversityOfTheNegev ;
+                            asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_MLP ;
+                            foaf:member asioIndividuals:DanielChamovitz ;
+                            rdfs:label "The Jacob Blaustein Institutes for Desert Research"@en ,
+                                       "לחזור לדף הקודם או לעבור אל דף הבית של האוניברסיטה"@he ;
+                            skos:altLabel "BIDR"@en .
+
+
+###  http://www.asio.es/asioinstances/asio#Ben-GurionUniversityOfTheNegev
+asioIndividuals:Ben-GurionUniversityOfTheNegev rdf:type owl:NamedIndividual ,
+                                     asio:University ;
+                            asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_MLP ;
+                            rdfs:label "Ben-Gurion University of the Negev"@en ,
+                                       "אוניברסיטת בן-גוריון בנגב"@he ;
+                            skos:altLabel "BGU"@en .
+
+
 ###  http://www.asio.es/asioinstances/asio#PacoCalvo
 asioIndividuals:PacoCalvo rdf:type owl:NamedIndividual ;
                 asio:plays  asio:Researching ,
@@ -963,6 +996,17 @@ asioIndividuals:PacoCalvoSPaper3 rdf:type owl:NamedIndividual ,
                       asio:publicationDate "2017"^^xsd:date ;
                       rdfs:comment "Calvo, P. (2017) What is it like to be a plant? Journal of Consciousness Studies."@en ;
                       rdfs:label "What is it like to be a plant?"@en .
+
+
+###  http://www.asio.es/asioinstances/asio#DanielChamovitzPaper1
+asioIndividuals:DanielChamovitzPaper1 rdf:type owl:NamedIndividual ,
+                               asio:PeerReviewedArticle ;
+                      asio:isAuthoredBy asioIndividuals:DanielChamovitz ;
+                      asio:isCoauthoredBy asioIndividuals:ManuelGarlochiHeredia ;
+                      asio:publishedBy asioIndividuals:NaturePlants ;
+                      asio:publicationDate "2018"^^xsd:date ;
+                      rdfs:comment "Chamovitz, D. (2018) Plants are intelligent; now what?. Nature Plants."@en ;
+                      rdfs:label "Plants are intelligent; now what?"@en .
 
 
 ###  http://www.asio.es/asioinstances/asio#PlantSignalingAndBehavior

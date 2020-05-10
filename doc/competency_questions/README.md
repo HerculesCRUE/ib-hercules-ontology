@@ -101,6 +101,9 @@ https://tinyurl.com/y7u55ldf
 ## CQ041: Fraud Control: Identify synergies between funded projects
 https://tinyurl.com/y8smzpsv
 
+## CQ042: Grants of a center in a scientific domain
+https://tinyurl.com/ybrud663
+
 ## CQ043: Identify universities with excellence distinctions
 https://tinyurl.com/ydcnhg5a
 

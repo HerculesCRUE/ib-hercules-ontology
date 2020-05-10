@@ -833,6 +833,9 @@ asioIndividuals:JoseAlbertoBenitezAndrades rdf:type owl:NamedIndividual ;
 asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
                          asio:plays  asio:Researching ,
                                      asio:Teaching ;
+                         asio:participant asioIndividuals:ESWC2019 ,
+                                          asioIndividuals:SemConf2019 ,
+                                          asioIndividuals:WHISEIII2019 ;
                          asio:isMemberOf asioIndividuals:WESO ;
                          asio:authorCitation [
                                                 rdf:type asio:QualifiedValue ;
@@ -951,6 +954,27 @@ asioIndividuals:MinimalIntelligenceLab rdf:type owl:NamedIndividual ,
                             rdfs:label "Laboratorio de Inteligencia Mínima"@es ,
                                        "Minimal Intelligence Lab"@en ;
                             skos:altLabel "MINT Lab"@en .
+
+
+###  http://www.asio.es/asioinstances/asio#SemConf
+asioIndividuals:SemConf2019 rdf:type owl:NamedIndividual ,
+                                     asio:Conference ;
+                            rdfs:label "Semantics Conference"@en ;
+                            skos:altLabel "SemConf2019"@en .
+
+                          
+###  http://www.asio.es/asioinstances/asio#SemConf
+asioIndividuals:ESWC2019 rdf:type owl:NamedIndividual ,
+                                     asio:Conference ;
+                            rdfs:label "Extended Semantic Web Conference"@en ;
+                            skos:altLabel "ESWC2019"@en .
+
+                          
+###  http://www.asio.es/asioinstances/asio#SemConf
+asioIndividuals:WHISEIII2019 rdf:type owl:NamedIndividual ,
+                                     asio:Workshop ;
+                            rdfs:label "Workshop on Humanities in the Semantic web"@en ;
+                            skos:altLabel "WHISEIII2019"@en .
 
 
 ###  http://www.asio.es/asioinstances/asio#TheJacobBlausteinInstitutesForDesertResearch

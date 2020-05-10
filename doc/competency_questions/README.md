@@ -30,6 +30,11 @@ https://tinyurl.com/y9frkekn
 ## CQ012: Participation percentage of a research center/structure.
 https://tinyurl.com/y7wassnx
 
+## CQ014: Explore information from a specific project with specific filters.
+* version A (european projects): https://tinyurl.com/y75cshha
+* version B (in a range of time): https://tinyurl.com/ya8xu9at
+* version C (with a given research field): https://tinyurl.com/y7hjghso
+
 ## CQ015: Identify scientific projects with similar themes and objectives
 https://tinyurl.com/y6vvpxnc
 

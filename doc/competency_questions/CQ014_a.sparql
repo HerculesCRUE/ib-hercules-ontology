@@ -1,0 +1,14 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?projectLabel ?propLabel ?oLabel WHERE {
+  ?project wbt:P1 ?projectType .    # get all projects
+  FILTER(?projectType = wb:Q155) # only european projects
+
+  ?project ?p ?o . # extract all predicates about the researcher
+  ?prop wikibase:directClaim ?p .
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+}
+ORDER BY ?propLabel

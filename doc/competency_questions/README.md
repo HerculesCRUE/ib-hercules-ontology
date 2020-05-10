@@ -50,6 +50,9 @@ Same as CQ018: https://tinyurl.com/y7dpqwg9
 * version A (based on research centers): https://tinyurl.com/y95snqlg
 * version B (based on scientific domain): https://tinyurl.com/yd99gxvz
 
+## CQ022: Clusters using productivity indicators as clasification criteria.
+https://tinyurl.com/y7ghls52
+
 ## CQ023: Research groups with significative deviations with respect to the average scientific production
 https://tinyurl.com/y84a6hqp
 

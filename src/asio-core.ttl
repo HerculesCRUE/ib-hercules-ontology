@@ -380,6 +380,13 @@ asio:projectOutcome rdf:type owl:ObjectProperty ;
                     rdfs:label "project outcome"@en .
 
 
+###  http://purl.org/hercules/asio/core#projectStatus
+asio:projectStatus rdf:type owl:ObjectProperty ;
+                   rdfs:domain foaf:Project ;
+                   rdfs:range asio:Status ;
+                   rdfs:label "project status"@en .
+
+
 ###  http://purl.org/hercules/asio/core#publicationCitation
 asio:publicationCitation rdf:type owl:ObjectProperty ;
                          rdfs:domain asio:Publication ;

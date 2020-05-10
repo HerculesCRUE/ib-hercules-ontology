@@ -1,0 +1,24 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?publicationLabel ?geoDivisionLabel WHERE {
+  # this block gets all universities from Murcia. the filter block can be parametrized
+  # to obtain universities from other community
+  ?university wbt:P24 wb:Q255 ;
+              wbt:P35 ?geoDivision .
+  ?geoDivision rdfs:label ?geoDivisionLabel .
+
+  # this block retrieves all the research centers associated with the universities above
+  ?researchCenter wbt:P1 ?researchCenterType ;
+                  wbt:P34 ?university .
+  FILTER(?researchCenterType IN (wb:Q2, wb:Q68))
+
+  # this block gets all the publications authored by people from the research centers above
+  ?publication wbt:P1 wb:Q50 ;
+               wbt:P10  ?researcher .
+  ?researcher wbt:P12 ?researchCenter .
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en,es" .
+  }
+}
+ORDER BY ?publicationLabel

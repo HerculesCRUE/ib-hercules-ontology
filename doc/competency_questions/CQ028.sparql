@@ -1,0 +1,17 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?projectLabel ?participationTypeLabel ?propLabel ?oLabel WHERE {
+  ?researcher wbt:P17 wb:Q44 ; # get entities of role Researching
+              ?participation ?project ;
+              rdfs:label ?researcherLabel .
+  FILTER (?participation IN (wbt:P27, wbt:P45) &&          # tipes of participantion (main researcher and participant)
+          ?researcherLabel = "María José Sanz Sánchez"@en) # researcher to be parametrizedf
+  ?project ?p ?o . # extract all predicates about the researcher
+  ?prop wikibase:directClaim ?p .
+  ?participationType wikibase:directClaim ?participation .
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+}
+ORDER BY ?projectLabel

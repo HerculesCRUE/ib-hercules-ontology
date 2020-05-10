@@ -86,6 +86,9 @@ https://tinyurl.com/ybpzquc3
 ## CQ033: Request of evaluation related to the new six-year term of knowledge and innovation transfer
 https://tinyurl.com/yb3wuzek
 
+## CQ036: University ranking based on funding.
+https://tinyurl.com/ycdodoph
+
 ## CQ038: Postdoctoral researcher's publications.
 https://tinyurl.com/y95hnf8g
 

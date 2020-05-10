@@ -27,6 +27,9 @@ https://tinyurl.com/y9frkekn
 ## CQ009: List of patents of a research group in a given area
 * version A: https://tinyurl.com/sph76pz
 
+## CQ010: List of associated/developed projects with specific details.
+https://tinyurl.com/y8n6upzz
+
 ## CQ012: Participation percentage of a research center/structure.
 https://tinyurl.com/y7wassnx
 

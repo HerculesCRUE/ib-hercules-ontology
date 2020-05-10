@@ -60,6 +60,9 @@ https://tinyurl.com/y84a6hqp
 * version A: https://tinyurl.com/y9ao7oh2
 * version B: https://tinyurl.com/y8gxakof
 
+## CQ028: List of projects including role.
+https://tinyurl.com/y7d5mhn9
+
 ## CQ029: List of my scientific production
 https://tinyurl.com/ybpzquc3
 

@@ -30,10 +30,19 @@ asioIndividuals:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
                                   asio:hasSealOfQuality asioIndividuals:SealOfQualityMariaDeMaeztu ;
                                   asio:participant asioIndividuals:CHANCE ,
                                                    asioIndividuals:ALICE ;
+                                  asio:member asioIndividuals:MariaJoseSanzSanchez ;
                                   rdfs:label "Basque Centre for Climate Change"@en ,
                                              "Klima Aldaketa Ikergai"@eu ;
                                   skos:altLabel "BC3"@en ,
                                                 "BC3"@eu .
+
+asioIndividuals:MariaJoseSanzSanchez rdf:type owl:NamedIndividual ;
+                                     asio:plays asio:Researching ;
+                                     asio:mainResearcherParticipant asioIndividuals:CHANCE ;
+                                     asio:participant asioIndividuals:ALICE ;
+                                     asio:isMemberOf asioIndividuals:BasqueCentreForClimateChange ;
+                                     rdfs:label "María José Sanz Sánchez"@en ,
+                                                "María José Sanz Sánchez"@es .
 
 ###  http://www.asio.es/asioinstances/asio#CHANCE
 asioIndividuals:CHANCE rdf:type owl:NamedIndividual ,

@@ -508,6 +508,12 @@ asio:projectAcronym rdf:type owl:DatatypeProperty ;
                     rdfs:label "project acronym"@en .
 
 
+###  http://purl.org/hercules/asio/core#projectBudget
+asio:projectBudget rdf:type owl:DatatypeProperty ;
+                   rdfs:domain foaf:Project ;
+                   rdfs:range xsd:decimal .
+
+
 ###  http://purl.org/hercules/asio/core#projectEndDate
 asio:projectEndDate rdf:type owl:DatatypeProperty ;
                     rdfs:domain foaf:Project ;

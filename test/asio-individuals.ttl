@@ -515,9 +515,26 @@ asioIndividuals:IUIE rdf:type owl:NamedIndividual ,
           asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
           asio:participants asioIndividuals:SmartFoods ;
           asio:associatedWith asioModules:ES_UNIVERSITY_012 ;
+          asio:member asioIndividuals:AntonioFernandoSkarmeta ;
           rdfs:label "Instituto Universitario de Investigación en Envejecimiento"@es ,
                      "University Institute for Aging Research"@en ;
           skos:altLabel "IUIE"@es .
+
+asioIndividuals:AntonioFernandoSkarmeta rdf:type owl:NamedIndividual ;
+                            asio:plays  asio:Researching ,
+                                        asio:Teaching ;
+                            asio:authors asioIndividuals:MarineEnvironment ;
+                            asio:isMemberOf asioIndividuals:IUIE ;
+                            rdfs:label "Antonio Fernández Skarmeta Gómez"@en ,
+                                       "Antonio Fernández Skarmeta Gómez"@es .
+
+
+asioIndividuals:MarineEnvironment rdf:type owl:NamedIndividual ,
+                                  asio:PeerReviewedArticle ;
+                           asio:isAuthoredBy asioIndividuals:AntonioFernandoSkarmeta ;
+                           asio:publicationDate "2015"^^xsd:date ;
+                           rdfs:label "A complex event processing approach to detect abnormal behaviours in the marine environment"@en .
+
 
 ###  http://www.asio.es/asioinstances/asio#SmartFoods
 asioIndividuals:SmartFoods rdf:type owl:NamedIndividual ,

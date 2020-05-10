@@ -95,6 +95,9 @@ https://tinyurl.com/y95hnf8g
 ## CQ039: Statistics - Funding obtained from researchers in a knowledge area
 https://tinyurl.com/ybawax8p
 
+## CQ040: Andalusian Universities publications ft. non-european researchers in relevant academic magazines.
+https://tinyurl.com/y7u55ldf
+
 ## CQ041: Fraud Control: Identify synergies between funded projects
 https://tinyurl.com/y8smzpsv
 

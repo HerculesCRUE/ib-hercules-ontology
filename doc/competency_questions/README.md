@@ -89,6 +89,9 @@ https://tinyurl.com/yb3wuzek
 ## CQ038: Postdoctoral researcher's publications.
 https://tinyurl.com/y95hnf8g
 
+## CQ039: Statistics - Funding obtained from researchers in a knowledge area
+https://tinyurl.com/ybawax8p
+
 ## CQ041: Fraud Control: Identify synergies between funded projects
 https://tinyurl.com/y8smzpsv
 

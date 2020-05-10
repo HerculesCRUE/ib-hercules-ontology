@@ -1,0 +1,31 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?publicationLabel ?mainAuthorLabel ?coAuthorLabel ?researchCenterLabel WHERE {
+  # this block gets all universities from Andalusia. the filter block can be parametrized
+  # to obtain universities from other community
+  ?university wbt:P24 wb:Q255 ;
+              wbt:P35 ?geoDivision .
+  ?geoDivision rdfs:label ?geoDivisionLabel .
+  FILTER(?geoDivisionLabel = "Andalusia"@en)
+
+  # this block retrieves all the research centers associated with the universities above
+  ?researchCenter wbt:P1 ?researchCenterType ;
+                  wbt:P34 ?university .
+  FILTER(?researchCenterType IN (wb:Q2, wb:Q68))
+
+  # this block gets all the publications co-authored by people from those research centers
+  ?publication wbt:P1 wb:Q50 ;
+               wbt:P49  ?coAuthor .
+  ?coAuthor wbt:P12 ?researchCenter .
+
+  # the following block gets authors from those publications that are not from the European Union
+  ?publication wbt:P10 ?mainAuthor .
+  ?mainAuthor wbt:P48 [
+                        wbt:P25 ?country
+                      ] .
+  FILTER NOT EXISTS { ?country wbt:P24 wb:Q298 } # country not from European Union
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en,es" .
+  }
+}

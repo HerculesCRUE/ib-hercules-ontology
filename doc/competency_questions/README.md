@@ -33,6 +33,9 @@ https://tinyurl.com/y8n6upzz
 ## CQ012: Participation percentage of a research center/structure.
 https://tinyurl.com/y7wassnx
 
+## CQ013: Create/Modify research project data based on different access levels
+https://tinyurl.com/ya6rsov2
+
 ## CQ014: Explore information from a specific project with specific filters.
 * version A (european projects): https://tinyurl.com/y75cshha
 * version B (in a range of time): https://tinyurl.com/ya8xu9at

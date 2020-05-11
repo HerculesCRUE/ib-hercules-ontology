@@ -1,0 +1,12 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT ?asigneeLabel ?patentLabel ?patentDescription WHERE {
+  ?patent wbt:P1 wb:Q12 ; # get entities of type Patent
+          wbt:P51 ?asignee . # with an asignee
+  ?asignee wbt:P1 wb:Q2 . # asignee is a research institue
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],es" .
+  }
+}
+ORDER BY DESC(?patentLabel)

@@ -341,6 +341,27 @@ asio:participates rdf:type owl:ObjectProperty ;
                   rdfs:label "participates"@en .
 
 
+###  http://purl.org/hercules/asio/core#patentAssignee
+asio:patentAssignee rdf:type owl:ObjectProperty ;
+                    rdfs:domain asio:Patent ;
+                    rdfs:range foaf:Organization ;
+                    rdfs:label "patent assignee"@en .
+
+
+###  http://purl.org/hercules/asio/core#patentInventor
+asio:patentInventor rdf:type owl:ObjectProperty ;
+                    rdfs:domain asio:Patent ;
+                    rdfs:range foaf:Person ;
+                    rdfs:label "patent inventor"@en .
+
+
+###  http://purl.org/hercules/asio/core#patentStatus
+asio:patentStatus rdf:type owl:ObjectProperty ;
+                  rdfs:domain asio:Patent ;
+                  rdfs:range asio:Status ;
+                  rdfs:label "patent status"@en .
+
+
 ###  http://purl.org/hercules/asio/core#personalizes
 asio:personalizes rdf:type owl:ObjectProperty ;
                   rdfs:domain asio:Profile ;
@@ -467,6 +488,10 @@ foaf:member rdf:type owl:ObjectProperty ;
             rdfs:label "member"@en .
 
 
+###  https://www.w3.org/TR/prov-o/#wasDerivedFrom
+<https://www.w3.org/TR/prov-o/#wasDerivedFrom> rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -506,6 +531,13 @@ asio:isActive rdf:type owl:DatatypeProperty ;
               rdfs:comment """This property allows to specify which is the user profile that is active,
 given a interaction between two applications."""@en ;
               rdfs:label "is active"@en .
+
+
+###  http://purl.org/hercules/asio/core#isCompetitive
+asio:isCompetitive rdf:type owl:DatatypeProperty ;
+                   rdfs:domain foaf:Project ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:label "is competitive"@en .
 
 
 ###  http://purl.org/hercules/asio/core#projectAcronym
@@ -997,6 +1029,12 @@ asio:Grant rdf:type owl:Class ;
            rdfs:subClassOf asio:Funding ;
            rdfs:comment "A financial award provided by a funding organisation for a particular project or purpose, usually awarded on the basis of a competitive application."@en ;
            rdfs:label "Grant"@en .
+
+
+###  http://purl.org/hercules/asio/core#InternalProject
+asio:InternalProject rdf:type owl:Class ;
+                     rdfs:subClassOf foaf:Project ;
+                     rdfs:label "Internal project"@en .
 
 
 ###  http://purl.org/hercules/asio/core#InternationalProject

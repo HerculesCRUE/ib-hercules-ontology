@@ -44,6 +44,37 @@ asioIndividuals:MariaJoseSanzSanchez rdf:type owl:NamedIndividual ;
                                      rdfs:label "María José Sanz Sánchez"@en ,
                                                 "María José Sanz Sánchez"@es .
 
+asioIndividuals:MockProject1 rdf:type owl:NamedIndividual ,
+                             asio:NationalProject ;
+                      asio:projectStartDate "2011-01-13"^^xsd:date ;
+                      asio:projectEndDate "2017-12-12"^^xsd:date ;
+                      asio:projectBudget "99999.99"^^xsd:decimal ;
+                      asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM ;
+                      rdfs:comment "Development of real time agents for an incident management system"@en ;
+                      rdfs:label "Externus (Mock Project)"@en ,
+                                 "Externus (Mock Project)"@es  .
+
+asioIndividuals:MockProject2 rdf:type owl:NamedIndividual ,
+                            asio:NationalProject ;
+                     asio:projectStartDate "2015-01-13"^^xsd:date ;
+                     asio:projectEndDate "2016-12-12"^^xsd:date ;
+                     asio:projectBudget "52456.42"^^xsd:decimal ;
+                     asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_BMC ;
+                     rdfs:comment "Study on the evolution of genomes."@en ;
+                     rdfs:label "MIAL (Mock project)"@en ,
+                                "MIAL (Mock Project)"@es  .
+
+asioIndividuals:MockProject3 rdf:type owl:NamedIndividual ,
+                            asio:NationalProject ;
+                     asio:projectStartDate "2014-01-13"^^xsd:date ;
+                     asio:projectEndDate "2016-12-12"^^xsd:date ;
+                     asio:projectBudget "120555.04"^^xsd:decimal ;
+                     asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM ;
+                     rdfs:comment "Development of multilanguage text analysis tools"@en ;
+                     rdfs:label "PoLyGlot (Mock Project)"@en ,
+                                "PoLyGlot (Mock Project)"@es  .
+
+
 ###  http://www.asio.es/asioinstances/asio#CHANCE
 asioIndividuals:CHANCE rdf:type owl:NamedIndividual ,
                             asio:EuropeanProject ;
@@ -87,7 +118,10 @@ asioIndividuals:CentreDeRecercaMatematica rdf:type owl:NamedIndividual ,
                                         asio:ResearchInstitute ;
                                asio:associatedWith asioModules:ES_UNIVERSITY_022 ;
                                asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
-                               asio:participant asioIndividuals:IndustrialApplicationsOfMovingBoundaryProblems ;
+                               asio:participant asioIndividuals:IndustrialApplicationsOfMovingBoundaryProblems ,
+                                                asioIndividuals:MockProject1 ,
+                                                asioIndividuals:MockProject2 ,
+                                                asioIndividuals:MockProject3 ;
                                rdfs:label "Centre de recerca matemàtica"@ca-es ,
                                           "Centre for Research in Mathematics"@en .
 
@@ -1262,6 +1296,9 @@ asioIndividuals:WESO rdf:type owl:NamedIndividual ,
                    asio:ResearchGroup ;
           asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF ;
           skos:broader asioIndividuals:UniversityOfOviedoSchoolOfComputerScienceEngineering ;
+          asio:participant asioIndividuals:MockProject1 ,
+                           asioIndividuals:MockProject2 ,
+                           asioIndividuals:MockProject3 ;
           foaf:member asioIndividuals:JoseEmilioLabraGayo ,
                       asioIndividuals:GuillermoFacundoColunga ,
                       asioIndividuals:HerminioGarciaGonzalez ,

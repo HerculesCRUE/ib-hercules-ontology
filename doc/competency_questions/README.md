@@ -112,3 +112,6 @@ https://tinyurl.com/ydcnhg5a
 
 ## CQ046: Project results by specific topic of projects developed in the network.
 https://tinyurl.com/ybp5zr73
+
+## CQ047: Partner search: see consortiums from other projects
+https://tinyurl.com/y82v4z4t

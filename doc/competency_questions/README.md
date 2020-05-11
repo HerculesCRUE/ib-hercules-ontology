@@ -123,6 +123,9 @@ https://tinyurl.com/ybrud663
 ## CQ043: Identify universities with excellence distinctions
 https://tinyurl.com/ydcnhg5a
 
+## CQ044: Quantify projects on competitive calls
+https://tinyurl.com/y85sbk8g
+
 ## CQ046: Project results by specific topic of projects developed in the network.
 https://tinyurl.com/ybp5zr73
 

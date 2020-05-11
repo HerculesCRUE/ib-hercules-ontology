@@ -27,7 +27,7 @@ https://tinyurl.com/y9frkekn
 ## CQ009: List of patents of a research group in a given area
 * version A: https://tinyurl.com/sph76pz
 
-## CQ010: List of associated/developed projects with specific details.
+## CQ010: List of associated/developed projects with specific details.
 https://tinyurl.com/y8n6upzz
 
 ## CQ012: Participation percentage of a research center/structure.
@@ -46,6 +46,9 @@ https://tinyurl.com/y6vvpxnc
 
 ## CQ016: Comparative visualizations of researchers' evolution.
 https://tinyurl.com/y7qlopbe
+
+## CQ017: Obtain list of indicators
+https://tinyurl.com/y9nc3kvu
 
 ## CQ018: Evolution of certain indicators according to timeline.
 https://tinyurl.com/y7dpqwg9
@@ -71,7 +74,7 @@ https://tinyurl.com/y84a6hqp
 * version A: https://tinyurl.com/y9ao7oh2
 * version B: https://tinyurl.com/y8gxakof
 
-## CQ026: List of conferences/workshops and scientific outreach events.
+## CQ026: List of conferences/workshops and scientific outreach events.
 https://tinyurl.com/y792383w
 
 ## CQ028: List of projects including role.
@@ -80,7 +83,7 @@ https://tinyurl.com/y7d5mhn9
 ## CQ029: List of my scientific production
 https://tinyurl.com/ybpzquc3
 
-## CQ031: Obtain indicators of my scientific production
+## CQ031: Obtain indicators of my scientific production
 * version A (citations): https://tinyurl.com/y8hrhopa
 * version B (h-index): https://tinyurl.com/yadob8vv
 * version C (i10-index): https://tinyurl.com/yd4yb4xv
@@ -92,22 +95,22 @@ https://tinyurl.com/ybpzquc3
 ## CQ033: Request of evaluation related to the new six-year term of knowledge and innovation transfer
 https://tinyurl.com/yb3wuzek
 
-## CQ036: University ranking based on funding.
+## CQ036: University ranking based on funding.
 https://tinyurl.com/ycdodoph
 
-## CQ037: Statistics - Quantify collaborations between universities
+## CQ037: Statistics - Quantify collaborations between universities
 https://tinyurl.com/yb47ltuq
 
 ## CQ038: Postdoctoral researcher's publications.
 https://tinyurl.com/y95hnf8g
 
-## CQ039: Statistics - Funding obtained from researchers in a knowledge area
+## CQ039: Statistics - Funding obtained from researchers in a knowledge area
 https://tinyurl.com/ybawax8p
 
 ## CQ040: Andalusian Universities publications ft. non-european researchers in relevant academic magazines.
 https://tinyurl.com/y7u55ldf
 
-## CQ041: Fraud Control: Identify synergies between funded projects
+## CQ041: Fraud Control: Identify synergies between funded projects
 https://tinyurl.com/y8smzpsv
 
 ## CQ042: Grants of a center in a scientific domain

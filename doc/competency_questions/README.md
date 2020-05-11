@@ -47,6 +47,9 @@ https://tinyurl.com/y6vvpxnc
 ## CQ016: Comparative visualizations of researchers' evolution.
 https://tinyurl.com/y7qlopbe
 
+## CQ017: Obtain list of indicators
+https://tinyurl.com/y9nc3kvu
+
 ## CQ018: Evolution of certain indicators according to timeline.
 https://tinyurl.com/y7dpqwg9
 

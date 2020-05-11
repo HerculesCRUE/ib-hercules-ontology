@@ -49,6 +49,7 @@ asioIndividuals:MockProject1 rdf:type owl:NamedIndividual ,
                       asio:projectStartDate "2011-01-13"^^xsd:date ;
                       asio:projectEndDate "2017-12-12"^^xsd:date ;
                       asio:projectBudget "99999.99"^^xsd:decimal ;
+                      asio:isCompetitive true ;
                       asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM ;
                       rdfs:comment "Development of real time agents for an incident management system"@en ;
                       rdfs:label "Externus (Mock Project)"@en ,
@@ -69,6 +70,7 @@ asioIndividuals:MockProject3 rdf:type owl:NamedIndividual ,
                      asio:projectStartDate "2014-01-13"^^xsd:date ;
                      asio:projectEndDate "2016-12-12"^^xsd:date ;
                      asio:projectBudget "120555.04"^^xsd:decimal ;
+                     asio:isCompetitive true ;
                      asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM ;
                      rdfs:comment "Development of multilanguage text analysis tools"@en ;
                      rdfs:label "PoLyGlot (Mock Project)"@en ,

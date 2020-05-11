@@ -1,0 +1,16 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?universityALabel ?universityBLabel ?projectLabel WHERE {
+  ?project wbt:P1 ?projectType ;         # get all projects
+           wbt:P32 ?researchField .      # with a research field
+  FILTER(?projectType = wb:Q156 && # national projects
+         ?researchField = wb:Q171) # research field to be parametrized (in this case Food science and technology)
+  ?universityA wbt:P27 ?project .
+  ?universityB wbt:P27 ?project .
+  FILTER(?universityA != ?universityB)
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en,es" .
+  }
+}
+ORDER BY ?projectLabel

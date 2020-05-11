@@ -348,11 +348,32 @@ asio:patentAssignee rdf:type owl:ObjectProperty ;
                     rdfs:label "patent assignee"@en .
 
 
+###  http://purl.org/hercules/asio/core#patentAssistantExaminer
+asio:patentAssistantExaminer rdf:type owl:ObjectProperty ;
+                             rdfs:domain foaf:Person ;
+                             rdfs:range asio:Patent ;
+                             rdfs:label "patent assistant examiner"@en .
+
+
+###  http://purl.org/hercules/asio/core#patentCountry
+asio:patentCountry rdf:type owl:ObjectProperty ;
+                   rdfs:domain asio:Patent ;
+                   rdfs:range asio:Country ;
+                   rdfs:label "patent country"@en .
+
+
 ###  http://purl.org/hercules/asio/core#patentInventor
 asio:patentInventor rdf:type owl:ObjectProperty ;
                     rdfs:domain asio:Patent ;
                     rdfs:range foaf:Person ;
                     rdfs:label "patent inventor"@en .
+
+
+###  http://purl.org/hercules/asio/core#patentPrimaryExaminer
+asio:patentPrimaryExaminer rdf:type owl:ObjectProperty ;
+                           rdfs:domain foaf:Person ;
+                           rdfs:range asio:Patent ;
+                           rdfs:label "patent primary examiner"@en .
 
 
 ###  http://purl.org/hercules/asio/core#patentStatus
@@ -538,6 +559,13 @@ asio:isCompetitive rdf:type owl:DatatypeProperty ;
                    rdfs:domain foaf:Project ;
                    rdfs:range xsd:boolean ;
                    rdfs:label "is competitive"@en .
+
+
+###  http://purl.org/hercules/asio/core#patentDate
+asio:patentDate rdf:type owl:DatatypeProperty ;
+                rdfs:domain asio:Patent ;
+                rdfs:range xsd:date ;
+                rdfs:label "patent date"@en .
 
 
 ###  http://purl.org/hercules/asio/core#projectAcronym

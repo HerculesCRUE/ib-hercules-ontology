@@ -1,0 +1,31 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT (COUNT(*) AS ?numberOfColaborations) WHERE {
+  ?publication wbt:P1 wb:Q50 ;
+               wbt:P49 ?coAuthor ;
+               wbt:P10 ?author .
+  ?coAuthor wbt:P12 [
+                     wbt:P34 [
+                               wbt:P35 ?coAuthorGeoDivision
+                             ]
+                     ] .
+
+  ?author wbt:P12 [
+    wbt:P34 [
+      wbt:P35 ?authorGeoDivision
+    ]
+  ] .
+
+  ?coAuthor wbt:P12 ?coAuthorRG .
+  ?author wbt:P12 ?authorRG .
+
+  ?authorGeoDivision rdfs:label ?authorGeoDivisionLabel .
+  ?coAuthorGeoDivision rdfs:label ?coAuthorGeoDivisionLabel .
+
+  FILTER(?authorGeoDivisionLabel = "Catalonia"@en && ?coAuthorGeoDivisionLabel = "Catalonia"@en &&
+        ?coAuthorRG != ?authorRG)
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en,es" .
+  }
+}

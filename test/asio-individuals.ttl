@@ -445,10 +445,15 @@ asioIndividuals:DepartamentDeTecnologiesDeLaInformacioILesComunicacions rdf:type
                                                              skos:altLabel "DTIC-UPF"@ca ,
                                                                            "DTIC-UPF"@es .
 
+asioIndividuals:MariaFernandezGarcia rdf:type owl:NamedIndividual ;
+                                     asio:plays asio:Researching ;
+                                     rdfs:label "María Fernández García"@en .
 
 ###  http://www.asio.es/asioinstances/asio#ES2270650
 asioIndividuals:ES2270650 rdf:type owl:NamedIndividual ,
                         asio:Patent ;
+               asio:patentAssignee asioIndividuals:InstitutoDeProductosLacteosDeAsturias ;
+               asio:patentInventor asioIndividuals:MariaFernandezGarcia ;
                rdfs:comment "Fernández, M.; Alvarez, M.A. Detección de bacterias del ácido láctico productoras de tiramina mediante reacción en cadena de la polimerasa (pcr) y sus aplicaciones. Patente de Invención ES2270650 (B1) Fecha de publicación: 16.03.2008."@en ;
                rdfs:label "ES 2270650 B1"@en .
 
@@ -456,6 +461,7 @@ asioIndividuals:ES2270650 rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#ES2276597
 asioIndividuals:ES2276597 rdf:type owl:NamedIndividual ,
                         asio:Patent ;
+               asio:patentAssignee asioIndividuals:InstitutoDeProductosLacteosDeAsturias ;
                rdfs:comment "del Río, B.; Martín, M.C.; Binetti, A.G.; Ariza, M.; Hernández-Magadán, A.; Fernández, M.; Alvarez, M.A. Detección e identificación de bacteriófagos de bacterias del ácido láctico mediante reacción en cadena de la polimerasa múltiple (multi-pcr) y su uso. Patente de Invención. ES2276597 (B1) Ampliación de patente Internacional Solicitud de Patente WO2006136640 (A1) Fecha de publicación: 16.06.2007 Licenciada a Corporación Alimentaria Peñasanta S.A. (CAPSA)"@en ;
                rdfs:label "ES 2276597 B1"@en .
 

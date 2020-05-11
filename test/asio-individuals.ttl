@@ -117,6 +117,7 @@ I propose to employ a biophysical and computational toolbox to study the mechano
 asioIndividuals:CentreDeRecercaMatematica rdf:type owl:NamedIndividual ,
                                         asio:ResearchInstitute ;
                                asio:associatedWith asioModules:ES_UNIVERSITY_022 ;
+                               asio:member asioIndividuals:TomasAlarcon ;
                                asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
                                asio:participant asioIndividuals:IndustrialApplicationsOfMovingBoundaryProblems ,
                                                 asioIndividuals:MockProject1 ,
@@ -124,6 +125,12 @@ asioIndividuals:CentreDeRecercaMatematica rdf:type owl:NamedIndividual ,
                                                 asioIndividuals:MockProject3 ;
                                rdfs:label "Centre de recerca matemàtica"@ca-es ,
                                           "Centre for Research in Mathematics"@en .
+
+asioIndividuals:TomasAlarcon rdf:type owl:NamedIndividual ;
+                             asio:plays asio:Researching ;
+                             asio:isMemberOf asioIndividuals:CentreDeRecercaMatematica ;
+                             asio:coauthors asioIndividuals:MockPublication1 ;
+                             rdfs:label "Tomás Alarcón Cor"@en .
 
 ###  http://www.asio.es/asioinstances/asio#IndustrialApplicationsOfMovingBoundaryProblems
 asioIndividuals:IndustrialApplicationsOfMovingBoundaryProblems rdf:type owl:NamedIndividual ,
@@ -142,11 +149,23 @@ asioIndividuals:CentreDeRegulacioGenomica rdf:type owl:NamedIndividual ,
                                asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
                                asio:participant asioIndividuals:ChromDesign ,
                                                 asioIndividuals:EASIGenomics ;
+                               asio:member asioIndividuals:AmyCurwin ;
                                asio:associatedWith asioModules:ES_UNIVERSITY_039 ;
                                rdfs:label "Centre de Regulació Genòmica"@ca-es ,
                                           "Centre for Genomic Regulation"@en ,
                                           "Centro de Regulación Genómica"@es ;
                                skos:altLabel "CRG"@ca-es .
+
+asioIndividuals:AmyCurwin rdf:type owl:NamedIndividual ;
+                          asio:plays asio:Researching ;
+                          asio:authors asio:MockPublication1 ;
+                          asio:isMemberOf asioIndividuals:CentreDeRegulacioGenomica ;
+                          rdfs:label "Amy Curwin"@en .
+
+asio:MockPublication1 rdf:type owl:NamedIndividual , asio:PeerReviewedArticle ;
+                      asio:isAuthoredBy asioIndividuals:AmyCurwin ;
+                      asio:isCoauthoredBy asioIndividuals:TomasAlarcon ;
+                      rdfs:label "Analysis of genomic regulation principles (Mock)"@en .
 
 ###  http://www.asio.es/asioinstances/asio#EASIGenomics
 asioIndividuals:EASIGenomics rdf:type owl:NamedIndividual ,

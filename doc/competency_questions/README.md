@@ -95,6 +95,9 @@ https://tinyurl.com/yb3wuzek
 ## CQ036: University ranking based on funding.
 https://tinyurl.com/ycdodoph
 
+## CQ037: Statistics - Quantify collaborations between universities
+https://tinyurl.com/yb47ltuq
+
 ## CQ038: Postdoctoral researcher's publications.
 https://tinyurl.com/y95hnf8g
 

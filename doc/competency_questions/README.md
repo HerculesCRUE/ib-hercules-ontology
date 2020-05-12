@@ -18,6 +18,9 @@ https://tinyurl.com/yal7vbhs
 * version A: https://tinyurl.com/st6zmg7
 * version B: https://tinyurl.com/t872gck
 
+## CQ005: List of research centres that have carried out a H2020 project...
+https://tinyurl.com/ybslb9ks
+
 ## CQ006: Obtain a list of scientific production in a range of time with important metadata.
 https://tinyurl.com/y7bb7g54
 

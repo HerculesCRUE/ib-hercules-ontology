@@ -77,7 +77,7 @@ https://tinyurl.com/y84a6hqp
 ## CQ026: List of conferences/workshops and scientific outreach events.
 https://tinyurl.com/y792383w
 
-## CQ027: Obtain the list of patents registered as a titular
+## CQ027: Obtain the list of patents registered as a titular
 * version A (asignee): https://tinyurl.com/y8mut4kf
 * version B (inventor): https://tinyurl.com/y7qwh437
 
@@ -86,6 +86,9 @@ https://tinyurl.com/y7d5mhn9
 
 ## CQ029: List of my scientific production
 https://tinyurl.com/ybpzquc3
+
+## CQ030: List of startups or spin-offs
+https://tinyurl.com/y7wvwx3n
 
 ## CQ031: Obtain indicators of my scientific production
 * version A (citations): https://tinyurl.com/y8hrhopa

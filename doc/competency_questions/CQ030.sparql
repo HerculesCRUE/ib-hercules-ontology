@@ -1,0 +1,12 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?founderLabel ?foundedOrgLabel WHERE {
+  ?founder wbt:P1 wb:Q1 ;
+           wbt:P54 ?foundedOrg .
+  ?founder rdfs:label ?founderLabel .
+  FILTER(?founderLabel = "Pablo Martín Rodríguez"@es) # person name to be parametrized
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+}

@@ -805,6 +805,21 @@ asioIndividuals:InstitutoDeProductosLacteosDeAsturias rdf:type owl:NamedIndividu
                                                          "IPLA"@es ,
                                                          "Instituto de Productos Lácteos de Asturias"@en .
 
+asioIndividuals:Izertis rdf:type owl:NamedIndividual , asio:Company ;
+                        asio:participant asioIndividuals:HerculesASIOProject ;
+                        rdfs:label "Izertis"@en .
+
+asioIndividuals:PabloMartinRodriguez rdf:type owl:NamedIndividual ;
+                                     asio:companyFounder asioIndividuals:Izertis ;
+                                     rdfs:label "Pablo Martín Rodríguez"@en .
+
+asioIndividuals:HerculesASIOProject rdf:type owl:NamedIndividual , asio:EuropeanProject ;
+                                asio:projectBudget "1577856"^^xsd:decimal ;
+                                asio:isCompetitive true ;
+                                asio:label "Semantic Architecture and Ontological Infrastructure"@en ,
+                                           "Arquitectura Semántica e Infraestructura Ontológica"@es ;
+                                skos:altLabel "ASIO"@es .
+
 ###  http://www.asio.es/asioinstances/asio#LacticBacteria
 asioIndividuals:LacticBacteria rdf:type owl:NamedIndividual ,
                                     asio:RegionalProject ;
@@ -1325,7 +1340,8 @@ asioIndividuals:WESO rdf:type owl:NamedIndividual ,
           skos:broader asioIndividuals:UniversityOfOviedoSchoolOfComputerScienceEngineering ;
           asio:participant asioIndividuals:MockProject1 ,
                            asioIndividuals:MockProject2 ,
-                           asioIndividuals:MockProject3 ;
+                           asioIndividuals:MockProject3 ,
+                           asioIndividuals:HerculesASIOProject ;
           foaf:member asioIndividuals:JoseEmilioLabraGayo ,
                       asioIndividuals:GuillermoFacundoColunga ,
                       asioIndividuals:HerminioGarciaGonzalez ,

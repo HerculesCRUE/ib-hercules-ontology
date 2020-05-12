@@ -165,6 +165,13 @@ asio:codeOf rdf:type owl:ObjectProperty ;
             rdfs:label "code of"@en .
 
 
+###  http://purl.org/hercules/asio/core#companyFounder
+asio:companyFounder rdf:type owl:ObjectProperty ;
+                    rdfs:domain foaf:Person ;
+                    rdfs:range asio:Company ;
+                    rdfs:label "company founder"@en .
+
+
 ###  http://purl.org/hercules/asio/core#coordinatedBy
 asio:coordinatedBy rdf:type owl:ObjectProperty ;
                    owl:inverseOf asio:projectCoordinator ;
@@ -565,7 +572,14 @@ asio:isCompetitive rdf:type owl:DatatypeProperty ;
 asio:patentDate rdf:type owl:DatatypeProperty ;
                 rdfs:domain asio:Patent ;
                 rdfs:range xsd:date ;
-                rdfs:label "patent date"@en .
+                rdfs:label "date of patent"@en .
+
+
+###  http://purl.org/hercules/asio/core#patentExpirationDate
+asio:patentExpirationDate rdf:type owl:DatatypeProperty ;
+                          rdfs:domain asio:Patent ;
+                          rdfs:range xsd:date ;
+                          rdfs:label "patent expiration date"@en .
 
 
 ###  http://purl.org/hercules/asio/core#projectAcronym

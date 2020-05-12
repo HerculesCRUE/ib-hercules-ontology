@@ -15,11 +15,11 @@
     "out_shape_map": "../out_simple.shapeMap"
   },
  {
-    "test_name": "example3",
-    "ontology": "../simple_ontology.ttl",
-    "data": "../simple_example.ttl",
-    "schema": "../simple_schema.shex",
-    "in_shape_map": "../in_simple.shapeMap",
-    "out_shape_map": "../out_simple.shapeMap"
+    "test_name": "test that project class has all needed attributes",
+    "ontology": "../../src/asio-core.ttl",
+    "data": "../example_project.ttl",
+    "schema": "../project.s",
+    "in_shape_map": "../project.m",
+    "out_shape_map": "../project_out.m"
   }
 ]

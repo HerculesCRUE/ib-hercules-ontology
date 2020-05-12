@@ -1648,6 +1648,24 @@ asio:Administrative rdf:type owl:NamedIndividual ,
                              asio:Role .
 
 
+###  http://purl.org/hercules/asio/core#CatedraticoEscuelaUniversitaria
+asio:CatedraticoEscuelaUniversitaria rdf:type owl:NamedIndividual ,
+                                              asio:Role ;
+                                     rdfs:label "Catedràtic d'escola universitària"@ca-ad ,
+                                                "Catedrático de escola universitaria"@gl ,
+                                                "Catedrático de escuela universitaria"@es ,
+                                                "Catedráticu d'escuela universitaria"@ast .
+
+
+###  http://purl.org/hercules/asio/core#CatedraticoUniversidad
+asio:CatedraticoUniversidad rdf:type owl:NamedIndividual ,
+                                     asio:Role ;
+                            rdfs:label "Catedràtic d'universitat"@ca-ad ,
+                                       "Catedrático de universidad"@es ,
+                                       "Catedrático de universidade"@gl ,
+                                       "Catedráticu d'universidá"@ast .
+
+
 ###  http://purl.org/hercules/asio/core#EventOrganiser
 asio:EventOrganiser rdf:type owl:NamedIndividual ,
                              asio:Role ;
@@ -1658,6 +1676,22 @@ asio:EventOrganiser rdf:type owl:NamedIndividual ,
 ###  http://purl.org/hercules/asio/core#MasterStudent
 asio:MasterStudent rdf:type owl:NamedIndividual ,
                             asio:Role .
+
+
+###  http://purl.org/hercules/asio/core#PASfuncionario
+asio:PASfuncionario rdf:type owl:NamedIndividual ,
+                             asio:Role ;
+                    rdfs:label "PAS funcionari"@ca-ad ,
+                               "PAS funcionario"@es ,
+                               "PAS funcionario"@gl ,
+                               "PAS funcionariu"@ast .
+
+
+###  http://purl.org/hercules/asio/core#PASlaboral
+asio:PASlaboral rdf:type owl:NamedIndividual ,
+                         asio:Role ;
+                rdfs:label "PAS laboral"@ca-ad ,
+                           "PAS laboral"@es .
 
 
 ###  http://purl.org/hercules/asio/core#PhDStudent
@@ -1678,6 +1712,15 @@ asio:Teaching rdf:type owl:NamedIndividual ,
 ###  http://purl.org/hercules/asio/core#TechnicalSupport
 asio:TechnicalSupport rdf:type owl:NamedIndividual ,
                                asio:Role .
+
+
+###  http://purl.org/hercules/asio/core#TitularUniversidad
+asio:TitularUniversidad rdf:type owl:NamedIndividual ,
+                                 asio:Role ;
+                        rdfs:label "Profesor titular d'universidá"@ast ,
+                                   "Profesor titular de universidad"@es ,
+                                   "Profesor titular de universidade"@gl ,
+                                   "Professor titular d'universitat"@ca-ad .
 
 
 ###  http://purl.org/hercules/asio/core#UndergraduateStudent

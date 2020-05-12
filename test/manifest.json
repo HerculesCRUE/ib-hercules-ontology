@@ -17,7 +17,7 @@
  {
     "test_name": "test that project class has all needed attributes",
     "ontology": "../../src/asio-core.ttl",
-    "data": "../example_project.ttl",
+    "data": "../asio-individuals.ttl",
     "schema": "../project.s",
     "in_shape_map": "../project.m",
     "out_shape_map": "../project_out.m"

@@ -1,25 +1,26 @@
 [
-  {
-    "test_name": "example1",
-    "ontology": "../simple_ontology.ttl",
-    "data": "../simple_example.ttl",
-    "schema": "../simple_schema.shex",
-    "in_shape_map": "../in_simple.shapeMap",
-    "out_shape_map": "../out_simple.shapeMap"
-  }, {
-    "test_name": "example2",
-    "ontology": "../simple_ontology.ttl",
-    "data": "../simple_example.ttl",
-    "schema": "../simple_schema.shex",
-    "in_shape_map": "../in_simple.shapeMap",
-    "out_shape_map": "../out_simple.shapeMap"
-  },
  {
-    "test_name": "test that project class has all needed attributes",
+    "test_name": "test that a project instance has all needed attributes",
     "ontology": "../../src/asio-core.ttl",
     "data": "../asio-individuals.ttl",
     "schema": "../project.s",
-    "in_shape_map": "../project.m",
+    "in_shape_map": "../project_in.m",
     "out_shape_map": "../project_out.m"
-  }
+  },
+  {
+     "test_name": "test that a project instance does not conform to a random shape",
+     "ontology": "../../src/asio-core.ttl",
+     "data": "../asio-individuals.ttl",
+     "schema": "../random_shape.s",
+     "in_shape_map": "../random_shape_in.m",
+     "out_shape_map": "../random_shape_out.m"
+   },
+   {
+      "test_name": "test that a all nodes from a sparql query conform to project",
+      "ontology": "../../src/asio-core.ttl",
+      "data": "../asio-individuals.ttl",
+      "schema": "../project.s",
+      "in_shape_map": "../project_sparql_in.m",
+      "out_shape_map": "../project_sparql_out.m"
+    }
 ]

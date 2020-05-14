@@ -27,6 +27,9 @@ https://tinyurl.com/y7bb7g54
 ## CQ007: Distribution of the Spanish scientific production
 https://tinyurl.com/y9frkekn
 
+## CQ008: Compare different research aspects to figure out the most competitive.
+https://tinyurl.com/y9t5oc7a
+
 ## CQ009: List of patents of a research group in a given area
 * version A: https://tinyurl.com/sph76pz
 

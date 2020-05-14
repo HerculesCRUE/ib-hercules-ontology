@@ -69,16 +69,16 @@ foaf:Organization
   owl:equivalentClass org:Organization ,
                       frapo:Organization ,
                       vivo:Organization ,
-                      swpo:Organization ,
+                      #swpo:Organization ,
                       org:Organization ,
-                      dul:Organization ,
+                      #dul:Organization ,
                       doap:Organization ,
                       aiiso:Organization ,
                       cv:Organization ,
-                      sio:SIO_000012 ,
-                      ebucore:Organisation ,
-                      bbccore:Organisation ,
-                      npg:Organization
+                      sio:SIO_000012
+                      #ebucore:Organisation ,
+                      #bbccore:Organisation ,
+                      #npg:Organization
 .
 asio:University
   owl:equivalentClass org:University ,
@@ -238,27 +238,27 @@ asio:CV
                       semcerif:CurriculumVitae ,
                       acm:K.3.2.2
 .
-asio:HumanResource
-  owl:equivalentClass fea:HumanResource
-.
-asio:Student
-  owl:equivalentClass swpo:Student ,
-                      swrc:Student ,
-                      vivo:Student ,
-                      sio:SIO_000405
+#asio:HumanResource
+  #owl:equivalentClass fea:HumanResource
+#.
+#asio:Student
+ #owl:equivalentClass swpo:Student ,
+                      #swrc:Student ,
+                      #vivo:Student ,
+                      #sio:SIO_000405
 #                     teach:Student ,
 #                      akt:Student
-.
-asio:UndergraduateStudent
-  owl:equivalentClass vivo:UndergraduateStudent
-.
+#.
+#asio:UndergraduateStudent
+  #owl:equivalentClass vivo:UndergraduateStudent
+#.
 #asio:GraduateStudent
 #  owl:equivalentClass vivo:GraduateStudent ;
 #.
-asio:PhDStudent
-  owl:equivalentClass swrc:PhDStudent
+#asio:PhDStudent
+  #owl:equivalentClass swrc:PhDStudent
 #                      akt:PhD-Student
-.
+#.
 asio:ResearchContribution
   owl:equivalentClass orkg:ResearchContribution
 .
@@ -279,10 +279,10 @@ asio:ResearchProblem
 # equivalent properties here:
 
 
-asio:member
-  owl:equivalentProperty foaf:member ,
-                      frapo:member
-.
+#asio:member
+  #owl:equivalentProperty foaf:member ,
+                      #frapo:member
+#.
 asio:hasCV
   owl:equivalentProperty frapo:hasCurriculumVitae
 .

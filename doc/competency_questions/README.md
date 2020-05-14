@@ -73,6 +73,9 @@ https://tinyurl.com/y7ghls52
 ## CQ023: Research groups with significative deviations with respect to the average scientific production
 https://tinyurl.com/y84a6hqp
 
+## CQ024: Profile and evolution of relationships between companies and research groups.
+https://tinyurl.com/ybnexbv6
+
 ## CQ025: List of projects that I have directed/co-directed
 * version A: https://tinyurl.com/y9ao7oh2
 * version B: https://tinyurl.com/y8gxakof

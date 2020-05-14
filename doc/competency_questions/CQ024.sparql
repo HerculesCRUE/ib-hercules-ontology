@@ -1,0 +1,23 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?researchCenterLabel ?orgLabel ?projectLabel ?propLabel ?oLabel WHERE {
+  ?researchCenter wbt:P1 ?researchCenterType ;
+                  rdfs:label ?researchCenterLabel .
+  FILTER(?researchCenterType IN (wb:Q68, wb:Q2) &&                                    # organization is either research group or research institute
+         ?researchCenterLabel = "Web Semantics Oviedo"@en)                            # name of organization to be parameterized
+
+  ?org wbt:P1 wb:Q316 ;                                                               # get all companies
+       rdfs:label ?orgLabel .
+  FILTER(?orgLabel = "Izertis"@en)                                                    # company name to be parametrized
+
+  ?org wbt:P27 ?project .
+  ?researchCenter wbt:P27 ?project .
+
+  ?project ?p ?o .                                                                    # extract all predicates about the project
+  ?prop wikibase:directClaim ?p .
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en" .
+  }
+}
+ORDER BY ?projectLabel

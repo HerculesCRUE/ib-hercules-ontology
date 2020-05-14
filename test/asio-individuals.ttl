@@ -806,7 +806,8 @@ asioIndividuals:InstitutoDeProductosLacteosDeAsturias rdf:type owl:NamedIndividu
                                                          "Instituto de Productos Lácteos de Asturias"@en .
 
 asioIndividuals:Izertis rdf:type owl:NamedIndividual , asio:Company ;
-                        asio:participant asioIndividuals:HerculesASIOProject ;
+                        asio:participant asioIndividuals:HerculesASIOProject ,
+                                         asioIndividuals:Wesnomed ;
                         rdfs:label "Izertis"@en .
 
 asioIndividuals:PabloMartinRodriguez rdf:type owl:NamedIndividual ;
@@ -816,9 +817,14 @@ asioIndividuals:PabloMartinRodriguez rdf:type owl:NamedIndividual ;
 asioIndividuals:HerculesASIOProject rdf:type owl:NamedIndividual , asio:EuropeanProject ;
                                 asio:projectBudget "1577856"^^xsd:decimal ;
                                 asio:isCompetitive true ;
-                                asio:label "Semantic Architecture and Ontological Infrastructure"@en ,
+                                rdfs:label "Semantic Architecture and Ontological Infrastructure"@en ,
                                            "Arquitectura Semántica e Infraestructura Ontológica"@es ;
                                 skos:altLabel "ASIO"@es .
+
+asioIndividuals:Wesnomed rdf:type owl:NamedIndividual , asio:Project ;
+                         asio:projectStartDate "2017"^^xsd:date ;
+                         rdfs:comment "Sistema de edición adaptado basado en SNOMED"@es ;
+                         rdfs:label "WESNOMED"@en , "WESNOMED"@es .
 
 ###  http://www.asio.es/asioinstances/asio#LacticBacteria
 asioIndividuals:LacticBacteria rdf:type owl:NamedIndividual ,
@@ -1341,7 +1347,8 @@ asioIndividuals:WESO rdf:type owl:NamedIndividual ,
           asio:participant asioIndividuals:MockProject1 ,
                            asioIndividuals:MockProject2 ,
                            asioIndividuals:MockProject3 ,
-                           asioIndividuals:HerculesASIOProject ;
+                           asioIndividuals:HerculesASIOProject ,
+                           asioIndividuals:Wesnomed ;
           foaf:member asioIndividuals:JoseEmilioLabraGayo ,
                       asioIndividuals:GuillermoFacundoColunga ,
                       asioIndividuals:HerminioGarciaGonzalez ,

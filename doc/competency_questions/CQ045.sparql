@@ -1,0 +1,23 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?researcherLabel ?researcherUniversityLabel ?authorLabel ?authorUniversityLabel ?advisedThesisLabel WHERE {
+  ?researcher wbt:P17 wb:Q44 . # get entities of role Researching
+  ?researcher rdfs:label ?researcherLabel .
+  FILTER(?researcherLabel = "José Emilio Labra Gayo"@es) # researcher to be parametrized
+  ?researcher wbt:P16 ?advisedThesis ;
+              wbt:P12 [
+                        wbt:P34 ?researcherUniversity
+                      ] .
+
+  ?advisedThesis wbt:P10 ?author ;
+                 wbt:P59 ?award .
+
+  ?author wbt:P56 ?authorUniversity .
+
+  FILTER(str(?award) = "cum laude" && ?researcherUniversity != ?authorUniversity)
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+}

@@ -141,6 +141,9 @@ https://tinyurl.com/ydcnhg5a
 ## CQ044: Quantify projects on competitive calls
 https://tinyurl.com/y85sbk8g
 
+## CQ045: Researcher who direct theses in different doctorate programs than those from their university
+https://tinyurl.com/yb9uztal
+
 ## CQ046: Project results by specific topic of projects developed in the network.
 https://tinyurl.com/ybp5zr73
 

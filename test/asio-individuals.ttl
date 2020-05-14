@@ -823,8 +823,13 @@ asioIndividuals:HerculesASIOProject rdf:type owl:NamedIndividual , asio:European
 
 asioIndividuals:Wesnomed rdf:type owl:NamedIndividual , asio:Project ;
                          asio:projectStartDate "2017"^^xsd:date ;
+                         asio:projectOutcome asioIndividual:MockPrototype ;
                          rdfs:comment "Sistema de edición adaptado basado en SNOMED"@es ;
                          rdfs:label "WESNOMED"@en , "WESNOMED"@es .
+
+asioIndividual:MockPrototype rdf:type owl:NamedIndividual , asio:Prototype ;
+                             asio:hasTRL 2 ;
+                             rdfs:label "Wesnomed prototype"@en , "Prototipo de WESNOMED"@es .
 
 ###  http://www.asio.es/asioinstances/asio#LacticBacteria
 asioIndividuals:LacticBacteria rdf:type owl:NamedIndividual ,
@@ -929,6 +934,7 @@ asioIndividuals:InstitutoSaludCarlosIII rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioinstances/asio#JoseAlbertoBenitezAndrades
 asioIndividuals:JoseAlbertoBenitezAndrades rdf:type owl:NamedIndividual ;
+                                asio:student asioModules:ES_UNIVERSITY_009 ;
                                 asio:plays  asio:Researching ,
                                             asio:Teaching ;
                                 asio:authors asioIndividuals:Thesis3 ;
@@ -1218,6 +1224,7 @@ asioIndividuals:Thesis3 rdf:type owl:NamedIndividual ,
                       asio:PhDThesis ;
              asio:isAuthoredBy asioIndividuals:JoseAlbertoBenitezAndrades ;
              asio:advisedBy asioIndividuals:JoseEmilioLabraGayo ;
+             asio:awardedWith "cum laude" ;
              asio:publicationDate "2017"^^xsd:date ;
              rdfs:label "Tecnologías Semánticas aplicadas al Análisis de Redes Sociales en el ámbito de la Salud"@es .
 

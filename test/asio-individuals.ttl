@@ -823,7 +823,7 @@ asioIndividuals:HerculesASIOProject rdf:type owl:NamedIndividual , asio:European
 
 asioIndividuals:Wesnomed rdf:type owl:NamedIndividual , asio:Project ;
                          asio:projectStartDate "2017"^^xsd:date ;
-                         asio:projectOutcome asioIndividual:MockPrototype ;
+                         asio:projectOutcome asioIndividuals:MockPrototype ;
                          rdfs:comment "Sistema de edición adaptado basado en SNOMED"@es ;
                          rdfs:label "WESNOMED"@en , "WESNOMED"@es .
 

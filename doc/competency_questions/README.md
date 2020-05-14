@@ -111,6 +111,9 @@ https://tinyurl.com/y7wvwx3n
 ## CQ033: Request of evaluation related to the new six-year term of knowledge and innovation transfer
 https://tinyurl.com/yb3wuzek
 
+## CQ035: Advancement of technical and economical justification of projects between universities
+https://tinyurl.com/y7h6gmfd
+
 ## CQ036: University ranking based on funding.
 https://tinyurl.com/ycdodoph
 

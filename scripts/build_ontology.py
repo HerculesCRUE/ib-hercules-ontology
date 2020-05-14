@@ -25,7 +25,7 @@ def merge_ontologies(file_names, file_format='turtle'):
 def retrieve_files_from(folders, filter=None):
     file_names = []
     for folder in folders:
-        file_names += [os.path.join(folder, file) for file in os.listdir(folder)]
+        file_names += [os.path.join(folder, file) for file in os.listdir(folder) if file in filter]
     return file_names
 
 def save_final_graph(graph, output_name):
@@ -35,7 +35,7 @@ def save_final_graph(graph, output_name):
             f.write(res)
 
 if __name__ == '__main__':
-    file_names = retrieve_files_from([ALIGNMENTS_FOLDER, SRC_FOLDER])
+    file_names = retrieve_files_from([ALIGNMENTS_FOLDER, SRC_FOLDER], filter=["asio-core.ttl", "asio-mappings.ttl"])
     merged_graph = merge_ontologies(file_names)
     try_create_dir(OUTPUT_FOLDER)
     save_final_graph(merged_graph, os.path.join(OUTPUT_FOLDER, MERGED_ONTOLOGY_FILE_NAME))

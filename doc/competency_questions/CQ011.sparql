@@ -1,0 +1,15 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?universityLabel (COUNT(?researchCenterLabel) AS ?researchCenterCount) WHERE {
+  ?researchCenter wbt:P1 ?researchCenterType ;
+                  wbt:P34 ?university ;
+                  rdfs:label ?researchCenterLabel .
+  FILTER(?researchCenterType IN (wb:Q68, wb:Q2))        # organization is either research group or research institute
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en" .
+  }
+}
+GROUP BY ?universityLabel
+ORDER BY DESC (COUNT(?researchCenter))

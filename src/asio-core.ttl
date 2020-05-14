@@ -1,6 +1,6 @@
 @prefix : <http://purl.org/hercules/asio/core#> .
-@prefix ro: <http://purl.org/wf4ever/ro#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix deo: <http://purl.org/spar/deo/> .
 @prefix org: <http://www.w3.org/ns/org#> .
@@ -30,21 +30,33 @@
 
 <http://purl.org/hercules/asio/core#> rdf:type owl:Ontology ;
                                        owl:versionIRI <http://purl.org/hercules/asio/core/0.0.1> ;
-                                       owl:versionInfo "0.0.1"^^xsd:string ;
-                                       dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-                                       dc:contributor "José Emilio Labra Gayo"^^xsd:string ;
-                                       dc:contributor "Alejandro González Hevia"^^xsd:string ;
+                                       dc:contributor "Alejandro González Hevia"^^xsd:string ,
+                                                      "José Emilio Labra Gayo"^^xsd:string ;
                                        dc:creator "Emilio Rubiera Azcona"^^xsd:string ;
-                                       dc:date "2020-05-04"^^xsd:string ;
-                                       dc:description """FIXME"""^^xsd:string ;
+                                       dc:description "FIXME"^^xsd:string ;
                                        dc:title "The ASIO ontology"^^xsd:string ;
-                                       owl:imports <http://xmlns.com/foaf/spec/> ;
-                                       rdfs:label "ASIO core ontology" .
-
+                                       dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+                                       owl:versionInfo "0.0.1"^^xsd:string .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/license
 dct:license rdf:type owl:AnnotationProperty .
@@ -187,8 +199,8 @@ asio:coordinatedBy rdf:type owl:ObjectProperty ;
                    owl:inverseOf asio:projectCoordinator ;
                    rdfs:domain foaf:Project ;
                    rdfs:range foaf:Agent ;
-                   rdfs:comment "coordinated by"@en ,
-                                "inverse property of 'project coordinator'"@en .
+                   rdfs:comment "inverse property of 'project coordinator'"@en ;
+                   rdfs:label "coordinated by"@en .
 
 
 ###  http://purl.org/hercules/asio/core#country
@@ -280,11 +292,6 @@ asio:hasSealOfQuality rdf:type owl:ObjectProperty ;
                       rdfs:domain foaf:Agent ;
                       rdfs:range asio:ResearchInstitute ;
                       rdfs:label "has seal of quality"@en .
-
-
-###  http://purl.org/hercules/asio/core#hasTRL
-asio:hasTRL rdf:type owl:ObjectProperty ;
-            rdfs:label "has TRL"@en .
 
 
 ###  http://purl.org/hercules/asio/core#i10-index
@@ -499,6 +506,14 @@ asio:spinsOffFrom rdf:type owl:ObjectProperty ;
                   rdfs:label "spins of from"@en .
 
 
+###  http://purl.org/hercules/asio/core#student
+asio:student rdf:type owl:ObjectProperty ;
+             rdfs:domain foaf:Person ;
+             rdfs:range asio:University ;
+             rdfs:comment "A person studies or studied in a university."@en ;
+             rdfs:label "student"@en .
+
+
 ###  http://purl.org/hercules/asio/core#utilizes
 asio:utilizes rdf:type owl:ObjectProperty ;
               rdfs:domain asio:ResearchContribution ;
@@ -560,6 +575,14 @@ asio:hasResearcherID rdf:type owl:DatatypeProperty ;
                      rdfs:domain foaf:Person ;
                      rdfs:range xsd:string ;
                      rdfs:label "has Researcher ID"@en .
+
+
+###  http://purl.org/hercules/asio/core#hasTRL
+asio:hasTRL rdf:type owl:DatatypeProperty ;
+            rdfs:domain asio:Prototype ;
+            rdfs:range xsd:integer ;
+            rdfs:comment "A prototype has a given technology readiness level"@en ;
+            rdfs:label "has TRL"@en .
 
 
 ###  http://purl.org/hercules/asio/core#isActive
@@ -1254,6 +1277,12 @@ asio:PhDThesis rdf:type owl:Class ;
                               "Thèse doctorale"@fr .
 
 
+###  http://purl.org/hercules/asio/core#Product
+asio:Product rdf:type owl:Class ;
+             rdfs:comment "A product as outcome of a project."@en ;
+             rdfs:label "Product"@en .
+
+
 ###  http://purl.org/hercules/asio/core#Profile
 asio:Profile rdf:type owl:Class ;
              rdfs:comment "A profile represents a particular person playing a given role. In the specialised literature it is also known as a \"qua-individual\". The ASIO core ontology extends the meaning of profile to capture \"person-as-role\", \"person-at-context\" and \"person-in-community\"."@en ,
@@ -1278,6 +1307,13 @@ asio:ProjectBudget rdf:type owl:Class ;
                                   "Pressupost de projecte"@ca-es ,
                                   "Presupuesto de proyecto"@es ,
                                   "Project budget"@en .
+
+
+###  http://purl.org/hercules/asio/core#Prototype
+asio:Prototype rdf:type owl:Class ;
+               rdfs:subClassOf asio:Product ;
+               rdfs:comment "A product prototype"@en ;
+               rdfs:label "Prototype"@en .
 
 
 ###  http://purl.org/hercules/asio/core#Publication

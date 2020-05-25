@@ -53,11 +53,16 @@ asio: a owl:Ontology ;
     dc:contributor "Alejandro González Hevia"^^xsd:string,
         "José Emilio Labra Gayo"^^xsd:string ;
     dc:creator "Emilio Rubiera Azcona"^^xsd:string ;
-    dc:description "FIXME"^^xsd:string ;
+    dc:description "An ontology to address the Research Management of the CRUE's Spanish University System (Sistema Universitario Español) by applying an encompassing model not only capable of addressing the universities of the CRUE but also more belonging to the European Union."^^xsd:string ;
     dc:title "The ASIO ontology"^^xsd:string ;
     dct1:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     owl:versionIRI <http://purl.org/hercules/asio/core/0.0.1> ;
     owl:versionInfo "0.0.1"^^xsd:string .
+
+asio:Abstract a owl:Class ;
+    rdfs:label "Abstract"@en ;
+    rdfs:comment "An abstract that is published as a standalone document or in a journal of abstracts."@en ;
+    rdfs:subClassOf asio:Publication .
 
 asio:Administrative a asio:Role,
         owl:NamedIndividual .
@@ -77,6 +82,16 @@ asio:AdministrativeEntity a owl:Class ;
         "Entidades administrativas"@es,
         "Entités administratives"@fr,
         "Entidades administrativas"@pt .
+
+asio:AudioDocument a owl:Class ;
+    rdfs:label "Audio document"@en ;
+    rdfs:comment "Recorded audio in any format."@en ;
+    rdfs:subClassOf asio:ScientificPublication .
+
+asio:AudioVisualDocument a owl:Class ;
+    rdfs:label "Audio-visual document"@en ;
+    rdfs:comment "Audiovisual recording in any format"@en ;
+    rdfs:subClassOf asio:Publication .
 
 asio:BachelorsThesis a owl:Class ;
     rdfs:label "Trabayu de fin de grau"@ast,
@@ -132,19 +147,15 @@ asio:BacherlorsDegree a owl:Class ;
         "Título de grado"@es,
         "Licenciatura (pós-Bologna)"@pt-pt .
 
-asio:Book a owl:Class ;
-    rdfs:label "Llibre"@ca-ad,
-        "Llibre"@ca-es,
-        "Book"@en,
-        "Libro"@es,
-        "Livre"@fr,
-        "Livro"@pt ;
-    rdfs:subClassOf asio:ScientificPublication ;
-    skos:prefLabel "Llibre"@ca,
-        "Book"@en,
-        "Libro"@es,
-        "Livre"@fr,
-        "Livro"@pt .
+asio:CaseStudy a owl:Class ;
+    rdfs:label "Case study"@en ;
+    rdfs:comment "A qualitative descriptive research study of individuals or a group."@en ;
+    rdfs:subClassOf asio:ScientificPublication .
+
+asio:Catalog a owl:Class ;
+    rdfs:label "Catalog"@en ;
+    rdfs:comment "A list of items in a collection; an ordered compilation of item descriptions and sufficient information to afford access to them."@en ;
+    rdfs:subClassOf asio:Publication .
 
 asio:CatedraticoEscuelaUniversitaria a asio:Role,
         owl:NamedIndividual ;
@@ -164,6 +175,14 @@ asio:Conference a owl:Class ;
     rdfs:label "Conference"@en ;
     rdfs:comment "A meeting for consultation or discussion. [Source: http://purl.org/ontology/bibo/Conference]"@en ;
     rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> .
+
+asio:ConferencePoster a owl:Class ;
+    rdfs:label "Conference poster"@en ;
+    rdfs:comment "The digital file (or physical equivalent), if available after the conference, vs. the act of attending/presenting."@en ;
+    rdfs:subClassOf asio:Publication .
+
+asio:Database a owl:Class ;
+    rdfs:subClassOf asio:CollectedDocument .
 
 asio:DoctoralDegree a owl:Class ;
     rdfs:label "Doctorat"@ca-ad,
@@ -232,6 +251,10 @@ asio:EventOrganiser a asio:Role,
     rdfs:label "Event organiser"@en ;
     rdfs:comment "A role of organising cientific events, such as conferences, workshops, etc."@en .
 
+asio:EventSeries a owl:Class ;
+    rdfs:label "Event series"@en ;
+    rdfs:comment "A generic class which may include a conference series, a course section, a seminar series, or a workshop series. When possible, use one of these more specific classes."@en .
+
 asio:FundingAgency a owl:Class ;
     rdfs:label "Funding agency"@en .
 
@@ -261,6 +284,7 @@ asio:InternationalProject a owl:Class ;
 
 asio:Manual a owl:Class ;
     rdfs:label "Manual"@en ;
+    rdfs:comment "A book of instructions or guide to a specific topic."@en ;
     rdfs:subClassOf asio:ScientificPublication ;
     skos:altLabel "Handbook"@en ;
     skos:prefLabel "Manual"@en .
@@ -334,6 +358,11 @@ asio:PeerReviewedArticle a owl:Class ;
 
 asio:PhDStudent a asio:Role,
         owl:NamedIndividual .
+
+asio:Proceedings a owl:Class ;
+    rdfs:label "Proceedings"@en ;
+    rdfs:comment "A book integrated by a compilation of documents published from an event, such as a conference."@en ;
+    rdfs:subClassOf asio:Book .
 
 asio:ProjectBudget a owl:Class ;
     rdfs:label "Pressupost de projecte"@ca-ad,
@@ -458,7 +487,7 @@ asio:Teaching a asio:Role,
 
 asio:TechnicalReport a owl:Class ;
     rdfs:label "Technical report"@en ;
-    rdfs:subClassOf asio:ScientificPublication ;
+    rdfs:subClassOf asio:Report ;
     owl:equivalentClass fabio:TechnicalReport,
         sio:TechnicalReport ;
     skos:prefLabel "Technical report"@en .
@@ -554,6 +583,12 @@ asio:capital a owl:ObjectProperty ;
     rdfs:comment "A property to indicate that a place is the official seat of government in a political entity."@en ;
     rdfs:domain skos:Concept ;
     rdfs:range skos:Concept .
+
+asio:cites a owl:ObjectProperty ;
+    rdfs:label "cites"@en ;
+    rdfs:comment "a property to indicate that a document cites another one."@en ;
+    rdfs:domain asio:Publication ;
+    rdfs:range asio:Publication .
 
 asio:closed a asio:Status,
         owl:NamedIndividual ;
@@ -717,6 +752,23 @@ asio:isMemberOf a owl:ObjectProperty ;
     rdfs:label "is member of"@en ;
     owl:inverseOf foaf:member .
 
+asio:isbn10 a owl:DatatypeProperty ;
+    rdfs:label "has ISBN10"@en ;
+    rdfs:comment "International Standard Book Number (ISBN) 13"@en ;
+    rdfs:domain asio:Book ;
+    rdfs:subPropertyOf asio:identifier .
+
+asio:isbn13 a owl:DatatypeProperty ;
+    rdfs:label "has ISBN13"@en ;
+    rdfs:comment "International Standard Book Number (ISBN) 10"@en ;
+    rdfs:domain asio:Book ;
+    rdfs:subPropertyOf asio:identifier .
+
+asio:issn a owl:DatatypeProperty ;
+    rdfs:label "has ISSN"@en ;
+    rdfs:comment "International Standard Serial Number"@en ;
+    rdfs:subPropertyOf asio:identifier .
+
 asio:mainResearcherParticipant a owl:ObjectProperty ;
     rdfs:label "main researcher participant"@en ;
     rdfs:comment "A person is the main researcher in a given project."@en ;
@@ -852,6 +904,16 @@ asio:publicationDate a owl:DatatypeProperty ;
     rdfs:label "publication date"@en ;
     rdfs:range xsd:date .
 
+asio:pubmedcentralid a owl:DatatypeProperty ;
+    rdfs:label "has PubMed Central ID"@en ;
+    rdfs:comment "A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available in PubMed Central. The PMCID is issued shortly after the PI or author approves the PubMed Central formatted web version of the submission."@en ;
+    rdfs:subPropertyOf asio:identifier .
+
+asio:pubmedid a owl:DatatypeProperty ;
+    rdfs:label "has PubMed ID"@en ;
+    rdfs:comment "The PubMed ID (PMID) identifies a citation record (rather than full-text) in the PubMed database. It is not evidence of compliance with the NIH Public Access Policy, because it does not identify a full-text submission of any kind."@en ;
+    rdfs:subPropertyOf asio:identifier .
+
 asio:qualifieddate a owl:DatatypeProperty ;
     rdfs:label "qualified date"@en ;
     rdfs:comment "A given date (point in time) linked to a given value within a qualified value."@en ;
@@ -862,6 +924,12 @@ asio:qualifiedvaluation a owl:DatatypeProperty ;
     rdfs:label "qualified valuation"@en ;
     rdfs:comment "A given value linked to a given date (point in time) within a qualified value."@en ;
     rdfs:domain asio:QualifiedValue ;
+    rdfs:range xsd:string .
+
+asio:referencedLaw a owl:DatatypeProperty ;
+    rdfs:label "reference law"@en ;
+    rdfs:comment "A reference law that establishes a position."@en ;
+    rdfs:domain asio:Role ;
     rdfs:range xsd:string .
 
 asio:rejected a asio:Status,
@@ -885,6 +953,12 @@ asio:researchesIn a owl:ObjectProperty ;
     rdfs:label "researches in"@en ;
     rdfs:domain foaf:Agent ;
     rdfs:range modules:ScientificDomain .
+
+asio:reviews a owl:ObjectProperty ;
+    rdfs:label "a proerty to link a person to a publication as a reviewer."@en,
+        "reviews"@en ;
+    rdfs:domain foaf:Person ;
+    rdfs:range asio:Publication .
 
 asio:signed a asio:Status,
         owl:NamedIndividual ;
@@ -913,6 +987,11 @@ asio:terminated a asio:Status,
 asio:unfunded a asio:Status,
         owl:NamedIndividual ;
     rdfs:label "Unfunded"@en .
+
+asio:upc a owl:DatatypeProperty ;
+    rdfs:label "Universal Porduct Code"@en,
+        "has UPC"@en ;
+    rdfs:subPropertyOf asio:identifier .
 
 asio:utilizes a owl:ObjectProperty ;
     rdfs:label "utilizes"@en ;
@@ -1026,6 +1105,11 @@ asio:CV a owl:Class ;
         "Curriculum vitae"@fr,
         "Curriculum vitae"@pt .
 
+asio:CollectedDocument a owl:Class ;
+    rdfs:label "Collected document"@en ;
+    rdfs:comment "A document consisting of collections of previously published works."@en ;
+    rdfs:subClassOf asio:ScientificPublication .
+
 asio:Context a owl:Class ;
     rdfs:label "Context"@ca-es,
         "Context"@en,
@@ -1103,6 +1187,11 @@ asio:Prototype a owl:Class ;
     rdfs:label "Prototype"@en ;
     rdfs:comment "A product prototype"@en ;
     rdfs:subClassOf asio:Product .
+
+asio:Report a owl:Class ;
+    rdfs:label "Report"@en ;
+    rdfs:comment "A document describing an account or statement describing in detail an event, situation, or the like, usually as the result of observation, inquiry, etc."@en ;
+    rdfs:subClassOf asio:Publication .
 
 asio:ResearchInstitute a owl:Class ;
     rdfs:label "Centre de recerca"@ca-ad,
@@ -1316,6 +1405,20 @@ frapo:FinancialEntity a owl:Class ;
         "Entité financière"@fr,
         "Ente financeiro"@pt .
 
+asio:Book a owl:Class ;
+    rdfs:label "Llibre"@ca-ad,
+        "Llibre"@ca-es,
+        "Book"@en,
+        "Libro"@es,
+        "Livre"@fr,
+        "Livro"@pt ;
+    rdfs:subClassOf asio:ScientificPublication ;
+    skos:prefLabel "Llibre"@ca,
+        "Book"@en,
+        "Libro"@es,
+        "Livre"@fr,
+        "Livro"@pt .
+
 asio:Company a owl:Class ;
     rdfs:label "Empresa"@ca-ad,
         "Empresa"@ca-es,
@@ -1441,21 +1544,6 @@ asio:AcademicDegree a owl:Class ;
         "Grau acadêmico"@pt-br,
         "Grau académico"@pt-pt .
 
-asio:ScientificPublication a owl:Class ;
-    rdfs:label "Publicació científica"@ca-ad,
-        "Publicació científica"@ca-es,
-        "Scientific publication"@en,
-        "Publicación científica"@es,
-        "Publication scientifique"@fr,
-        "Publicação científica"@pt ;
-    rdfs:subClassOf asio:Publication ;
-    skos:prefLabel "Publicació científica"@ca-ad,
-        "Publicació científica"@ca-es,
-        "Scientific publication"@en,
-        "Publicación científica"@es,
-        "Publication scientifique"@fr,
-        "Publicação científica"@pt .
-
 foaf:Organization a owl:Class ;
     rdfs:subClassOf foaf:Agent ;
     owl:equivalentClass frapo:Organization,
@@ -1487,7 +1575,24 @@ asio:QualifiedValue a owl:Class ;
     rdfs:label "Qualified value"@en ;
     rdfs:comment "A class to represent a qualified value as used in Wikibase."@en .
 
+asio:identifier a owl:DatatypeProperty .
+
 xsd:date a rdfs:Datatype .
+
+asio:ScientificPublication a owl:Class ;
+    rdfs:label "Publicació científica"@ca-ad,
+        "Publicació científica"@ca-es,
+        "Scientific publication"@en,
+        "Publicación científica"@es,
+        "Publication scientifique"@fr,
+        "Publicação científica"@pt ;
+    rdfs:subClassOf asio:Publication ;
+    skos:prefLabel "Publicació científica"@ca-ad,
+        "Publicació científica"@ca-es,
+        "Scientific publication"@en,
+        "Publicación científica"@es,
+        "Publication scientifique"@fr,
+        "Publicação científica"@pt .
 
 asio:Patent a owl:Class ;
     rdfs:label "Patent"@ca-ad,
@@ -1517,6 +1622,11 @@ asio:Patent a owl:Class ;
 
 skos:Concept a owl:Class .
 
+asio:Status a owl:Class .
+
+foaf:Person a owl:Class ;
+    rdfs:subClassOf foaf:Agent .
+
 asio:Publication a owl:Class ;
     rdfs:label "Publicació"@ca-ad,
         "Publicació"@ca-es,
@@ -1543,11 +1653,6 @@ asio:Publication a owl:Class ;
         "Publicación"@gl,
         "Publicação"@pt .
 
-asio:Status a owl:Class .
-
-foaf:Person a owl:Class ;
-    rdfs:subClassOf foaf:Agent .
-
 foaf:Project a owl:Class ;
     rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en ;
     owl:equivalentClass dbo:Project,
@@ -1567,3 +1672,4 @@ asio:Role a owl:Class ;
     rdfs:comment "A condition/status/position that can be predicated of a person. In the ASIO core ontology, roles are reified as first order individuals and relations between roles and players are expressed by means of the asio:plays property. The ASIO core ontology does not impose any subclassification of roles. The concept is open to be refined according to domain or application requirements."@en .
 
 foaf:Agent a owl:Class .
+

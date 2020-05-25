@@ -40,6 +40,7 @@
 @prefix lib: <http://purl.org/library/> .
 @prefix lsc: <http://linkedscience.org/lsc/ns#> .
 @prefix modules: <http://purl.org/hercules/asio/modules#> .
+@prefix asioModules: <http://purl.org/hercules/asio/modules#> .
 @prefix npg: <http://ns.nature.com/terms/> .
 @prefix opus: <http://lsdis.cs.uga.edu/projects/semdis/opus#> .
 @prefix org: <http://www.w3.org/ns/org#> .
@@ -69,16 +70,11 @@ foaf:Organization
   owl:equivalentClass org:Organization ,
                       frapo:Organization ,
                       vivo:Organization ,
-                      #swpo:Organization ,
                       org:Organization ,
-                      #dul:Organization ,
                       doap:Organization ,
                       aiiso:Organization ,
                       cv:Organization ,
                       sio:SIO_000012
-                      #ebucore:Organisation ,
-                      #bbccore:Organisation ,
-                      #npg:Organization
 .
 asio:University
   owl:equivalentClass org:University ,
@@ -238,27 +234,7 @@ asio:CV
                       semcerif:CurriculumVitae ,
                       acm:K.3.2.2
 .
-#asio:HumanResource
-  #owl:equivalentClass fea:HumanResource
-#.
-#asio:Student
- #owl:equivalentClass swpo:Student ,
-                      #swrc:Student ,
-                      #vivo:Student ,
-                      #sio:SIO_000405
-#                     teach:Student ,
-#                      akt:Student
-#.
-#asio:UndergraduateStudent
-  #owl:equivalentClass vivo:UndergraduateStudent
-#.
-#asio:GraduateStudent
-#  owl:equivalentClass vivo:GraduateStudent ;
-#.
-#asio:PhDStudent
-  #owl:equivalentClass swrc:PhDStudent
-#                      akt:PhD-Student
-#.
+
 asio:ResearchContribution
   owl:equivalentClass orkg:ResearchContribution
 .
@@ -274,15 +250,6 @@ asio:ResearchMethod
 asio:ResearchProblem
   owl:equivalentClass orkg:ResearchProblem
 .
-
-
-# equivalent properties here:
-
-
-#asio:member
-  #owl:equivalentProperty foaf:member ,
-                      #frapo:member
-#.
 asio:hasCV
   owl:equivalentProperty frapo:hasCurriculumVitae
 .

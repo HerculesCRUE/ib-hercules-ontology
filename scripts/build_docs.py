@@ -5,7 +5,7 @@ from common import OUTPUT_FOLDER, try_create_dir
 
 LOCAL_RESOURCES_FOLDER = os.path.join('..', 'common')
 LODE_ENDPOINT = 'http://150.146.207.114/lode/extract'
-ONTOLOGY_URL = 'http://www.weso.es/hercules-ontology/current/asio.xml'
+ONTOLOGY_URL = 'https://herculescrue.github.io/ib-hercules-ontology/current/asio.xml'
 OUTPUT_FILE_NAME = 'asio.html'
 
 def extract_docs_from(onto_url, lode_endpoint):

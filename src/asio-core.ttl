@@ -574,6 +574,7 @@ asio:awardedWith rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/hercules/asio/core#hasDOI
 asio:hasDOI rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf asio:identifier ;
             rdfs:domain asio:Publication ;
             rdfs:range xsd:string ;
             rdfs:label "has DOI"@en .
@@ -581,6 +582,7 @@ asio:hasDOI rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/hercules/asio/core#hasORCID
 asio:hasORCID rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf asio:identifier ;
               rdfs:domain foaf:Person ;
               rdfs:range xsd:string ;
               rdfs:label "has ORCID"@en .
@@ -588,6 +590,7 @@ asio:hasORCID rdf:type owl:DatatypeProperty ;
 
 ###  http://purl.org/hercules/asio/core#hasResearcherID
 asio:hasResearcherID rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf asio:identifier ;
                      rdfs:domain foaf:Person ;
                      rdfs:range xsd:string ;
                      rdfs:label "has Researcher ID"@en .
@@ -1363,6 +1366,7 @@ asio:NationalProject rdf:type owl:Class ;
 
 ###  http://purl.org/hercules/asio/core#Patent
 asio:Patent rdf:type owl:Class ;
+            rdfs:subClassOf asio:Publication ;
             rdfs:comment "A form of intellectual property that gives its owner the legal right to exclude others from making, using, selling and importing an invention for a limited period of years, in exchange for publishing an enabling public disclosure of the invention."@en ;
             rdfs:label "Patent"@ca-ad ,
                        "Patent"@ca-es ,

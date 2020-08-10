@@ -1316,6 +1316,15 @@ asio:InternationalProject rdf:type owl:Class ;
                                      "Proyecto internacional"@es .
 
 
+###  http://purl.org/hercules/asio/core#LargeEnterprise
+asio:LargeEnterprise rdf:type owl:Class ;
+                     rdfs:subClassOf asio:Company ;
+                     rdfs:label "Empresa gran"@ca-es ,
+                                "Empresa grande"@es ,
+                                "Grande empresa"@pt ,
+                                "Large enterprise"@en .
+
+
 ###  http://purl.org/hercules/asio/core#Manual
 asio:Manual rdf:type owl:Class ;
             rdfs:subClassOf asio:ScientificPublication ;

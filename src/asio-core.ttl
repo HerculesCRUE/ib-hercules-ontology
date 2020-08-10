@@ -82,14 +82,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://purl.org/hercules/asio/core#Publishes
-asio:Publishes rdf:type owl:ObjectProperty ;
-               owl:inverseOf asio:publishedBy ;
-               rdfs:domain foaf:Agent ;
-               rdfs:range asio:Publication ;
-               rdfs:label "publishes"@en .
-
-
 ###  http://purl.org/hercules/asio/core#addresses
 asio:addresses rdf:type owl:ObjectProperty ;
                rdfs:domain asio:ResearchContribution ;
@@ -471,9 +463,17 @@ asio:publicationCitation rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/hercules/asio/core#publishedBy
 asio:publishedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf asio:publishes ;
                  rdfs:domain asio:Publication ;
                  rdfs:range foaf:Agent ;
                  rdfs:label "published by"@en .
+
+
+###  http://purl.org/hercules/asio/core#publishes
+asio:publishes rdf:type owl:ObjectProperty ;
+               rdfs:domain foaf:Agent ;
+               rdfs:range asio:Publication ;
+               rdfs:label "publishes"@en .
 
 
 ###  http://purl.org/hercules/asio/core#requiredFor
@@ -504,8 +504,8 @@ asio:researchesIn rdf:type owl:ObjectProperty ;
 asio:reviews rdf:type owl:ObjectProperty ;
              rdfs:domain foaf:Person ;
              rdfs:range asio:Publication ;
-             rdfs:label "a proerty to link a person to a publication as a reviewer."@en ,
-                        "reviews"@en .
+             rdfs:comment "a proerty to link a person to a publication as a reviewer."@en ;
+             rdfs:label "reviews"@en .
 
 
 ###  http://purl.org/hercules/asio/core#specializes
@@ -530,6 +530,19 @@ asio:student rdf:type owl:ObjectProperty ;
              rdfs:label "student"@en .
 
 
+###  http://purl.org/hercules/asio/core#taughtBy
+asio:taughtBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf asio:teaches ;
+              rdfs:label "taught by"@en .
+
+
+###  http://purl.org/hercules/asio/core#teaches
+asio:teaches rdf:type owl:ObjectProperty ;
+             rdfs:domain foaf:Person ;
+             rdfs:range asio:AcademicSubject ;
+             rdfs:label "teaches"@en .
+
+
 ###  http://purl.org/hercules/asio/core#utilizes
 asio:utilizes rdf:type owl:ObjectProperty ;
               rdfs:domain asio:ResearchContribution ;
@@ -542,6 +555,11 @@ asio:yields rdf:type owl:ObjectProperty ;
             rdfs:domain asio:ResearchContribution ;
             rdfs:range asio:ResearchResult ;
             rdfs:label "yields"@en .
+
+
+###  http://purl.org/wf4ever/ro#annotatesAggregatedResource
+ro:annotatesAggregatedResource rdf:type owl:ObjectProperty ;
+                               rdfs:label "annotates aggregated resource"@en .
 
 
 ###  http://www.w3.org/ns/prov#wasDerivedFrom
@@ -768,6 +786,13 @@ asio:upc rdf:type owl:DatatypeProperty ;
                     "has UPC"@en .
 
 
+###  http://purl.org/wf4ever/ro#entryName
+ro:entryName rdf:type owl:DatatypeProperty ;
+             rdfs:domain ro:FolderEntry ;
+             rdfs:range xsd:string ;
+             rdfs:comment "entry name"@en .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -853,6 +878,16 @@ asio:AcademicPublication rdf:type owl:Class ;
                                         "Publicação acadêmica"@pt .
 
 
+###  http://purl.org/hercules/asio/core#AcademicSubject
+asio:AcademicSubject rdf:type owl:Class ;
+                     rdfs:comment "Matière académique"@fr ;
+                     rdfs:label "Academic subject"@en ,
+                                "Asignatura académica"@es ,
+                                "Assignatura acadèmica"@ca-es ,
+                                "Unidade curricular acadêmica"@pt-pt ;
+                     skos:altLabel "Cadeira"@pt .
+
+
 ###  http://purl.org/hercules/asio/core#AdministrativeEntity
 asio:AdministrativeEntity rdf:type owl:Class ;
                           rdfs:subClassOf skos:ConceptScheme ;
@@ -890,6 +925,16 @@ asio:AudioVisualDocument rdf:type owl:Class ;
                          rdfs:subClassOf asio:Publication ;
                          rdfs:comment "Audiovisual recording in any format"@en ;
                          rdfs:label "Audio-visual document"@en .
+
+
+###  http://purl.org/hercules/asio/core#BachelorsDegreeSubject
+asio:BachelorsDegreeSubject rdf:type owl:Class ;
+                            rdfs:subClassOf asio:AcademicSubject ;
+                            rdfs:comment "Unidade curricular de grau"@pt ;
+                            rdfs:label "Asignatura de grao"@gl ,
+                                       "Assignatura de bàtxelor"@ca-ad ,
+                                       "Assignatura de grau"@ca-es ,
+                                       "Bachelor's degree subject"@en .
 
 
 ###  http://purl.org/hercules/asio/core#BachelorsThesis
@@ -1165,6 +1210,19 @@ asio:DoctoralDegree rdf:type owl:Class ;
                                    "Doutoramento"@pt .
 
 
+###  http://purl.org/hercules/asio/core#DoctoralProgram
+asio:DoctoralProgram rdf:type owl:Class ;
+                     rdfs:label "Doctoral program"@en ,
+                                "Doctoral programme"@en-gb ,
+                                "Programa de doctorado"@es ,
+                                "Programa de doctorat"@ca-es ,
+                                "Programa de doutoramento"@gl ,
+                                "Programa de doutoramento"@pt ,
+                                "Programme de doctorat"@fr ;
+                     skos:altLabel "PhD program"@en-us ,
+                                   "PhD programme"@en-gb .
+
+
 ###  http://purl.org/hercules/asio/core#EditedPublication
 asio:EditedPublication rdf:type owl:Class ;
                        rdfs:subClassOf asio:ScientificPublication ;
@@ -1297,6 +1355,19 @@ asio:MastersDegree rdf:type owl:Class ;
                                   "Màster universitari"@ca-es ,
                                   "Máster universitario"@es-es ,
                                   "Máster universitario"@gl .
+
+
+###  http://purl.org/hercules/asio/core#MastersDegreeSubject
+asio:MastersDegreeSubject rdf:type owl:Class ;
+                          rdfs:subClassOf asio:AcademicSubject ;
+                          rdfs:comment "Matière de master"@fr-fr ,
+                                       "Matière de maîtrise"@fr-ca ;
+                          rdfs:label "Asignatura de máster"@es ,
+                                     "Asignatura de máster"@gl ,
+                                     "Assignatura de mestratge"@ca-ad ,
+                                     "Assignatura de màster"@ca-es ,
+                                     "Master's degree subject"@en ,
+                                     "Unidace curricular de mestrado"@pt .
 
 
 ###  http://purl.org/hercules/asio/core#MastersThesis
@@ -1787,6 +1858,26 @@ modules:ScientificDomain rdf:type owl:Class ;
                                         "Áreas científicas"@pt .
 
 
+###  http://purl.org/wf4ever/ro#AggregatedAnnotation
+ro:AggregatedAnnotation rdf:type owl:Class ;
+                        rdfs:label "Aggregated annotation"@en .
+
+
+###  http://purl.org/wf4ever/ro#Folder
+ro:Folder rdf:type owl:Class ;
+          rdfs:label "Folder"@en .
+
+
+###  http://purl.org/wf4ever/ro#FolderEntry
+ro:FolderEntry rdf:type owl:Class ;
+               rdfs:label "Folder entry"@en .
+
+
+###  http://purl.org/wf4ever/ro#Manifest
+ro:Manifest rdf:type owl:Class ;
+            rdfs:label "Manifest"@en .
+
+
 ###  http://purl.org/wf4ever/ro#ResearchObject
 ro:ResearchObject rdf:type owl:Class ;
                   rdfs:comment "A research object aggregates a number of resources. A resource can be a workflow, web service, document, data item, data set, workflow run, software or a research object."@en ;
@@ -1802,6 +1893,25 @@ ro:ResearchObject rdf:type owl:Class ;
                                  "Objeto de investigación"@es ,
                                  "Objeto de investigação"@pt ,
                                  "Research object"@en .
+
+
+###  http://purl.org/wf4ever/ro#Resource
+ro:Resource rdf:type owl:Class ;
+            rdfs:label "Recurs"@ca ,
+                       "Recurso"@en ,
+                       "Recurso"@gl ,
+                       "Recurso"@pt ,
+                       "Resource"@en ,
+                       "Resource"@fr .
+
+
+###  http://purl.org/wf4ever/ro#SemanticAnnotation
+ro:SemanticAnnotation rdf:type owl:Class ;
+                      rdfs:label "Anotació semàntica"@ca ,
+                                 "Anotación semántica"@es ,
+                                 "Anotación semántica"@gl ,
+                                 "Anotação semântica"@pt ,
+                                 "Semantic annotation"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept

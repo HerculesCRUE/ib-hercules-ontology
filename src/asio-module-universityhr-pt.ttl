@@ -10,6 +10,7 @@
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix unescothes:    <http://skos.um.es/unescothes/> .
 
 asioModules:PT_UNIVERSITY_HR_PTPEM
       a       owl:NamedIndividual , asio:Role , skos:Concept ;

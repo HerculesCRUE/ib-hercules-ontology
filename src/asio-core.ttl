@@ -646,6 +646,7 @@ asio:isCompetitive rdf:type owl:DatatypeProperty ;
 asio:isbn10 rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf asio:identifier ;
             rdfs:domain asio:Book ;
+            rdfs:range xsd:string ;
             rdfs:comment "International Standard Book Number (ISBN) 13"@en ;
             rdfs:label "has ISBN10"@en .
 
@@ -654,6 +655,7 @@ asio:isbn10 rdf:type owl:DatatypeProperty ;
 asio:isbn13 rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf asio:identifier ;
             rdfs:domain asio:Book ;
+            rdfs:range xsd:string ;
             rdfs:comment "International Standard Book Number (ISBN) 10"@en ;
             rdfs:label "has ISBN13"@en .
 
@@ -661,6 +663,7 @@ asio:isbn13 rdf:type owl:DatatypeProperty ;
 ###  http://purl.org/hercules/asio/core#issn
 asio:issn rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf asio:identifier ;
+          rdfs:range xsd:string ;
           rdfs:comment "International Standard Serial Number"@en ;
           rdfs:label "has ISSN"@en .
 
@@ -744,6 +747,7 @@ asio:publicationDate rdf:type owl:DatatypeProperty ;
 ###  http://purl.org/hercules/asio/core#pubmedcentralid
 asio:pubmedcentralid rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf asio:identifier ;
+                     rdfs:range xsd:string ;
                      rdfs:comment "A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available in PubMed Central. The PMCID is issued shortly after the PI or author approves the PubMed Central formatted web version of the submission."@en ;
                      rdfs:label "has PubMed Central ID"@en .
 
@@ -751,6 +755,7 @@ asio:pubmedcentralid rdf:type owl:DatatypeProperty ;
 ###  http://purl.org/hercules/asio/core#pubmedid
 asio:pubmedid rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf asio:identifier ;
+              rdfs:range xsd:string ;
               rdfs:comment "The PubMed ID (PMID) identifies a citation record (rather than full-text) in the PubMed database. It is not evidence of compliance with the NIH Public Access Policy, because it does not identify a full-text submission of any kind."@en ;
               rdfs:label "has PubMed ID"@en .
 
@@ -782,7 +787,8 @@ asio:referencedLaw rdf:type owl:DatatypeProperty ;
 ###  http://purl.org/hercules/asio/core#upc
 asio:upc rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf asio:identifier ;
-         rdfs:label "Universal Porduct Code"@en ,
+         rdfs:range xsd:string ;
+         rdfs:label "Universal Product Code"@en ,
                     "has UPC"@en .
 
 

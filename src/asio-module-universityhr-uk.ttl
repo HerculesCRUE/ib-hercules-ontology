@@ -33,6 +33,7 @@ asioModules:GB_UNIVERSITY_HR_GBRREAASS
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBRREAASS ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRREAASS" ;
+      skos:closeMatch "C03376" ;
       skos:prefLabel "Research assistant"@en .
 
 asioModules:GB_UNIVERSITY_HR_GBRPROF
@@ -42,6 +43,8 @@ asioModules:GB_UNIVERSITY_HR_GBRPROF
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBRPROF ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRPROF" ;
+      skos:closeMatch "C03376" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Professorial research fellow"@en .
 
 asioModules:GB_UNIVERSITY_HR_GBCHAN
@@ -84,6 +87,7 @@ asioModules:GB_UNIVERSITY_HR_GBRTASSLEC
       skos:altLabel "Associate lecturer"@en ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRTASSLEC" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Assistant lecturer"@en .
 
 asioModules:GB_UNIVERSITY_HR_GBRTSENLEC
@@ -93,6 +97,7 @@ asioModules:GB_UNIVERSITY_HR_GBRTSENLEC
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBRTSENLEC ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRTSENLEC" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Senior lecturer"@en .
 
 asioModules:GB_UNIVERSITY_HR_CODE_GBRSENREAFEL
@@ -142,6 +147,7 @@ asioModules:GB_UNIVERSITY_HR_GBRREAFEL
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBRREAFEL ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRREAFEL" ;
+      skos:closeMatch "C03376" ;
       skos:prefLabel "Research fellow"@en .
 
 asioModules:GB_UNIVERSITY_HR_CODE_GBRTPROF
@@ -181,6 +187,7 @@ asioModules:GB_UNIVERSITY_HR_GBEREAD
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBEREAD ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBEREAD" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Emeritus reader"@en .
 
 asioModules:GB_UNIVERSITY_HR_GBDEPDIR
@@ -214,6 +221,7 @@ asioModules:GB_UNIVERSITY_HR_GBEPROF
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBEPROF ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBEPROF" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Emeritus professor"@en .
 
 asioModules:GB_UNIVERSITY_HR_GBPROCHAN
@@ -239,6 +247,7 @@ asioModules:GB_UNIVERSITY_HR_GBRTCLLEC
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBRTCLLEC ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRTCLLEC" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Clinical lecturer"@en .
 
 asioModules:GB_UNIVERSITY_HR_GBDEAN
@@ -264,6 +273,7 @@ asioModules:GB_UNIVERSITY_HR_GBRSENREAFEL
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBRSENREAFEL ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRSENREAFEL" ;
+      skos:closeMatch "C03376" ;
       skos:prefLabel "Senior research fellow"@en .
 
 asioModules:GB_UNIVERSITY_HR_GBVICCHAN
@@ -293,6 +303,7 @@ asioModules:GB_UNIVERSITY_HR_GBRTLEC
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBRTLEC ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRTLEC" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Lecturer"@en .
 
 asioModules:GB_UNIVERSITY_HR_CODE_GBRTLEC
@@ -309,6 +320,7 @@ asioModules:GB_UNIVERSITY_HR_GBTPROF
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBTPROF ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBTPROF" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Professorial teaching fellow"@en .
 
 asioModules:GB_UNIVERSITY_HR_CODE_GBRREAFEL
@@ -340,6 +352,7 @@ asioModules:GB_UNIVERSITY_HR_GBRTREAD
       skos:altLabel "Principal lecturer"@en ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRTREAD" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Reader"@en .
 
 asioModules:GB_UNIVERSITY_HR_GBRTPROF
@@ -349,6 +362,7 @@ asioModules:GB_UNIVERSITY_HR_GBRTPROF
       asio:hasCode asioModules:GB_UNIVERSITY_HR_CODE_GBRTPROF ;
       skos:inScheme asioModules:GBUniversityHumanResourcesList ;
       skos:notation "GBRTPROF" ;
+      skos:closeMatch "C00015" ;
       skos:prefLabel "Professor"@en .
 
 asioModules:GBUniversityHumanResourcesCodesList

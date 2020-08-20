@@ -11,6 +11,7 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix provo:   <http://www.w3.org/ns/prov#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix unescothes:    <http://skos.um.es/unescothes/> .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_ENE
       a       skos:Concept ;
@@ -161,6 +162,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_FIL
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_MLP ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "FIL" ;
+      skos:exactMatch "C02971" ;
       skos:prefLabel "Philosophy"@en , "Filosofía"@ast , "Filosofía" , "Filosofía"@es , "Filosofía"@gl , "Filosofia"@ca , "Filosofia"@pt , "Philosophie"@fr .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_EYA
@@ -269,6 +271,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_TRA
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_EYT ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "TRA" ;
+      skos:exactMatch "C04122" ;
       skos:prefLabel "Transporte"@gl , "Transporte"@pt , "Transporte" , "Transporte"@es , "Transport"@fr , "Transport"@ca , "Transport"@en , "Tresporte"@ast .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_FEM
@@ -280,12 +283,12 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_FEM
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM
       a       skos:Concept ;
-      rdfs:label "Ciencias y tecnologías medioambientales " ;
+      rdfs:label "Ciencias y tecnologías medioambientales" ;
       asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CTM ;
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "CTM" ;
-      skos:prefLabel "Ciencias y tecnologías medioambientales " , "Ciencias y tecnologías medioambientales "@es , "Ciencia e tecnoloxía ambiental"@gl , "Ciência e tecnologia ambiental"@pt , "Ciencies y tecnoloxíes medioambientales "@ast , "Ciències i tecnologies mediambientals"@ca , "Environmental science and technology"@en , "Sciences et technologies de l'environnement"@fr .
+      skos:prefLabel "Ciencias y tecnologías medioambientales" , "Ciencias y tecnologías medioambientales"@es , "Ciencia e tecnoloxía ambiental"@gl , "Ciência e tecnologia ambiental"@pt , "Ciencies y tecnoloxíes medioambientales"@ast , "Ciències i tecnologies mediambientals"@ca , "Environmental science and technology"@en , "Sciences et technologies de l'environnement"@fr .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_BIO
       a       skos:Concept ;
@@ -296,12 +299,12 @@ asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_BIO
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_BIO
       a       skos:Concept ;
-      rdfs:label "Biociencias y biotecnología " ;
+      rdfs:label "Biociencias y biotecnología" ;
       asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_BIO ;
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "BIO" ;
-      skos:prefLabel "Biociencias y biotecnología " , "Biociencias y biotecnología "@es , "Biosciences and biotechnology"@en , "Biociências e biotecnologia"@pt , "Biosciences et biotechnologie"@fr , "Biociencias e biotecnoloxía"@gl , "Biociencies y biotecnoloxía"@ast , "Biociències i biotecnologia"@ca .
+      skos:prefLabel "Biociencias y biotecnología" , "Biociencias y biotecnología"@es , "Biosciences and biotechnology"@en , "Biociências e biotecnologia"@pt , "Biosciences et biotechnologie"@fr , "Biociencias e biotecnoloxía"@gl , "Biociencies y biotecnoloxía"@ast , "Biociències i biotecnologia"@ca .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_INF
       a       skos:Concept ;
@@ -383,6 +386,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_QMC
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_CTQ ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "QMC" ;
+      skos:exactMatch "C00568" ;
       skos:prefLabel "Chemistry"@en , "Química"@ast , "Química" , "Química"@es , "Química"@ca , "Química"@gl , "Química"@pt , "Chimie"@fr .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_ART
@@ -403,12 +407,12 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_ICA
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_BME
       a       skos:Concept ;
-      rdfs:label "Biomedicina " ;
+      rdfs:label "Biomedicina" ;
       asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_BME ;
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "BME" ;
-      skos:prefLabel "Biomedicina"@ca , "Biomedicina"@gl , "Biomedicina"@pt , "Biomedicine"@en , "Biomédecine"@fr , "Biomedecina "@an , "Biomedicina " , "Biomedicina "@es , "Biomedicina "@ast .
+      skos:prefLabel "Biomedicina"@ca , "Biomedicina"@gl , "Biomedicina"@pt , "Biomedicine"@en , "Biomédecine"@fr , "Biomedecina"@an , "Biomedicina" , "Biomedicina"@es , "Biomedicina"@ast .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_EYF
       a       skos:Concept ;
@@ -585,12 +589,12 @@ asioModules:ES_SUBJECT_AREA_LEVEL_2_MTM
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_DER
       a       skos:Concept ;
-      rdfs:label "Derecho " ;
+      rdfs:label "Derecho" ;
       asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_DER ;
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "DER" ;
-      skos:prefLabel "Derecho " , "Derecho "@es , "Droit"@fr , "Dereito"@gl , "Dret"@ca , "Drechu"@ast , "Direito"@pt , "Law"@en .
+      skos:prefLabel "Derecho " , "Derecho"@es , "Droit"@fr , "Dereito"@gl , "Dret"@ca , "Drechu"@ast , "Direito"@pt , "Law"@en .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_POL
       a       skos:Concept ;
@@ -648,12 +652,12 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_TCO
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_CAA
       a       skos:Concept ;
-      rdfs:label "Ciencias agrarias y agroalimentarias " ;
+      rdfs:label "Ciencias agrarias y agroalimentarias" ;
       asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CAA ;
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "CAA" ;
-      skos:prefLabel "Ciencias agrícolas e agroalimentarias"@gl , "Ciencias agrarias y agroalimentarias " , "Ciencias agrarias y agroalimentarias "@es , "Sciences agronomiques et agroalimentaires"@fr , "Ciencies agraries y agroalimentarias "@ast , "Ciències agràries i agroalimentàries"@ca , "Ciências agrícolas e agroalimentares"@pt , "Agricultural and agri-food sciences"@en .
+      skos:prefLabel "Ciencias agrícolas e agroalimentarias"@gl , "Ciencias agrarias y agroalimentarias " , "Ciencias agrarias y agroalimentarias"@es , "Sciences agronomiques et agroalimentaires"@fr , "Ciencies agraries y agroalimentarias"@ast , "Ciències agràries i agroalimentàries"@ca , "Ciências agrícolas e agroalimentares"@pt , "Agricultural and agri-food sciences"@en .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_SOC
       a       skos:Concept ;
@@ -692,16 +696,18 @@ asioModules:ES_SUBJECT_AREA_LEVEL_2_PSI
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "PSI" ;
+      skos:exactMatch "C03195" ;
       skos:prefLabel "Psychologie"@fr , "Psicoloxía"@gl , "Psicoloxía"@ast , "Psychology"@en , "Psicologia"@ca , "Psicologia"@pt , "Psicología" , "Psicología"@es .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_CSO
       a       skos:Concept ;
-      rdfs:label "Ciencias sociales " ;
+      rdfs:label "Ciencias sociales" ;
       asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CSO ;
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "CSO" ;
-      skos:prefLabel "Ciencias sociais"@gl , "Ciencias sociales " , "Ciencias sociales "@es , "Sciences sociales"@fr , "Ciências Sociais"@pt , "Social Sciences"@en , "Ciències socials"@ca , "Ciencies sociales"@ast .
+      skos:exactMatch "C03719" ;
+      skos:prefLabel "Ciencias sociais"@gl , "Ciencias sociales " , "Ciencias sociales"@es , "Sciences sociales"@fr , "Ciências Sociais"@pt , "Social Sciences"@en , "Ciències socials"@ca , "Ciencies sociales"@ast .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_FIS
       a       skos:Concept ;
@@ -773,6 +779,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_2_ECO
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "ECO" ;
+      skos:exactMatch "C01180" ;
       skos:prefLabel "Économie"@fr , "Economy"@en , "Economía"@es , "Economía" , "Economía"@ast , "Economía"@gl , "Economia"@ca , "Economia"@pt .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_FYA
@@ -847,6 +854,9 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_INA
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_PIN ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "INA" ;
+      skos:closeMatch "C02447" ;
+      skos:closeMatch "C02398" ;
+      skos:closeMatch "" ;
       skos:prefLabel "Mechanical, naval and aeronautical engineering"@en , "Ingeniería mecánica, naval y aeronáutica" , "Ingeniería mecánica, naval y aeronáutica"@es , "Enxeñaría mecánica, naval e aeronáutica"@gl , "Ingénierie mécanique, naval et aéronautique"@fr , "Enginyeria mecànica, naval i aeronàutica"@ca , "Inxeniería mecánica, naval y aeronáutica"@ast , "Engenharia mecânica, naval e aeronáutica"@pt .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_EYA
@@ -856,6 +866,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_EYA
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_ECO ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "EYA" ;
+      skos:closeMatch "C01180" ;
       skos:prefLabel "Economia e suas aplicações"@pt , "Economia i les seves aplicacions"@ca , "Economía e as súas aplicacións"@gl , "Economía y sus aplicaciones" , "Economía y sus aplicaciones"@es , "Economía y les sos aplicaciones"@ast , "Economy and its applications"@en , "Économie et ses applications"@fr .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_AYF
@@ -865,6 +876,8 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_AYF
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_CAA ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "AYF" ;
+      skos:closeMatch "C00112" ;
+      skos:closeMatch "C01594" ;
       skos:prefLabel "Agricultura i forestal"@ca , "Agriculture et foresterie"@fr , "Agricultura e silvicultura"@pt , "Agricultura e silvicultura"@gl , "Agriculture and forestry"@en , "Agricultura y forestal" , "Agricultura y forestal"@es , "Agricultura y forestal"@ast .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CPO
@@ -874,6 +887,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_CPO
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_CSO ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "CPO" ;
+      skos:exactMatch "C03057" ;
       skos:prefLabel "Ciencias políticas"@gl , "Ciência Política"@pt , "Ciencia política"@es , "Ciencia política" , "Ciencia política"@ast , "Ciència política"@ca , "Politic science"@en , "Sciences politiques"@fr .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_ART
@@ -889,6 +903,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_1_CV
       asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CV ;
       skos:inScheme asioModules:ESSubjectAreas1stList ;
       skos:notation "CV" ;
+      skos:exactMatch "C02293" ;
       skos:prefLabel "Sciéncias de la vida"@oc , "Life sciences"@en , "Ciencies de la vida"@ast , "Ciências da vida"@pt , "Céncias de la vida"@ext , "siˈɛnsiəs ðə ɫə ˈbiðə"@ca , "Sciences de la vie"@fr , "Sciencias d'a vida"@an , "Ciencias de la vida" , "Ciencias de la vida"@es , "laɪf ˈsaɪənsəz"@en-US , "Ciències de la vida"@ca , "ˈθjen̟θjaz ðe la ˈβ̞iða"@es-ES , "Ciencias da vida"@gl , "Bizi zientziak"@eu , "laɪf ˈsaɪənsɪz"@en-GB ;
       ontolex:phoneticRep "siˈɛnsiəs ðə ɫə ˈbiðə"@ca , "laɪf ˈsaɪənsəz"@en-US , "ˈθjen̟θjaz ðe la ˈβ̞iða"@es-ES , "laɪf ˈsaɪənsɪz"@en-GB .
 
@@ -913,6 +928,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_2_CTQ
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "CTQ" ;
+      skos:exactMatch "C00565" ;
       skos:prefLabel "Ciências e tecnologias químicas"@pt , "Ciencias y tecnologías químicas" , "Ciencias y tecnologías químicas"@es , "Ciencias e Tecnoloxías Químicas"@gl , "Ciencies y tecnoloxíes químiques"@ast , "Ciències i tecnologies químiques"@ca , "Chemical Sciences and Technologies"@en , "Sciences et technologies chimiques"@fr .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_GYA
@@ -938,6 +954,9 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_IEA
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_PIN ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "IEA" ;
+      skos:closeMatch "C01311" ;
+      skos:closeMatch "C01321" ;
+      skos:closeMatch "C01363" ;
       skos:prefLabel "Enxeñaría eléctrica, electrónica e automática"@gl , "Enginyeria elèctrica, electrònica i automàtica"@ca , "Inxeniería eléctrica, electrónica y automática"@ast , "Electrical, electronic and automatic engineering"@en , "Ingénierie électrique, électronique et automatique"@fr , "Engenharia elétrica, eletrônica e automática"@pt , "Ingeniería eléctrica, electrónica y automática" , "Ingeniería eléctrica, electrónica y automática"@es .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_EYT
@@ -947,6 +966,8 @@ asioModules:ES_SUBJECT_AREA_LEVEL_2_EYT
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
       skos:inScheme asioModules:ESSubjectAreas2ndList ;
       skos:notation "EYT" ;
+      skos:closeMatch "C04122" ;
+      skos:closeMatch "C01360" ;
       skos:prefLabel "Energia e transporte"@pt , "Energy and transportation"@en , "Enerxía y tresporte"@ast , "Enerxía e transporte"@gl , "Energia i transport"@ca , "Energía y transporte" , "Energía y transporte"@es , "Énergie et transports"@fr .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_MEN
@@ -1016,6 +1037,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_BTC
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_BIO ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "BTC" ;
+      skos:exactMatch "C00409" ;
       skos:prefLabel "Biotecnologia"@ca , "Biotecnologia"@pt , "Biotecnoloxía"@gl , "Biotecnoloxía"@ast , "Biotecnología" , "Biotecnología"@es , "Biotechnologie"@fr , "Biotechnology"@en .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_TMA
@@ -1025,6 +1047,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_TMA
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "TMA" ;
+      skos:exactMatch "C01386" ;
       skos:prefLabel "Tecnologías medioambientales" , "Tecnologías medioambientales"@es , "Technologies environnementales"@fr , "Tecnoloxías ambientais"@gl , "Environmental technologies"@en , "Tecnoloxíes medioambientales"@ast , "Tecnologias ambientais"@pt , "Tecnologies mediambientals"@ca .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_ARQ
@@ -1080,6 +1103,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_DE3
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_DER ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "DE3" ;
+      skos:exactMatch "C02229" ;
       skos:prefLabel "Droit"@fr , "Dereito"@gl , "Dret"@ca , "Drechu"@ast , "Direito"@pt , "Derecho" , "Derecho"@es , "Law"@en .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_PS3
@@ -1110,6 +1134,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_IBI
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_PIN ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "IBI" ;
+      skos:exactMatch "C02465" ;
       skos:prefLabel "Enxeñaría biomédica"@gl , "Ingeniería biomédica" , "Ingeniería biomédica"@es , "Engenharia Biomédica"@pt , "Ingénierie biomédical"@fr , "Inxeniería biomédica"@ast , "Enginyeria biomèdica"@ca , "Biomedical engineering"@en .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_DER
@@ -1147,6 +1172,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_CAN
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_BME ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "CAN" ;
+      skos:exactMatch "C00499" ;
       skos:prefLabel "Câncer"@pt , "Cancer"@fr , "Cancer"@en , "Cáncer" , "Cáncer"@es , "Cáncer"@ast , "Cáncer"@gl , "Càncer"@ca .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_BTC
@@ -1216,6 +1242,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_BDV
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "BDV" ;
+      skos:exactMatch "C00396" ;
       skos:prefLabel "Biodiversitat"@ca , "Biodiversité"@fr , "Biodiversity"@en , "Biodiversidad" , "Biodiversidad"@es , "Biodiversidad"@ast , "Biodiversidade"@gl , "Biodiversidade"@pt .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_HIS
@@ -1225,6 +1252,7 @@ asioModules:ES_SUBJECT_AREA_LEVEL_3_HIS
       skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_2_PHA ;
       skos:inScheme asioModules:ESSubjectAreas3rdList ;
       skos:notation "HIS" ;
+      skos:exactMatch "C01809" ;
       skos:prefLabel "Historia"@es , "Historia"@ast , "Historia"@gl , "Historia" , "History"@en , "História"@pt , "Història"@ca , "Histoire"@fr .
 
 asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_CAN

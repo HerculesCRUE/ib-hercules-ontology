@@ -15,6 +15,7 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix unescothes:    <http://skos.um.es/unescothes/> .
 
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_MCLIJMIG

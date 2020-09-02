@@ -34,6 +34,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_MTMANAL
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "MTMANAL" ;
+      skos:exactMatch unescothes:C02774 ;
       skos:prefLabel "Numerical analysis"@en , "Análisis numérico"@ast , "Análisis numérico" , "Análisis numérico"@es , "Análisis numérico"@an , "Análise numérica"@gl , "Análise numérica"@pt , "Analyse numérique"@fr , "Anàlisi numèrica"@ca .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CODE_CTPETR
@@ -50,6 +51,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_FFIRKXR
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "FFIRKXR" ;
+      skos:exactMatch unescothes:C02321 ;
       skos:prefLabel "Literature"@en , "Littérature"@fr , "Literatura"@pt , "Literatura" , "Literatura"@es , "Literatura"@gl , "Literatura"@ca , "Lliteratura"@ast .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_HALMCG
@@ -59,6 +61,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_HALMCG
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "HALMCG" ;
+      skos:exactMatch unescothes:C00153 ;
       skos:prefLabel "Histoire ancienne"@fr , "História antiga"@pt , "Historia antiga"@gl , "Historia antiga"@ast , "Història antiga"@ca , "Historia antigua" , "Historia antigua"@es , "Old history"@en .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CODE_FFIVCZF
@@ -170,6 +173,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BFSDGRC
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "BFSDGRC" ;
+      skos:exactMatch unescothes:C04252 ;
       skos:prefLabel "Viroloxía"@ast , "Viroloxía"@gl , "Virologie"@fr , "Virology"@en , "Virología" , "Virología"@es , "Virologia"@ca , "Virologia"@pt .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CODE_BFSEEAB
@@ -186,6 +190,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTMETE
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "CTMETE" ;
+      skos:closeMatch unescothes:C02496 ;
       skos:prefLabel "Meteorology"@en , "Météorologie"@fr , "Meteorología"@es , "Meteorología" , "Meteoroloxía"@ast , "Meteoroloxía"@gl , "Meteorologia"@ca , "Meteorologia"@pt , "Meteorologia"@ext .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM
@@ -195,6 +200,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "MTM" ;
+      skos:closeMatch unescothes:C02437 ;
       skos:note "Investigación en Matemáticas, incluíndo álxebra, análise real, análise complexa, análise funcional, análise armónica, análise numérica, combinativa, ecuacións funcionais, educación matemática, estatísticas, física matemática, xeometría, historia matemática, lóxica matemática, investigación operacional, matemáticas Aplicada, Matemática Discreta, Optimización, Teoría de Control, Teoría de Probabilidades, Teoría de Números e Topoloxía."@gl , "Recerca en matemàtiques, incloent-hi Àlgebra, Anàlisi Real, Anàlisi Complex, Anàlisi Funcional, anàlisi harmònica, Anàlisi Numèric, Combinatòria, Equacions Funcionals, Educació Matemàtica, Estadística, Física Matemàtica, Geometria, Història de la Matemàtica, Lògica Matemàtica, Investigació Operativa, Matemàtica aplicada, Matemàtica Discreta, Optimització, Teoria de Control, Teoria de la Probabilitat, Teoria de Nombres i Topologia."@ca , "Mathematics research, including Algebra, Real Analysis, Complex Analysis, Functional Analysis, Harmonic Analysis, Numerical, Combinatorial Analysis, Functional Equations, Mathematical Education, Statistics, Mathematical Physics, Geometry, Mathematical History, Mathematical Logic, Operational Research, Mathematics Applied, Discrete Mathematics, Optimization, Control Theory, Probability Theory, Number Theory and Topology."@en ;
       skos:prefLabel "Matemàtiques"@ca , "Matemática"@pt , "Matemáticas"@gl , "Mathématiques"@fr , "Mathematics"@en , "Matemáticas" , "Matemáticas"@es , "Matemáticas"@ast .
 
@@ -206,15 +212,6 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "IME" ;
       skos:prefLabel "Mechanical, naval and aeronautical engineering"@en , "Ingeniería mecánica, naval y aeronáutica" , "Ingeniería mecánica, naval y aeronáutica"@es , "Enxeñaría mecánica, naval e aeronáutica"@gl , "Ingénierie mécanique, naval et aéronautique"@fr , "Enginyeria mecànica, naval i aeronàutica"@ca , "Inxeniería mecánica, naval y aeronáutica"@ast , "Engenharia mecânica, naval e aeronáutica"@pt .
-
-asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_
-      a       skos:Concept ;
-      rdfs:label "" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ ;
-      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_ ;
-      skos:inScheme asioModules:ESscientificDomains2ndList ;
-      skos:notation "" ;
-      skos:prefLabel ""@ast , ""@fr , "" , ""@es , ""@ca , ""@gl , ""@en , " "@pt .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CODE_CTPALE
       a       skos:Concept ;
@@ -253,6 +250,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTGEOD
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "CTGEOD" ;
+      skos:closeMatch unescothes:C01667 ;
       skos:prefLabel "Xeodinámica interna"@gl , "Geodinâmica interna"@pt , "Geodinámica interna"@es , "Geodinámica interna" , "Xeodinámica interno"@ast , "Geodinàmica Interna"@ca , "Internal geodynamics"@en , "Géodynamique interne"@fr .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CODE_MTMTOPO
@@ -276,6 +274,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_PSBODX
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "PSBODX" ;
+      skos:closeMatch unescothes:C02497 ;
       skos:prefLabel "Metodoloxía"@ast , "Metodoloxía"@gl , "Metodología"@es , "Metodología" , "Methodology"@en , "Metodologia"@ca , "Metodologia"@pt , "Méthodologie"@fr .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CODE_BMEDTINW
@@ -318,6 +317,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_HAQGZR
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "HAQGZR" ;
+      skos:exactMatch unescothes:C03114 ;
       skos:prefLabel "Préhistoire"@fr , "Prehistory"@en , "Prehistoria"@es , "Prehistoria" , "Prehistoria"@ast , "Prehistoria"@gl , "Pré-história"@pt , "Prehistòria"@ca .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_FFIYMLQ
@@ -449,6 +449,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTPETR
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "CTPETR" ;
+      skos:exactMatch unescothes:C02963 ;
       skos:prefLabel "Petrology"@en , "Petrologia"@oc , "Petrologia"@ca , "Petrologia"@pt , "Pétrologie"@fr , "Petroloxía"@ast , "Petroloxía"@gl , "Petrología" , "Petrología"@es .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_MCLIQUEG
@@ -458,6 +459,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_MCLIQUEG
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "MCLIQUEG" ;
+      skos:exactMatch unescothes:C01973 ;
       skos:prefLabel "Maladies infectieuses"@fr , "Enfermedades infecciosas" , "Enfermedades infecciosas"@es , "Doenças infecciosas"@pt , "Enfermedaes infeccioses"@ast , "Infectious diseases"@en , "Enfermidades infecciosas"@gl , "Malalties infeccioses"@ca .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_AGR
@@ -523,6 +525,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_MTMTOPO
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
       skos:inScheme asioModules:ESscientificDomains3rdList ;
       skos:notation "MTMTOPO" ;
+      skos:exactMatch unescothes:C04079 ;
       skos:prefLabel "Topología" , "Topología"@es , "Topologia"@ca , "Topologia"@pt , "Topoloxía"@ast , "Topoloxía"@gl , "Topology"@en , "Topologie"@fr .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_PSFRSQ

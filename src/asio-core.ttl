@@ -1252,6 +1252,15 @@ asio:EmploymentContract rdf:type owl:Class ;
                                        "Employment contract"@en .
 
 
+###  http://purl.org/hercules/asio/core#Equipment
+asio:Equipment rdf:type owl:Class ;
+               rdfs:label "Equipament"@ca-es ,
+                          "Equipamento"@pt ,
+                          "Equipment"@en ,
+                          "Equipo"@es ,
+                          "équipements"@fr .
+
+
 ###  http://purl.org/hercules/asio/core#EuropeanProject
 asio:EuropeanProject rdf:type owl:Class ;
                      rdfs:subClassOf foaf:Project ;
@@ -1274,6 +1283,14 @@ asio:EuropeanProject rdf:type owl:Class ;
 asio:EventSeries rdf:type owl:Class ;
                  rdfs:comment "A generic class which may include a conference series, a course section, a seminar series, or a workshop series. When possible, use one of these more specific classes."@en ;
                  rdfs:label "Event series"@en .
+
+
+###  http://purl.org/hercules/asio/core#Facility
+asio:Facility rdf:type owl:Class ;
+              rdfs:label "Facility"@en ,
+                         "Instalaciones"@es ,
+                         "Instalacions"@ca-es ,
+                         "établissement"@fr .
 
 
 ###  http://purl.org/hercules/asio/core#Funding
@@ -1725,6 +1742,14 @@ asio:SealOfQuality rdf:type owl:Class ;
                                   "Segell de qualitat"@ca-es ,
                                   "Sello de calidad"@es ,
                                   "Selo de qualidade"@pt .
+
+
+###  http://purl.org/hercules/asio/core#Service
+asio:Service rdf:type owl:Class ;
+             rdfs:label "Servei"@ca-es ,
+                        "Service"@en ,
+                        "Servicio"@es ,
+                        "Serviço"@pt .
 
 
 ###  http://purl.org/hercules/asio/core#ServiceContract

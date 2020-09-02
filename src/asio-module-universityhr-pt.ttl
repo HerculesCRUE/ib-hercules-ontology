@@ -19,7 +19,8 @@ asioModules:PT_UNIVERSITY_HR_PTPEM
       asio:hasCode asioModules:PT_UNIVERSITY_HR_CODE_PTPEM ;
       skos:inScheme asioModules:PTUniversityHumanResourcesList ;
       skos:notation "PTPEM" ;
-      skos:closeMatch "C00015" ;
+      skos:closeMatch unescothes:C00015 ;
+      skos:closeMatch unescothes:C03965 ;
       skos:prefLabel "Profesor emérito"@es , "Profesor emérito"@gl , "Profesor eméritu"@ast , "Professor emèrit"@ca , "Professor emérito"@pt .
 
 asioModules:PT_UNIVERSITY_HR_PTPC
@@ -29,7 +30,8 @@ asioModules:PT_UNIVERSITY_HR_PTPC
       asio:hasCode asioModules:PT_UNIVERSITY_HR_CODE_PTPC ;
       skos:inScheme asioModules:PTUniversityHumanResourcesList ;
       skos:notation "PTPC" ;
-      skos:closeMatch "C00015" ;
+      skos:closeMatch unescothes:C00015 ;
+      skos:closeMatch unescothes:C03965 ;
       skos:prefLabel "Professor catedràtic"@ca , "Profesor catedrático"@es , "Profesor catedrático"@gl , "Professor catedrático"@pt , "Profesor catedráticu"@ast .
 
 asioModules:PTUniversityHumanResourcesList
@@ -44,7 +46,8 @@ asioModules:PT_UNIVERSITY_HR_PTPAU
       asio:hasCode asioModules:PT_UNIVERSITY_HR_CODE_PTPAU ;
       skos:inScheme asioModules:PTUniversityHumanResourcesList ;
       skos:notation "PTPAU" ;
-      skos:closeMatch "C00015" ;
+      skos:closeMatch unescothes:C00015 ;
+      skos:closeMatch unescothes:C03965 ;
       skos:prefLabel "Profesor auxiliar"@gl , "Profesor auxiliar"@es , "Profesor auxiliar"@ast , "Professor auxiliar"@ca , "Professor auxiliar"@pt .
 
 asioModules:PT_UNIVERSITY_HR_CODE_PTPAU
@@ -80,7 +83,8 @@ asioModules:PT_UNIVERSITY_HR_PTPAS
       asio:hasCode asioModules:PT_UNIVERSITY_HR_CODE_PTPAS ;
       skos:inScheme asioModules:PTUniversityHumanResourcesList ;
       skos:notation "PTPAS" ;
-      skos:closeMatch "C00015" ;
+      skos:closeMatch unescothes:C00015 ;
+      skos:closeMatch unescothes:C03965 ;
       skos:prefLabel "Profesor asociáu"@ast , "Professor associado"@pt , "Professor associat"@ca , "Irakasle elkartua"@eu , "Profesor asociado"@es , "Profesor asociado"@gl .
 
 asioModules:PT_UNIVERSITY_HR_CODE_PTPC

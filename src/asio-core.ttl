@@ -259,6 +259,7 @@ asio:hasCode rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/hercules/asio/core#hasPatent
 asio:hasPatent rdf:type owl:ObjectProperty ;
+               rdfs:domain asio:Invention ;
                rdfs:range asio:Patent ;
                rdfs:label "has patent"@en .
 
@@ -300,6 +301,12 @@ asio:i10-index rdf:type owl:ObjectProperty ;
                rdfs:range asio:QualifiedValue ;
                rdfs:comment "A property to express the i10-index of an author."@en ;
                rdfs:label "i10-index"@en .
+
+
+###  http://purl.org/hercules/asio/core#invoiceOf
+asio:invoiceOf rdf:type owl:ObjectProperty ;
+               rdfs:domain asio:Invoice ;
+               rdfs:range asio:Expenditure .
 
 
 ###  http://purl.org/hercules/asio/core#isAdvisedBy
@@ -1285,12 +1292,25 @@ asio:EventSeries rdf:type owl:Class ;
                  rdfs:label "Event series"@en .
 
 
+###  http://purl.org/hercules/asio/core#Expenditure
+asio:Expenditure rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/cerif/frapo/FinancialEntity> ;
+                 rdfs:label "Despesa"@ca-es ,
+                            "Expenditure"@en ,
+                            "Gasto"@es .
+
+
 ###  http://purl.org/hercules/asio/core#Facility
 asio:Facility rdf:type owl:Class ;
               rdfs:label "Facility"@en ,
                          "Instalaciones"@es ,
                          "Instalacions"@ca-es ,
                          "établissement"@fr .
+
+
+###  http://purl.org/hercules/asio/core#FinancialDocument
+asio:FinancialDocument rdf:type owl:Class ;
+                       rdfs:subClassOf <http://xmlns.com/foaf/spec/#Document> .
 
 
 ###  http://purl.org/hercules/asio/core#Funding
@@ -1337,6 +1357,20 @@ asio:InternationalProject rdf:type owl:Class ;
                                      "Projet international"@fr ,
                                      "Projeto internacional"@pt ,
                                      "Proyecto internacional"@es .
+
+
+###  http://purl.org/hercules/asio/core#Invention
+asio:Invention rdf:type owl:Class ;
+               rdfs:comment "A new device, method, or process developed from study and experimentation in the framework of research."@en ;
+               rdfs:label "Invention"@en .
+
+
+###  http://purl.org/hercules/asio/core#Invoice
+asio:Invoice rdf:type owl:Class ;
+             rdfs:subClassOf asio:FinancialDocument ;
+             rdfs:label "Factura"@ca-es ,
+                        "Factura"@es ,
+                        "Invoice"@en .
 
 
 ###  http://purl.org/hercules/asio/core#LargeEnterprise
@@ -1538,6 +1572,12 @@ asio:Profile rdf:type owl:Class ;
                           "Profile"@en .
 
 
+###  http://purl.org/hercules/asio/core#ProformaInvoice
+asio:ProformaInvoice rdf:type owl:Class ;
+                     rdfs:subClassOf asio:Publication ;
+                     rdfs:label "Proforma invoice"@en .
+
+
 ###  http://purl.org/hercules/asio/core#ProjectBudget
 asio:ProjectBudget rdf:type owl:Class ;
                    rdfs:subClassOf asio:Budget ;
@@ -1565,6 +1605,7 @@ asio:Prototype rdf:type owl:Class ;
 
 ###  http://purl.org/hercules/asio/core#Publication
 asio:Publication rdf:type owl:Class ;
+                 rdfs:subClassOf <http://xmlns.com/foaf/spec/#Document> ;
                  rdfs:comment "Content made available to the general public. In the case of ASIO, often scientific or academic contents published."@en ;
                  rdfs:label "Publicació"@ca-ad ,
                             "Publicació"@ca-es ,
@@ -1984,6 +2025,10 @@ foaf:Person rdf:type owl:Class ;
 ###  http://xmlns.com/foaf/0.1/Project
 foaf:Project rdf:type owl:Class ;
              rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en .
+
+
+###  http://xmlns.com/foaf/spec/#Document
+<http://xmlns.com/foaf/spec/#Document> rdf:type owl:Class .
 
 
 #################################################################

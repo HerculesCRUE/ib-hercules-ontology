@@ -1,0 +1,1238 @@
+PREFIX xml: <http://www.w3.org/XML/1998/namespace/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX asioCore: <http://purl.org/hercules/asio/core#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX c4dm: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX cerif: <http://purl.org/cerif/frapo/>
+PREFIX : <http://weso.es/shapes/>
+
+:NationalProject
+{
+   asioCore:coordinatedBy  @:Agent  *;
+   asioCore:projectID  xsd:string  *;
+   asioCore:isCompetitive  xsd:string  *;
+   asioCore:projectBudget  xsd:string  *;
+   asioCore:projectStatus  @:Status  *;
+   asioCore:projectAcronym  xsd:string  *;
+   asioCore:projectKeyword  xsd:string  *;
+   asioCore:projectEndDate  xsd:string  *;
+   asioCore:projectStartDate  xsd:string  *;
+   asioCore:projectObjective  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *
+}
+
+
+:ConferencePoster
+{
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:awardedWith  xsd:string  *
+}
+
+
+:ResearchMaterial .
+
+
+:University
+{
+   foaf:icqChatID  xsd:string  *;
+   cerif:purchasesFrom  @:Agent  *;
+   asioCore:associatedWith  @:Agent  *;
+   cerif:employs  @:Agent  *;
+   foaf:openid  @:Document  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   foaf:msnChatID  xsd:string  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   foaf:age  xsd:string  *;
+   foaf:birthday  xsd:string  *;
+   asioCore:profiles  @:Profile  *;
+   foaf:mbox  @:Thing  *;
+   foaf:weblog  @:Document  *;
+   foaf:aimChatID  xsd:string  *;
+   asioCore:participant  @:Project  *;
+   foaf:account  @:OnlineAccount  *;
+   foaf:gender  xsd:string  *;
+   foaf:interest  @:Document  *;
+   asioCore:coauthors  @:Publication  *;
+   asioCore:plays  @:Role  *;
+   cerif:collaboratesWith  @:Agent  *;
+   asioCore:Publishes  @:Publication  *;
+   foaf:topic_interest  @:Thing  *;
+   asioCore:authors  @:Publication  *;
+   foaf:skypeID  xsd:string  *;
+   cerif:sellsTo  @:Agent  *;
+   foaf:tipjar  @:Document  *;
+   cerif:isEmployedBy  @:Agent  *;
+   foaf:status  xsd:string  *;
+   asioCore:projectCoordinator  @:Project  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   foaf:made  @:Thing  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   foaf:jabberID  xsd:string  *;
+   foaf:yahooChatID  xsd:string  *;
+   foaf:mbox_sha1sum  xsd:string  *
+}
+
+
+:Manual
+{
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:publicationCitation  @:QualifiedValue  *
+}
+
+
+:InternalProject
+{
+   asioCore:projectID  xsd:string  *;
+   asioCore:projectStartDate  xsd:string  *;
+   asioCore:projectStatus  @:Status  *;
+   asioCore:coordinatedBy  @:Agent  *;
+   asioCore:projectKeyword  xsd:string  *;
+   asioCore:projectAcronym  xsd:string  *;
+   asioCore:isCompetitive  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:projectEndDate  xsd:string  *;
+   asioCore:projectObjective  xsd:string  *;
+   asioCore:projectBudget  xsd:string  *
+}
+
+
+:Context .
+
+
+:Profile
+{
+   asioCore:isActive  xsd:string  *;
+   asioCore:personalizes  @:Role  *;
+   asioCore:atContext  @:Context  *
+}
+
+
+:CV .
+
+
+:Report
+{
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:hasScientificDomain  @:Concept  *
+}
+
+
+:Abstract
+{
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:isCoauthoredBy  @:Agent  *
+}
+
+
+:Publication
+{
+   asioCore:cites  @:Publication  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:awardedWith  xsd:string  *
+}
+
+
+:ScientificDomain .
+
+
+:AudioDocument
+{
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:publishedBy  @:Agent  *
+}
+
+
+:Catalog
+{
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:isCoauthoredBy  @:Agent  *
+}
+
+
+:CollectedDocument
+{
+   asioCore:cites  @:Publication  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:awardedWith  xsd:string  *
+}
+
+
+:Workshop
+{
+   c4dm:agent  @:Agent  *;
+   c4dm:time  @:TemporalEntity  *;
+   c4dm:place  @:SpatialThing  *;
+   c4dm:sub_event  @:Event  *
+}
+
+
+:Conference
+{
+   c4dm:sub_event  @:Event  *;
+   c4dm:time  @:TemporalEntity  *;
+   c4dm:agent  @:Agent  *;
+   c4dm:place  @:SpatialThing  *
+}
+
+
+:AcademicPublication
+{
+   asioCore:cites  @:Publication  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:requiredFor  @:AcademicDegree  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:coadvisedBy  @:Person  *;
+   asioCore:hasScientificDomain  @:Concept  *
+}
+
+
+:Proceedings
+{
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:hasScientificDomain  @:Concept  *
+}
+
+
+:ResearchResult .
+
+
+:Thesis
+{
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:requiredFor  @:AcademicDegree  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:coadvisedBy  @:Person  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:publishedBy  @:Agent  *
+}
+
+
+:GeopoliticalEntities .
+
+
+:EmploymentContract
+{
+   foaf:page  @:Document  *;
+   foaf:homepage  @:Document  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:name  xsd:string  *;
+   foaf:depiction  @:Image  *;
+   foaf:logo  @:Thing  *;
+   foaf:theme  @:Thing  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   foaf:maker  @:Agent  *
+}
+
+
+:ResearchMethod .
+
+
+:FundingProgramme .
+
+
+:AcademicDegree
+{
+   asioCore:requires  @:Role  *;
+   asioCore:requires  @:AcademicPublication  *
+}
+
+
+:Budget
+{
+   foaf:page  @:Document  *;
+   foaf:theme  @:Thing  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   foaf:name  xsd:string  *;
+   foaf:logo  @:Thing  *;
+   foaf:depiction  @:Image  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:homepage  @:Document  *;
+   foaf:maker  @:Agent  *
+}
+
+
+:CaseStudy
+{
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:publishedBy  @:Agent  *
+}
+
+
+:BachelorsThesis
+{
+   asioCore:requiredFor  @:AcademicDegree  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:coadvisedBy  @:Person  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:publicationCitation  @:QualifiedValue  *
+}
+
+
+:Company
+{
+   cerif:isEmployedBy  @:Agent  *;
+   foaf:birthday  xsd:string  *;
+   cerif:sellsTo  @:Agent  *;
+   foaf:aimChatID  xsd:string  *;
+   foaf:skypeID  xsd:string  *;
+   foaf:jabberID  xsd:string  *;
+   foaf:msnChatID  xsd:string  *;
+   foaf:topic_interest  @:Thing  *;
+   asioCore:authors  @:Publication  *;
+   foaf:status  xsd:string  *;
+   foaf:icqChatID  xsd:string  *;
+   foaf:weblog  @:Document  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   foaf:account  @:OnlineAccount  *;
+   asioCore:profiles  @:Profile  *;
+   foaf:made  @:Thing  *;
+   cerif:collaboratesWith  @:Agent  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   foaf:yahooChatID  xsd:string  *;
+   asioCore:associatedWith  @:Agent  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   foaf:gender  xsd:string  *;
+   cerif:employs  @:Agent  *;
+   cerif:purchasesFrom  @:Agent  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   asioCore:plays  @:Role  *;
+   foaf:age  xsd:string  *;
+   asioCore:Publishes  @:Publication  *;
+   asioCore:projectCoordinator  @:Project  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   foaf:mbox  @:Thing  *;
+   foaf:interest  @:Document  *;
+   asioCore:participant  @:Project  *;
+   foaf:tipjar  @:Document  *;
+   foaf:openid  @:Document  *;
+   asioCore:coauthors  @:Publication  *
+}
+
+
+:AdministrativeEntity .
+
+
+:AudioVisualDocument
+{
+   asioCore:cites  @:Publication  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:awardedWith  xsd:string  *
+}
+
+
+:InternationalProject
+{
+   asioCore:projectKeyword  xsd:string  *;
+   foaf:page  @:Document  *;
+   asioCore:projectStatus  @:Status  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:projectID  xsd:string  *;
+   asioCore:projectObjective  xsd:string  *;
+   foaf:depiction  @:Image  *;
+   foaf:logo  @:Thing  *;
+   asioCore:projectAcronym  xsd:string  *;
+   asioCore:isCompetitive  xsd:string  *;
+   asioCore:coordinatedBy  @:Agent  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:maker  @:Agent  *;
+   foaf:name  xsd:string  *;
+   foaf:homepage  @:Document  *;
+   asioCore:projectBudget  xsd:string  *;
+   asioCore:projectStartDate  xsd:string  *;
+   foaf:theme  @:Thing  *;
+   asioCore:projectEndDate  xsd:string  *;
+   foaf:isPrimaryTopicOf  @:Document  *
+}
+
+
+:Funding
+{
+   foaf:homepage  @:Document  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:theme  @:Thing  *;
+   foaf:name  xsd:string  *;
+   foaf:page  @:Document  *;
+   foaf:depiction  @:Image  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   foaf:maker  @:Agent  *;
+   foaf:logo  @:Thing  *
+}
+
+
+:ProjectBudget
+{
+   foaf:page  @:Document  *;
+   foaf:depiction  @:Image  *;
+   foaf:maker  @:Agent  *;
+   foaf:name  xsd:string  *;
+   foaf:theme  @:Thing  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   foaf:logo  @:Thing  *;
+   foaf:homepage  @:Document  *
+}
+
+
+:ResearchProblem .
+
+
+:Article
+{
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:hasDOI  xsd:string  *
+}
+
+
+:ResearchField .
+
+
+:FundingAgency .
+
+
+:ResearchContribution
+{
+   asioCore:addresses  @:ResearchProblem  *;
+   asioCore:employs  @:ResearchMethod  *;
+   asioCore:yields  @:ResearchResult  *;
+   asioCore:utilizes  @:ResearchMaterial  *
+}
+
+
+:SealOfQuality .
+
+
+:SpainUniversityStaffing .
+
+
+:Status .
+
+
+:Prototype
+{
+   asioCore:hasTRL  xsd:string  *
+}
+
+
+:ResearchInstitute
+{
+   foaf:holdsAccount  @:OnlineAccount  *;
+   foaf:age  xsd:string  *;
+   asioCore:plays  @:Role  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   foaf:aimChatID  xsd:string  *;
+   cerif:isEmployedBy  @:Agent  *;
+   cerif:collaboratesWith  @:Agent  *;
+   asioCore:coauthors  @:Publication  *;
+   foaf:gender  xsd:string  *;
+   foaf:openid  @:Document  *;
+   foaf:weblog  @:Document  *;
+   foaf:yahooChatID  xsd:string  *;
+   foaf:status  xsd:string  *;
+   foaf:skypeID  xsd:string  *;
+   cerif:purchasesFrom  @:Agent  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   asioCore:profiles  @:Profile  *;
+   foaf:interest  @:Document  *;
+   asioCore:participant  @:Project  *;
+   foaf:tipjar  @:Document  *;
+   foaf:account  @:OnlineAccount  *;
+   foaf:msnChatID  xsd:string  *;
+   cerif:employs  @:Agent  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   asioCore:associatedWith  @:Agent  *;
+   asioCore:Publishes  @:Publication  *;
+   foaf:mbox  @:Thing  *;
+   foaf:birthday  xsd:string  *;
+   cerif:sellsTo  @:Agent  *;
+   foaf:jabberID  xsd:string  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   foaf:topic_interest  @:Thing  *;
+   foaf:icqChatID  xsd:string  *;
+   asioCore:projectCoordinator  @:Project  *;
+   foaf:made  @:Thing  *;
+   asioCore:authors  @:Publication  *
+}
+
+
+:Grant
+{
+   foaf:isPrimaryTopicOf  @:Document  *;
+   foaf:page  @:Document  *;
+   foaf:depiction  @:Image  *;
+   foaf:logo  @:Thing  *;
+   foaf:name  xsd:string  *;
+   foaf:theme  @:Thing  *;
+   foaf:maker  @:Agent  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:homepage  @:Document  *
+}
+
+
+:QualifiedValue
+{
+   asioCore:qualifieddate  xsd:string  *;
+   asioCore:qualifiedvaluation  xsd:string  *
+}
+
+
+:FundingOrganization
+{
+   cerif:purchasesFrom  @:Agent  *;
+   foaf:made  @:Thing  *;
+   asioCore:Publishes  @:Publication  *;
+   asioCore:authors  @:Publication  *;
+   cerif:sellsTo  @:Agent  *;
+   asioCore:projectCoordinator  @:Project  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   foaf:skypeID  xsd:string  *;
+   foaf:aimChatID  xsd:string  *;
+   foaf:weblog  @:Document  *;
+   asioCore:participant  @:Project  *;
+   foaf:account  @:OnlineAccount  *;
+   foaf:mbox  @:Thing  *;
+   foaf:jabberID  xsd:string  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   asioCore:profiles  @:Profile  *;
+   foaf:icqChatID  xsd:string  *;
+   foaf:tipjar  @:Document  *;
+   foaf:openid  @:Document  *;
+   foaf:yahooChatID  xsd:string  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   foaf:msnChatID  xsd:string  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   asioCore:plays  @:Role  *;
+   cerif:collaboratesWith  @:Agent  *;
+   foaf:birthday  xsd:string  *;
+   cerif:employs  @:Agent  *;
+   asioCore:coauthors  @:Publication  *;
+   foaf:interest  @:Document  *;
+   asioCore:associatedWith  @:Agent  *;
+   foaf:status  xsd:string  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   foaf:topic_interest  @:Thing  *;
+   foaf:age  xsd:string  *;
+   cerif:isEmployedBy  @:Agent  *;
+   foaf:gender  xsd:string  *
+}
+
+
+:Product .
+
+
+:ScientificPublication
+{
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:cites  @:Publication  *
+}
+
+
+:Database
+{
+   asioCore:cites  @:Publication  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:awardedWith  xsd:string  *
+}
+
+
+:DoctoralDegree
+{
+   asioCore:requires  @:Role  *;
+   asioCore:requires  @:AcademicPublication  *
+}
+
+
+:Country .
+
+
+:EuropeanProject
+{
+   asioCore:coordinatedBy  @:Agent  *;
+   foaf:homepage  @:Document  *;
+   asioCore:projectEndDate  xsd:string  *;
+   asioCore:projectID  xsd:string  *;
+   asioCore:projectBudget  xsd:string  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   foaf:depiction  @:Image  *;
+   foaf:logo  @:Thing  *;
+   foaf:name  xsd:string  *;
+   asioCore:projectKeyword  xsd:string  *;
+   asioCore:projectObjective  xsd:string  *;
+   asioCore:isCompetitive  xsd:string  *;
+   foaf:page  @:Document  *;
+   asioCore:projectAcronym  xsd:string  *;
+   asioCore:projectStatus  @:Status  *;
+   foaf:theme  @:Thing  *;
+   asioCore:projectStartDate  xsd:string  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:maker  @:Agent  *
+}
+
+
+:TechnicalReport
+{
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:awardedWith  xsd:string  *
+}
+
+
+:EventSeries .
+
+
+:SME
+{
+   foaf:icqChatID  xsd:string  *;
+   foaf:skypeID  xsd:string  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   foaf:age  xsd:string  *;
+   asioCore:authors  @:Publication  *;
+   cerif:collaboratesWith  @:Agent  *;
+   cerif:sellsTo  @:Agent  *;
+   asioCore:profiles  @:Profile  *;
+   foaf:topic_interest  @:Thing  *;
+   asioCore:participant  @:Project  *;
+   asioCore:plays  @:Role  *;
+   foaf:aimChatID  xsd:string  *;
+   foaf:tipjar  @:Document  *;
+   foaf:jabberID  xsd:string  *;
+   foaf:openid  @:Document  *;
+   asioCore:associatedWith  @:Agent  *;
+   foaf:mbox  @:Thing  *;
+   asioCore:coauthors  @:Publication  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   cerif:purchasesFrom  @:Agent  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   asioCore:projectCoordinator  @:Project  *;
+   cerif:employs  @:Agent  *;
+   foaf:gender  xsd:string  *;
+   foaf:yahooChatID  xsd:string  *;
+   foaf:interest  @:Document  *;
+   foaf:msnChatID  xsd:string  *;
+   foaf:status  xsd:string  *;
+   foaf:account  @:OnlineAccount  *;
+   foaf:made  @:Thing  *;
+   foaf:weblog  @:Document  *;
+   foaf:birthday  xsd:string  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   asioCore:Publishes  @:Publication  *;
+   cerif:isEmployedBy  @:Agent  *
+}
+
+
+:MastersThesis
+{
+   asioCore:cites  @:Publication  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:requiredFor  @:AcademicDegree  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:coadvisedBy  @:Person  *
+}
+
+
+:EditedPublication
+{
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:awardedWith  xsd:string  *
+}
+
+
+:Patent
+{
+   asioCore:patentExpirationDate  xsd:string  *;
+   asioCore:patentDate  xsd:string  *;
+   asioCore:patentInventor  @:Person  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:patentCountry  @:Country  *;
+   asioCore:patentAssignee  @:Organization  *;
+   asioCore:patentStatus  @:Status  *
+}
+
+
+:Book
+{
+   asioCore:isCoauthoredBy  @:Agent  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:hasScientificDomain  @:Concept  *
+}
+
+
+:PeerReviewedArticle
+{
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:isCoauthoredBy  @:Agent  *
+}
+
+
+:RegionalProject
+{
+   asioCore:projectStatus  @:Status  *;
+   foaf:theme  @:Thing  *;
+   foaf:fundedBy  @:Thing  *;
+   asioCore:projectEndDate  xsd:string  *;
+   asioCore:projectAcronym  xsd:string  *;
+   foaf:name  xsd:string  *;
+   foaf:page  @:Document  *;
+   foaf:logo  @:Thing  *;
+   asioCore:coordinatedBy  @:Agent  *;
+   asioCore:projectObjective  xsd:string  *;
+   asioCore:projectID  xsd:string  *;
+   asioCore:projectBudget  xsd:string  *;
+   foaf:homepage  @:Document  *;
+   asioCore:projectKeyword  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   asioCore:isCompetitive  xsd:string  *;
+   foaf:depiction  @:Image  *;
+   asioCore:projectStartDate  xsd:string  *;
+   foaf:maker  @:Agent  *
+}
+
+
+:BacherlorsDegree
+{
+   asioCore:requires  @:AcademicPublication  *;
+   asioCore:requires  @:Role  *
+}
+
+
+:ResearchGroup
+{
+   asioCore:Publishes  @:Publication  *;
+   foaf:msnChatID  xsd:string  *;
+   foaf:openid  @:Document  *;
+   asioCore:participant  @:Project  *;
+   foaf:birthday  xsd:string  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   foaf:tipjar  @:Document  *;
+   asioCore:associatedWith  @:Agent  *;
+   asioCore:plays  @:Role  *;
+   foaf:jabberID  xsd:string  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   foaf:yahooChatID  xsd:string  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   foaf:member  @:Agent  *;
+   foaf:interest  @:Document  *;
+   asioCore:coauthors  @:Publication  *;
+   foaf:gender  xsd:string  *;
+   foaf:icqChatID  xsd:string  *;
+   asioCore:authors  @:Publication  *;
+   foaf:weblog  @:Document  *;
+   foaf:made  @:Thing  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   foaf:skypeID  xsd:string  *;
+   asioCore:projectCoordinator  @:Project  *;
+   foaf:mbox  @:Thing  *;
+   cerif:sellsTo  @:Agent  *;
+   cerif:purchasesFrom  @:Agent  *;
+   foaf:aimChatID  xsd:string  *;
+   cerif:isEmployedBy  @:Agent  *;
+   asioCore:profiles  @:Profile  *;
+   foaf:status  xsd:string  *;
+   foaf:topic_interest  @:Thing  *;
+   cerif:employs  @:Agent  *;
+   foaf:age  xsd:string  *;
+   cerif:collaboratesWith  @:Agent  *;
+   foaf:account  @:OnlineAccount  *;
+   asioCore:hasResearchLine  @:Concept  *
+}
+
+
+:UniversityDivision
+{
+   cerif:sellsTo  @:Agent  *;
+   asioCore:projectCoordinator  @:Project  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   cerif:isEmployedBy  @:Agent  *;
+   asioCore:plays  @:Role  *;
+   foaf:age  xsd:string  *;
+   foaf:jabberID  xsd:string  *;
+   foaf:topic_interest  @:Thing  *;
+   foaf:status  xsd:string  *;
+   asioCore:profiles  @:Profile  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   foaf:weblog  @:Document  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   foaf:yahooChatID  xsd:string  *;
+   foaf:skypeID  xsd:string  *;
+   foaf:mbox  @:Thing  *;
+   cerif:employs  @:Agent  *;
+   asioCore:associatedWith  @:Agent  *;
+   foaf:icqChatID  xsd:string  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   asioCore:coauthors  @:Publication  *;
+   foaf:birthday  xsd:string  *;
+   foaf:made  @:Thing  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   foaf:account  @:OnlineAccount  *;
+   cerif:collaboratesWith  @:Agent  *;
+   foaf:msnChatID  xsd:string  *;
+   asioCore:participant  @:Project  *;
+   foaf:openid  @:Document  *;
+   cerif:purchasesFrom  @:Agent  *;
+   asioCore:authors  @:Publication  *;
+   foaf:gender  xsd:string  *;
+   foaf:interest  @:Document  *;
+   foaf:aimChatID  xsd:string  *;
+   asioCore:Publishes  @:Publication  *;
+   foaf:tipjar  @:Document  *
+}
+
+
+:PhDThesis
+{
+   asioCore:hasDOI  xsd:string  *;
+   asioCore:awardedWith  xsd:string  *;
+   asioCore:coadvisedBy  @:Person  *;
+   asioCore:cites  @:Publication  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:publicationCitation  @:QualifiedValue  *;
+   asioCore:publishedBy  @:Agent  *;
+   asioCore:requiredFor  @:AcademicDegree  *;
+   asioCore:isCoauthoredBy  @:Agent  *
+}
+
+
+:Role
+{
+   asioCore:requires  @:Role  *;
+   asioCore:requires  @:AcademicPublication  *;
+   asioCore:specializes  @:Role  *;
+   asioCore:referencedLaw  xsd:string  *
+}
+
+
+:Spinoff
+{
+   foaf:gender  xsd:string  *;
+   foaf:age  xsd:string  *;
+   foaf:weblog  @:Document  *;
+   cerif:sellsTo  @:Agent  *;
+   cerif:isEmployedBy  @:Agent  *;
+   asioCore:authors  @:Publication  *;
+   asioCore:profiles  @:Profile  *;
+   foaf:status  xsd:string  *;
+   foaf:made  @:Thing  *;
+   foaf:account  @:OnlineAccount  *;
+   cerif:employs  @:Agent  *;
+   foaf:icqChatID  xsd:string  *;
+   foaf:birthday  xsd:string  *;
+   foaf:skypeID  xsd:string  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   foaf:aimChatID  xsd:string  *;
+   asioCore:associatedWith  @:Agent  *;
+   asioCore:participant  @:Project  *;
+   asioCore:Publishes  @:Publication  *;
+   foaf:msnChatID  xsd:string  *;
+   foaf:topic_interest  @:Thing  *;
+   foaf:jabberID  xsd:string  *;
+   cerif:purchasesFrom  @:Agent  *;
+   foaf:yahooChatID  xsd:string  *;
+   foaf:openid  @:Document  *;
+   foaf:tipjar  @:Document  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   cerif:collaboratesWith  @:Agent  *;
+   foaf:mbox  @:Thing  *;
+   asioCore:coauthors  @:Publication  *;
+   asioCore:plays  @:Role  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   asioCore:projectCoordinator  @:Project  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   foaf:interest  @:Document  *
+}
+
+
+:ServiceContract
+{
+   foaf:name  xsd:string  *;
+   foaf:maker  @:Agent  *;
+   foaf:theme  @:Thing  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:depiction  @:Image  *;
+   foaf:logo  @:Thing  *;
+   foaf:homepage  @:Document  *;
+   foaf:page  @:Document  *;
+   foaf:isPrimaryTopicOf  @:Document  *
+}
+
+
+:MastersDegree
+{
+   asioCore:requires  @:Role  *;
+   asioCore:requires  @:AcademicPublication  *
+}
+
+
+:Contract
+{
+   foaf:name  xsd:string  *;
+   foaf:page  @:Document  *;
+   foaf:maker  @:Agent  *;
+   foaf:depiction  @:Image  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:theme  @:Thing  *;
+   foaf:homepage  @:Document  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   foaf:logo  @:Thing  *
+}
+
+
+:Agent
+{
+   cerif:purchasesFrom  @:Agent  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   asioCore:Publishes  @:Publication  *;
+   asioCore:authors  @:Publication  *;
+   foaf:skypeID  xsd:string  *;
+   foaf:topic_interest  @:Thing  *;
+   foaf:yahooChatID  xsd:string  *;
+   foaf:weblog  @:Document  *;
+   asioCore:coauthors  @:Publication  *;
+   cerif:sellsTo  @:Agent  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   asioCore:associatedWith  @:Agent  *;
+   cerif:employs  @:Agent  *;
+   foaf:jabberID  xsd:string  *;
+   foaf:mbox  @:Thing  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   cerif:collaboratesWith  @:Agent  *;
+   foaf:msnChatID  xsd:string  *;
+   asioCore:projectCoordinator  @:Project  *;
+   foaf:interest  @:Document  *;
+   foaf:birthday  xsd:string  *;
+   foaf:age  xsd:string  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   foaf:status  xsd:string  *;
+   foaf:aimChatID  xsd:string  *;
+   cerif:isEmployedBy  @:Agent  *;
+   asioCore:participant  @:Project  *;
+   foaf:gender  xsd:string  *;
+   asioCore:profiles  @:Profile  *;
+   asioCore:plays  @:Role  *;
+   foaf:made  @:Thing  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   foaf:account  @:OnlineAccount  *;
+   foaf:openid  @:Document  *;
+   foaf:tipjar  @:Document  *;
+   foaf:icqChatID  xsd:string  *
+}
+
+
+:Concept
+{
+   asioCore:geoDivision  @:GeopoliticalEntities  *;
+   asioCore:geo-division  @:GeopoliticalEntities  *;
+   asioCore:capital  @:Concept  *;
+   asioCore:codeOf  @:Concept  *;
+   asioCore:hasCode  @:Concept  *;
+   foaf:focus  @:Thing  *
+}
+
+
+:Document
+{
+   foaf:topic  @:Thing  *;
+   foaf:primaryTopic  @:Thing  *
+}
+
+
+:Image
+{
+   foaf:thumbnail  @:Image  *;
+   foaf:primaryTopic  @:Thing  *;
+   foaf:topic  @:Thing  *;
+   foaf:depicts  @:Thing  *
+}
+
+
+:OnlineAccount
+{
+   foaf:homepage  @:Document  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   foaf:theme  @:Thing  *;
+   foaf:logo  @:Thing  *;
+   foaf:name  xsd:string  *;
+   foaf:accountServiceHomepage  @:Document  *;
+   foaf:fundedBy  @:Thing  *;
+   foaf:page  @:Document  *;
+   foaf:maker  @:Agent  *;
+   foaf:depiction  @:Image  *;
+   foaf:accountName  xsd:string  *
+}
+
+
+:Person
+{
+   foaf:workplaceHomepage  @:Document  *;
+   asioCore:hasResearcherID  xsd:string  *;
+   foaf:lastName  xsd:string  *;
+   foaf:yahooChatID  xsd:string  *;
+   asioCore:i10-index  @:QualifiedValue  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   asioCore:coauthors  @:Publication  *;
+   foaf:firstName  xsd:string  *;
+   foaf:mbox  @:Thing  *;
+   foaf:img  @:Image  *;
+   asioCore:hasORCID  xsd:string  *;
+   foaf:status  xsd:string  *;
+   asioCore:coadvises  @:AcademicPublication  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   asioCore:participant  @:Project  *;
+   foaf:publications  @:Document  *;
+   foaf:geekcode  xsd:string  *;
+   cerif:employs  @:Agent  *;
+   foaf:gender  xsd:string  *;
+   asioCore:reviews  @:Publication  *;
+   foaf:surname  xsd:string  *;
+   foaf:openid  @:Document  *;
+   foaf:icqChatID  xsd:string  *;
+   asioCore:patentAssistantExaminer  @:Patent  *;
+   foaf:workInfoHomepage  @:Document  *;
+   foaf:family_name  xsd:string  *;
+   foaf:account  @:OnlineAccount  *;
+   cerif:purchasesFrom  @:Agent  *;
+   foaf:based_near  @:SpatialThing  *;
+   foaf:aimChatID  xsd:string  *;
+   asioCore:patentPrimaryExaminer  @:Patent  *;
+   asioCore:student  @:University  *;
+   foaf:pastProject  @:Thing  *;
+   foaf:age  xsd:string  *;
+   foaf:made  @:Thing  *;
+   foaf:myersBriggs  xsd:string  *;
+   asioCore:authorCitation  @:QualifiedValue  *;
+   asioCore:isGrantedWith  @:Grant  *;
+   asioCore:projectCoordinator  @:Project  *;
+   asioCore:plays  @:Role  *;
+   asioCore:advises  @:AcademicPublication  *;
+   asioCore:companyFounder  @:Company  *;
+   cerif:sellsTo  @:Agent  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   foaf:skypeID  xsd:string  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   asioCore:authors  @:Publication  *;
+   foaf:interest  @:Document  *;
+   foaf:weblog  @:Document  *;
+   asioCore:hasCV  @:CV  *;
+   cerif:isEmployedBy  @:Agent  *;
+   foaf:tipjar  @:Document  *;
+   cerif:hasBirthDate  xsd:string  *;
+   asioCore:Publishes  @:Publication  *;
+   foaf:birthday  xsd:string  *;
+   foaf:schoolHomepage  @:Document  *;
+   cerif:collaboratesWith  @:Agent  *;
+   asioCore:mainResearcherParticipant  @:Project  *;
+   foaf:familyName  xsd:string  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   asioCore:h-index  @:QualifiedValue  *;
+   foaf:msnChatID  xsd:string  *;
+   foaf:topic_interest  @:Thing  *;
+   foaf:plan  xsd:string  *;
+   cerif:hasCurriculumVitae  @:Document  *;
+   foaf:jabberID  xsd:string  *;
+   foaf:knows  @:Person  *;
+   asioCore:profiles  @:Profile  *;
+   foaf:currentProject  @:Thing  *;
+   asioCore:associatedWith  @:Agent  *
+}
+
+
+:Event
+{
+   c4dm:sub_event  @:Event  *;
+   c4dm:time  @:TemporalEntity  *;
+   c4dm:agent  @:Agent  *;
+   c4dm:place  @:SpatialThing  *
+}
+
+
+:Organization
+{
+   cerif:employs  @:Agent  *;
+   foaf:interest  @:Document  *;
+   asioCore:hasResearchLine  @:Concept  *;
+   foaf:topic_interest  @:Thing  *;
+   foaf:holdsAccount  @:OnlineAccount  *;
+   foaf:jabberID  xsd:string  *;
+   foaf:yahooChatID  xsd:string  *;
+   foaf:status  xsd:string  *;
+   foaf:made  @:Thing  *;
+   foaf:mbox  @:Thing  *;
+   asioCore:profiles  @:Profile  *;
+   foaf:aimChatID  xsd:string  *;
+   asioCore:participant  @:Project  *;
+   foaf:mbox_sha1sum  xsd:string  *;
+   asioCore:hasSealOfQuality  @:ResearchInstitute  *;
+   foaf:icqChatID  xsd:string  *;
+   cerif:collaboratesWith  @:Agent  *;
+   asioCore:coauthors  @:Publication  *;
+   foaf:account  @:OnlineAccount  *;
+   asioCore:Publishes  @:Publication  *;
+   foaf:birthday  xsd:string  *;
+   cerif:sellsTo  @:Agent  *;
+   cerif:isEmployedBy  @:Agent  *;
+   foaf:openid  @:Document  *;
+   foaf:gender  xsd:string  *;
+   foaf:msnChatID  xsd:string  *;
+   asioCore:authors  @:Publication  *;
+   cerif:purchasesFrom  @:Agent  *;
+   asioCore:researchesIn  @:ScientificDomain  *;
+   asioCore:plays  @:Role  *;
+   asioCore:projectCoordinator  @:Project  *;
+   asioCore:associatedWith  @:Agent  *;
+   foaf:age  xsd:string  *;
+   foaf:skypeID  xsd:string  *;
+   foaf:weblog  @:Document  *;
+   foaf:tipjar  @:Document  *
+}
+
+
+:Project
+{
+   asioCore:coordinatedBy  @:Agent  *;
+   asioCore:projectBudget  xsd:string  *;
+   asioCore:projectStartDate  xsd:string  *;
+   foaf:page  @:Document  *;
+   foaf:name  xsd:string  *;
+   foaf:theme  @:Thing  *;
+   foaf:depiction  @:Image  *;
+   asioCore:projectStatus  @:Status  *;
+   asioCore:projectID  xsd:string  *;
+   foaf:fundedBy  @:Thing  *;
+   asioCore:projectKeyword  xsd:string  *;
+   asioCore:hasScientificDomain  @:Concept  *;
+   asioCore:projectAcronym  xsd:string  *;
+   asioCore:isCompetitive  xsd:string  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   foaf:logo  @:Thing  *;
+   foaf:maker  @:Agent  *;
+   asioCore:projectObjective  xsd:string  *;
+   asioCore:projectEndDate  xsd:string  *;
+   foaf:homepage  @:Document  *
+}
+
+
+:Thing
+{
+   foaf:fundedBy  @:Thing  *;
+   foaf:isPrimaryTopicOf  @:Document  *;
+   foaf:name  xsd:string  *;
+   foaf:logo  @:Thing  *;
+   foaf:depiction  @:Image  *;
+   foaf:homepage  @:Document  *;
+   foaf:theme  @:Thing  *;
+   foaf:maker  @:Agent  *;
+   foaf:page  @:Document  *
+}
+
+
+:TemporalEntity .
+
+
+:SpatialThing
+{
+   foaf:based_near  @:SpatialThing  *
+}
